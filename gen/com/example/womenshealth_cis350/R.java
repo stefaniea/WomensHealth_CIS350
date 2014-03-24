@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.example.womanshealth_cis350;
+package com.example.womenshealth_cis350;
 
 public final class R {
     public static final class attr {

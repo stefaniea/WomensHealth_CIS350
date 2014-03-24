@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 
-import com.example.womanshealth_cis350.R;
 
 public class LetsGetStarted extends Activity {
 	@Override

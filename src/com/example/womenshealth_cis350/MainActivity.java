@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.MotionEvent;
 
-import com.example.womanshealth_cis350.R;
 public class MainActivity extends Activity {
 
 	@Override
