@@ -11,6 +11,7 @@ public final class R {
     public static final class attr {
     }
     public static final class dimen {
+        public static final int TitleSize=0x7f040002;
         /**  Default screen margins, per the Android Design guidelines. 
 
          Customize dimensions originally defined in res/values/dimens.xml (such as
@@ -26,8 +27,8 @@ public final class R {
     public static final class id {
         public static final int action_settings=0x7f080003;
         public static final int getstarted=0x7f080002;
+        public static final int subtitle=0x7f080000;
         public static final int title_screen=0x7f080001;
-        public static final int title_screen2=0x7f080000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
