@@ -53,7 +53,30 @@ public class WhatToExpect extends Activity implements OnItemSelectedListener {
 		if(arg3 == 5) {
 			content.setText(R.string.fourdays_wte);
 		}
-		
+		if(arg3 == 6) {
+			content.setText(R.string.oneweek_wte);
+		}
+		if(arg3 == 7) {
+			content.setText(R.string.twothreeweeks_wte);
+		}
+		if(arg3 == 8) {
+			content.setText(R.string.onemonth_wte);
+		}
+		if(arg3 == 9) {
+			content.setText(R.string.twomonths_wte);
+		}
+		if(arg3 == 10) {
+			content.setText(R.string.threemonths_wte);
+		}
+		if(arg3 == 11) {
+			content.setText(R.string.fourmonths_wte);
+		}
+		if(arg3 == 12) {
+			content.setText(R.string.sixmonths_wte);
+		}
+		if(arg3 == 13) {
+			content.setText(R.string.aftersixmonths_wte);
+		}
 	}
 
 	@Override

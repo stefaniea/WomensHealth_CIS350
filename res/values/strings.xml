@@ -103,7 +103,7 @@ during this time and will cluster feedings together and again
  you may feel like all your baby wants to do is nurse –this is normal! \n
      	 </string>
      	 
-            <string name="onemonth">
+            <string name="onemonth_wte">
        • By one month, your baby may start to sleep for longer 
        periods of time between feedings, which is okay as long 
        as you are still nursing between 8-12 times total per 24 hrs \n
@@ -112,7 +112,7 @@ during this time and will cluster feedings together and again
                 
      	 </string>
      	 
-             <string name="twomonths">
+             <string name="twomonths_wte">
        • You may notice your baby spending less time at the 
        breast during each feeding session because he or she is more
         efficient at the breast now and is able to remove milk more effectively \n
@@ -123,7 +123,7 @@ formula fed babies of the same age and this is normal \n
 
   </string>
      	 
-               <string name="threemonths">
+               <string name="threemonths_wte">
        • Another growth spurt is expected around this time so do not be 
        concerned if your baby picks up the frequency of feeds again at this point\n 
 • Babies at this time may get distracted during feeds and you’ll want to redirect
@@ -132,10 +132,27 @@ formula fed babies of the same age and this is normal \n
      
      	 </string>
      	 
-                <string name="fourmonths">
+                <string name="fourmonths_wte">
         •  By four months, most mothers report feeling the hang 
        of breastfeeding and being happy with their choice \n
  • Your baby may begin teething which can cause your baby 
 to want to chew on things, but this does not mean your baby is hungry for solid foods \n
+     	 </string>
+     	 
+                 <string name="sixmonths_wte">
+        •  This is an exciting time because your have breastfed your baby for the
+         recommended length of time! \n
+•  Your baby can now start having solid foods and continue breastfeeding 
+•  Always offer your breast first, then solid foods 
+so the baby gets your nutritious breast milk before filling up on solid foods \n
+
+     	 </string>
+     	   <string name="aftersixmonths_wte">
+        • Allow your baby to continue nursing if it is what you both desire \n
+• Some babies may stop showing interest in breastfeeding \n
+while others will continue to find comfort in it 
+• Regardless of what you choose, know that you have done a great thing for you 
+and your baby by keeping it up for this long! \n
+     	       
      	 </string>
   </resources>
