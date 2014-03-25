@@ -45,17 +45,17 @@ public final class R {
         public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int 1week_wte=0x7f050008;
-        public static final int 24hours_wte=0x7f050004;
-        public static final int 2days_wte=0x7f050005;
-        public static final int 3days_wte=0x7f050006;
-        public static final int 4days_wte=0x7f050007;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         /**  what to expect strings/info "wte" = what to expect 
          */
         public static final int atbirth_wte=0x7f050003;
+        public static final int fourdays_wte=0x7f050007;
         public static final int hello_world=0x7f050002;
+        public static final int oneweek_wte=0x7f050008;
+        public static final int threedays_wte=0x7f050006;
+        public static final int twentyfourhours_wte=0x7f050004;
+        public static final int twodays_wte=0x7f050005;
     }
     public static final class style {
         /** 
