@@ -1,6 +1,7 @@
 package com.example.womenshealth_cis350;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -20,8 +21,17 @@ public class LetsGetStarted extends Activity {
 		return true;
 	}
 	
-	public void onStartedClick(View v) {
-		
+	public boolean onStartedClick(View v) {
+	//after clicking "let's get started" change the page	
+		return true;
+	}
+	
+	//testing the WhatToExpect page
+	public boolean onTestDropDownClick(View v) {
+		Intent start = new Intent(this, WhatToExpect.class);
+		startActivity(start);
+	
+		return true;
 	}
 
 }

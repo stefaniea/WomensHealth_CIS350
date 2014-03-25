@@ -9,6 +9,15 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.57"
         android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:onClick="onTestDropDownClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop down menu test" />
+
     </LinearLayout>
 
     <Button

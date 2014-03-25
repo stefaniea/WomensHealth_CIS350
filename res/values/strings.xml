@@ -7,6 +7,7 @@
     <string name="hello_world">Hello world!</string>
     
       <string-array name="ages_array">
+        <item></item>
         <item>At birth</item>
         <item>First 24 Hours</item>
         <item>2 days</item>
@@ -21,4 +22,71 @@
         <item>6 months</item>
         <item>6 months and beyond</item>
     </string-array>
+    
+      <!-- what to expect strings/info "wte" = what to expect -->
+      <string name="atbirth_wte">
+     • Almost immediately after birth, your baby is in a unique alert stage and may 
+    latch on for the first time seeming like a pro \n
+ • Allow the baby to stay with you skin-to-skin while the baby seeks 
+out the breast and nipple 
+ • While some babies may latch on at this time, many will simply 
+“explore” by licking, bobbing their head, and possibly taking a few small sucks \n
+ • Remember, all of this is normal and the most important thing at this 
+time is to be skin-to-skin with your baby and allow the baby access to your 
+breast for a feeding attempt if the baby seems interested   \n
+      </string>
+      
+      <string name="24hours_wte">
+     • This is a learning time for you and your baby \n
+ • Make sure to spend lots of time together skin-to-skin \n 
+ • Many babies will seem very sleepy during this first 
+24 hours and you may need to wake your baby for feeds \n
+ • If your baby is uninterested in the breast during this time, 
+try hand-expressing your colostrum directly into your baby’s mouth \n
+      </string>
+      
+       <string name="2days_wte">
+     • Your baby will be waking up more by this time. It may seem like all your baby wants to do is nurse.
+     This is normal! \n
+ • Your colostrum fills the baby’s tiny belly and is easily digested, 
+therefore making the baby ready for more in a short amount of time \n
+ • Keep up with the frequent feeds and skin-to-skin, because at this 
+point your milk may be beginning to transition into your mature milk and 
+frequent nipple stimulation will help this to occur \n
+
+      </string>
+      <string name="3days_wte">
+           • Many women describe day three as one of the most difficult of all,
+           so great job making it here and keep up the good work \n
+ • At this point, you can expect your baby’s latch to be improving and you
+ are both getting the hang of it \n
+ • Your baby’s appetite may seem insatiable and it seems 
+like you’re feeding constantly. Again, this is normal and your 
+baby is just helping to bring your milk supply in \n
+          
+      </string>
+      
+      <string name="4days_wte">
+         • Many women will experience their milk “coming in” at this time
+          and you may wake up with your breasts feeling very full and firm \n
+• It is critical at this time that you feed your baby
+ frequently and on cue so that the baby can regulate your milk supply to fit his or her needs \n
+• Your milk may be changing in color at this point from yellowish to white 
+• Your baby may choose to take each breast during one feeding, or he or 
+she may choose to nurse on one side only and then begin with the other 
+side at the next feeding—either way is normal \n 
+          
+      </string>
+      
+       <string name="1week_wte">
+         • Many women will experience their milk “coming in” at this time
+          and you may wake up with your breasts feeling very full and firm \n
+• It is critical at this time that you feed your baby
+ frequently and on cue so that the baby can regulate your milk supply to fit his or her needs \n
+• Your milk may be changing in color at this point from yellowish to white 
+• Your baby may choose to take each breast during one feeding, or he or 
+she may choose to nurse on one side only and then begin with the other 
+side at the next feeding—either way is normal \n 
+          
+      </string>
   </resources>

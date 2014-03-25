@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class WhatToExpect extends Activity implements OnItemSelectedListener {
 	@Override
@@ -35,7 +36,12 @@ public class WhatToExpect extends Activity implements OnItemSelectedListener {
 	@Override
 	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
 			long arg3) {
-		// TODO Auto-generated method stub
+		TextView content = (TextView) findViewById(R.id.age_content);
+		//position = at birth
+		if(arg3 == 1) {
+			content.setText(R.string.atbirth_wte);
+		}
+		
 		
 	}
 

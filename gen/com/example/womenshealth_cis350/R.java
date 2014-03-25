@@ -28,9 +28,11 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090004;
-        public static final int age_spinner=0x7f090003;
-        public static final int getstarted=0x7f090002;
+        public static final int action_settings=0x7f090006;
+        public static final int age_content=0x7f090005;
+        public static final int age_spinner=0x7f090004;
+        public static final int button1=0x7f090002;
+        public static final int getstarted=0x7f090003;
         public static final int subtitle=0x7f090001;
         public static final int title_screen=0x7f090000;
     }
@@ -43,8 +45,16 @@ public final class R {
         public static final int main=0x7f080000;
     }
     public static final class string {
+        public static final int 1week_wte=0x7f050008;
+        public static final int 24hours_wte=0x7f050004;
+        public static final int 2days_wte=0x7f050005;
+        public static final int 3days_wte=0x7f050006;
+        public static final int 4days_wte=0x7f050007;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        /**  what to expect strings/info "wte" = what to expect 
+         */
+        public static final int atbirth_wte=0x7f050003;
         public static final int hello_world=0x7f050002;
     }
     public static final class style {
