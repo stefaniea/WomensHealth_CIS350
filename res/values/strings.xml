@@ -3,6 +3,22 @@
 
     <string name="app_name">WomensHealth_CIS350</string>
     <string name="action_settings">Settings</string>
+   
     <string name="hello_world">Hello world!</string>
-
-</resources>
+    
+      <string-array name="ages_array">
+        <item>At birth</item>
+        <item>First 24 Hours</item>
+        <item>2 days</item>
+        <item>3 days</item>
+        <item>4 days</item>
+        <item>1 week</item>
+        <item>2-3 weeks</item>
+        <item>1 month</item>
+        <item>2 months</item>
+        <item>3 months</item>
+        <item>4 months</item>
+        <item>6 months</item>
+        <item>6 months and beyond</item>
+    </string-array>
+  </resources>

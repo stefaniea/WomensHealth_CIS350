@@ -9,18 +9,6 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="107dp"
-        android:ems="10"
-        android:inputType="textMultiLine"
-        android:text="Breastfeeding"
-        android:textSize="20sp" />
-
-    <TextView
         android:id="@+id/title_screen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,10 +18,24 @@
         android:clickable="false"
         android:editable="false"
         android:ems="10"
-        android:fontFamily="Georgia"
+        android:fontFamily="MyriadPro"
         android:inputType="text|textMultiLine"
         android:text="Women&apos;s Health Toolkit"
         android:textSize="22sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="134dp"
+        android:ems="10"
+        android:fontFamily="MyriadPro"
+        android:inputType="textMultiLine"
+        android:text="Breastfeeding"
+        android:textSize="20sp"
+        android:width="140dp" />
 
 </RelativeLayout>
