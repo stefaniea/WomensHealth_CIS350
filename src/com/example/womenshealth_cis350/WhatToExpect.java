@@ -41,7 +41,18 @@ public class WhatToExpect extends Activity implements OnItemSelectedListener {
 		if(arg3 == 1) {
 			content.setText(R.string.atbirth_wte);
 		}
-		
+		if(arg3 == 2) {
+			content.setText(R.string.twentyfourhours_wte);
+		}
+		if(arg3 == 3) {
+			content.setText(R.string.twodays_wte);
+		}
+		if(arg3 == 4) {
+			content.setText(R.string.threedays_wte);
+		}
+		if(arg3 == 5) {
+			content.setText(R.string.fourdays_wte);
+		}
 		
 	}
 

@@ -51,11 +51,16 @@ public final class R {
          */
         public static final int atbirth_wte=0x7f050003;
         public static final int fourdays_wte=0x7f050007;
+        public static final int fourmonths=0x7f05000d;
         public static final int hello_world=0x7f050002;
+        public static final int onemonth=0x7f05000a;
         public static final int oneweek_wte=0x7f050008;
         public static final int threedays_wte=0x7f050006;
+        public static final int threemonths=0x7f05000c;
         public static final int twentyfourhours_wte=0x7f050004;
         public static final int twodays_wte=0x7f050005;
+        public static final int twomonths=0x7f05000b;
+        public static final int twothreeweeks_wte=0x7f050009;
     }
     public static final class style {
         /** 
