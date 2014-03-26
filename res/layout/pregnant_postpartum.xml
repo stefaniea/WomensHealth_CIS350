@@ -3,17 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-
     <Button
         android:id="@+id/button1"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
         android:text="Pregnant" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
         android:text="Postpartum" />
-
 </LinearLayout>
