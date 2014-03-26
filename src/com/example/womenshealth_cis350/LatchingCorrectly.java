@@ -3,7 +3,6 @@ package com.example.womenshealth_cis350;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.View;
 
 public class LatchingCorrectly extends Activity {
 	@Override
