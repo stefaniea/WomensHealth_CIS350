@@ -188,7 +188,8 @@ public final class R {
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int btn_dropdown=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
         public static final int action_settings=0x7f0a000d;
@@ -208,9 +209,10 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int get_started=0x7f030001;
-        public static final int latching_correctly=0x7f030002;
-        public static final int what_to_expect=0x7f030003;
+        public static final int drawable=0x7f030001;
+        public static final int get_started=0x7f030002;
+        public static final int latching_correctly=0x7f030003;
+        public static final int what_to_expect=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -263,5 +265,7 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f080001;
+        public static final int Our_Theme=0x7f080002;
+        public static final int Widget_Spinner=0x7f080003;
     }
 }
