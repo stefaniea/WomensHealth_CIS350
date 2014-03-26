@@ -7,7 +7,7 @@
     <string name="hello_world">Hello world!</string>
     
       <string-array name="ages_array">
-        <item></item>
+        <item>What is the Age of your Baby?</item>
         <item>At birth</item>
         <item>First 24 Hours</item>
         <item>2 days</item>
