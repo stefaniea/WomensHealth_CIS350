@@ -188,14 +188,21 @@ public final class R {
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int btn_dropdown=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
+<<<<<<< HEAD
         public static final int LinearLayout01=0x7f0a000d;
         public static final int ScrollView01=0x7f0a000f;
         public static final int action_settings=0x7f0a0011;
         public static final int age_content=0x7f0a0010;
         public static final int age_spinner=0x7f0a000e;
+=======
+        public static final int action_settings=0x7f0a000f;
+        public static final int age_content=0x7f0a000e;
+        public static final int age_spinner=0x7f0a000d;
+>>>>>>> FETCH_HEAD
         public static final int button1=0x7f0a0002;
         public static final int button2=0x7f0a0003;
         public static final int checkBox1=0x7f0a0007;
@@ -270,5 +277,7 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f080001;
+        public static final int Our_Theme=0x7f080002;
+        public static final int Widget_Spinner=0x7f080003;
     }
 }
