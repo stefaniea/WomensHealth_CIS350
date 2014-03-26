@@ -10,6 +10,9 @@ package com.example.womenshealth_cis350;
 public final class R {
     public static final class array {
         public static final int ages_array=0x7f070000;
+        /**  Strings for goal setting page, gs stands for goal setting 
+         */
+        public static final int goalsetting_array=0x7f070001;
     }
     public static final class attr {
     }
@@ -233,19 +236,23 @@ public final class R {
         /**  what to expect strings/info "wte" = what to expect 
          */
         public static final int atbirth_wte=0x7f060003;
-        public static final int baby_latch_quest=0x7f060010;
+        public static final int baby_latch_quest=0x7f060014;
+        public static final int days_gs=0x7f060010;
         public static final int fourdays_wte=0x7f060007;
         public static final int fourmonths_wte=0x7f06000d;
         public static final int hello_world=0x7f060002;
+        public static final int months_gs=0x7f060012;
         public static final int onemonth_wte=0x7f06000a;
         public static final int oneweek_wte=0x7f060008;
         public static final int sixmonths_wte=0x7f06000e;
+        public static final int three_months_gs=0x7f060013;
         public static final int threedays_wte=0x7f060006;
         public static final int threemonths_wte=0x7f06000c;
         public static final int twentyfourhours_wte=0x7f060004;
         public static final int twodays_wte=0x7f060005;
         public static final int twomonths_wte=0x7f06000b;
         public static final int twothreeweeks_wte=0x7f060009;
+        public static final int weeks_gs=0x7f060011;
     }
     public static final class style {
         /** 

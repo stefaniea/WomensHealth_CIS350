@@ -155,4 +155,103 @@ while others will continue to find comfort in it
 and your baby by keeping it up for this long! \n
      	       
      	 </string>
-  </resources>
+
+ <!-- Strings for goal setting page, gs stands for goal setting -->
+ <string-array name="goalsetting_array">
+        <item>I plan on breastfeeding my baby for: </item>
+        <item>A few days after I give birth</item>
+        <item>1-3 weeks</item>
+        <item>1-2 months</item>
+        <item>3 months</item>
+        <item>4 months</item>
+        <item>6 months</item>
+        <item>Greater than 6 months</item>
+        <item>1 month</item>
+        <item>2 months</item>
+        <item>3 months</item>
+        <item>4 months</item>
+        <item>6 months</item>
+        <item>6 months and beyond</item>
+    </string-array>
+    
+ <string name="days_gs">
+     • That’s great! Congratulations on making the commitment to feed 
+
+your baby for a few days in the hospital!\n
+
+• By choosing to breastfeed for a few days in the hospital, you are 
+
+providing colostrum for your baby\n
+
+	\t - Colostrum is easy for your baby to digest, full of nutrients 
+
+and also contains antibodies to help baby fight off 
+
+infections\n
+ </string>
+ 
+<string name="weeks_gs">
+• That’s great! Congratulations on making the commitment to feed 
+
+baby [name] for 1-3 weeks!\n
+
+• By choosing to breastfeed for 1-3 weeks you will lower your 
+
+baby’s risk of developing\n
+
+	\t- Type II diabetes\n
+
+	\t- Obesity \n
+
+	\t- Infections of the GI tract \n
+ </string>
+ 
+<string name="months_gs">
+• That’s great! Congratulations on making the commitment to feed 
+
+your baby for 1-2 months! \n
+
+• By choosing to breastfeed for 1-2 months you will lower the risk 
+
+of your baby developing \n
+
+	\t- Type II diabetes \n
+
+	\t- Obesity \n
+
+	\t- Infections of the GI tract \n
+
+	\t- Food allergies by 3 years of age \n
+
+• You also will lower the risk of SIDS \n
+ </string>
+ 
+<string name="three_months_gs">
+•  That’s great! Congratulations on making the commitment to feed 
+
+your baby for 3 months! \n
+
+•  By choosing to breastfeed for 3 months you will lower the risk of 
+
+your baby developing \n
+
+\t- Type II diabetes \n
+
+\t- Obesity \n
+
+\t- Infections of the GI tract \n
+
+\t- Food allergies by 3 years of age \n
+
+\t- Ear infections \n
+
+\t- Skin conditions like eczema \n
+
+\t- Asthma \n
+
+\t- Type 1 diabetes \n
+
+•  You also will lower the risk of SIDS \n
+ </string>
+ 
+ </resources>
