@@ -192,11 +192,14 @@ public final class R {
     }
     public static final class id {
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int action_settings=0x7f0a0010;
         public static final int age_content=0x7f0a000f;
         public static final int age_spinner=0x7f0a000e;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 1139e3963cfb1edcdb882d0f6a4039b62a2d796d
         public static final int LinearLayout01=0x7f0a000b;
         public static final int ScrollView01=0x7f0a000d;
         public static final int action_settings=0x7f0a000f;
@@ -207,7 +210,10 @@ public final class R {
         public static final int age_content=0x7f0a000e;
         public static final int age_spinner=0x7f0a000d;
 >>>>>>> 465343103260a98ca1198475793a60ac1e73c0b8
+<<<<<<< HEAD
 >>>>>>> 2c692290789fbc57a5dfa5e541e6f9db24f77e24
+=======
+>>>>>>> 1139e3963cfb1edcdb882d0f6a4039b62a2d796d
         public static final int button1=0x7f0a0002;
         public static final int button2=0x7f0a0003;
         public static final int button3=0x7f0a0004;
@@ -230,11 +236,16 @@ public final class R {
         public static final int get_started=0x7f030003;
         public static final int latching_correctly=0x7f030004;
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int what_to_expect=0x7f030005;
 =======
         public static final int pregnant_postpartum=0x7f030005;
         public static final int what_to_expect=0x7f030006;
 >>>>>>> 2c692290789fbc57a5dfa5e541e6f9db24f77e24
+=======
+        public static final int pregnant_postpartum=0x7f030005;
+        public static final int what_to_expect=0x7f030006;
+>>>>>>> 1139e3963cfb1edcdb882d0f6a4039b62a2d796d
     }
     public static final class menu {
         public static final int main=0x7f090000;
