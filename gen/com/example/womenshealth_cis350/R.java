@@ -191,17 +191,11 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-<<<<<<< HEAD
-        public static final int LinearLayout01=0x7f0a000b;
-        public static final int ScrollView01=0x7f0a000d;
-        public static final int action_settings=0x7f0a000f;
-        public static final int age_content=0x7f0a000e;
-        public static final int age_spinner=0x7f0a000c;
-=======
-        public static final int action_settings=0x7f0a000f;
-        public static final int age_content=0x7f0a000e;
-        public static final int age_spinner=0x7f0a000d;
->>>>>>> 465343103260a98ca1198475793a60ac1e73c0b8
+        public static final int LinearLayout01=0x7f0a000d;
+        public static final int ScrollView01=0x7f0a000f;
+        public static final int action_settings=0x7f0a0011;
+        public static final int age_content=0x7f0a0010;
+        public static final int age_spinner=0x7f0a000e;
         public static final int button1=0x7f0a0002;
         public static final int button2=0x7f0a0003;
         public static final int checkBox1=0x7f0a0007;
