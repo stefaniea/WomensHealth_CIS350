@@ -1,135 +1,119 @@
 package com.example.womenshealth_cis350;
-
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+  
 import android.app.Activity;
-import android.app.ExpandableListActivity;
 import android.os.Bundle;
-import android.view.Gravity;
+import android.util.DisplayMetrics;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AbsListView;
-import android.widget.BaseExpandableListAdapter;
-import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ExpandableListView.ExpandableListContextMenuInfo;
-import android.widget.TextView;
+import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.Toast;
-
-public class BenefitsOfBreastfeeding extends ExpandableListActivity {
-	
-	ExpandableListAdapter mAdapter;
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.benefits);
-		
-		// Set up our adapter
-        mAdapter = new MyExpandableListAdapter();
-        setListAdapter(mAdapter);
-        registerForContextMenu(getExpandableListView());
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-	
-	@Override
-    public boolean onContextItemSelected(MenuItem item) {
-        ExpandableListContextMenuInfo info = (ExpandableListContextMenuInfo) item.getMenuInfo();
  
-        String title = ((TextView) info.targetView).getText().toString();
-        
-        int type = ExpandableListView.getPackedPositionType(info.packedPosition);
-        if (type == ExpandableListView.PACKED_POSITION_TYPE_CHILD) {
-            int groupPos = ExpandableListView.getPackedPositionGroup(info.packedPosition); 
-            int childPos = ExpandableListView.getPackedPositionChild(info.packedPosition); 
-            Toast.makeText(this, title + ": Child " + childPos + " clicked in group " + groupPos,
-                    Toast.LENGTH_SHORT).show();
-            return true;
-        } else if (type == ExpandableListView.PACKED_POSITION_TYPE_GROUP) {
-            int groupPos = ExpandableListView.getPackedPositionGroup(info.packedPosition); 
-            Toast.makeText(this, title + ": Group " + groupPos + " clicked", Toast.LENGTH_SHORT).show();
-            return true;
-        }
-        
-        return false;
+public class BenefitsOfBreastfeeding extends Activity {
+ 
+    List<String> groupList;
+    List<String> childList;
+    Map<String, List<String>> benefitCollection;
+    ExpandableListView expListView;
+ 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.benefits_main);
+ 
+        createGroupList();
+ 
+        createCollection();
+ 
+        expListView = (ExpandableListView) findViewById(R.id.benefit_list);
+        final ExpandableListAdapter expListAdapter = new ExpandableListAdapter(
+                this, groupList, benefitCollection);
+        expListView.setAdapter(expListAdapter);
+ 
+        //setGroupIndicatorToRight();
+ 
+        expListView.setOnChildClickListener(new OnChildClickListener() {
+ 
+            public boolean onChildClick(ExpandableListView parent, View v,
+                    int groupPosition, int childPosition, long id) {
+                final String selected = (String) expListAdapter.getChild(
+                        groupPosition, childPosition);
+                Toast.makeText(getBaseContext(), selected, Toast.LENGTH_LONG)
+                        .show();
+ 
+                return true;
+            }
+        });
     }
-	
-	public class MyExpandableListAdapter extends BaseExpandableListAdapter {
-
-		// Sample data set.  children[i] contains the children (String[]) for groups[i].
-	    private String[] groups = { "People Names", "Dog Names", "Cat Names", "Fish Names" };
-	    private String[][] children = {
-	            { "Arnold", "Barry", "Chuck", "David" },
-	            { "Ace", "Bandit", "Cha-Cha", "Deuce" },
-	            { "Fluffy", "Snuggles" },
-	            { "Goldy", "Bubbles" }
-	    };
-	    
-	    public Object getChild(int groupPosition, int childPosition) {
-	        return children[groupPosition][childPosition];
-	    }
-
-	    public long getChildId(int groupPosition, int childPosition) {
-	        return childPosition;
-	    }
-
-	    public int getChildrenCount(int groupPosition) {
-	        return children[groupPosition].length;
-	    }
-
-	    public TextView getGenericView() {
-	        // Layout parameters for the ExpandableListView
-	        AbsListView.LayoutParams lp = new AbsListView.LayoutParams(
-	                ViewGroup.LayoutParams.FILL_PARENT, 64);
-
-	        TextView textView = new TextView(BenefitsOfBreastfeeding.this);
-	        textView.setLayoutParams(lp);
-	        // Center the text vertically
-	        textView.setGravity(Gravity.CENTER_VERTICAL | Gravity.LEFT);
-	        // Set the text starting position
-	        textView.setPadding(36, 0, 0, 0);
-	        return textView;
-	    }
-	    
-	    public View getChildView(int groupPosition, int childPosition, boolean isLastChild,
-	            View convertView, ViewGroup parent) {
-	        TextView textView = getGenericView();
-	        textView.setText(getChild(groupPosition, childPosition).toString());
-	        return textView;
-	    }
-
-	    public Object getGroup(int groupPosition) {
-	        return groups[groupPosition];
-	    }
-
-	    public int getGroupCount() {
-	        return groups.length;
-	    }
-
-	    public long getGroupId(int groupPosition) {
-	        return groupPosition;
-	    }
-
-	    public View getGroupView(int groupPosition, boolean isExpanded, View convertView,
-	            ViewGroup parent) {
-	        TextView textView = getGenericView();
-	        textView.setText(getGroup(groupPosition).toString());
-	        return textView;
-	    }
-
-	    public boolean isChildSelectable(int groupPosition, int childPosition) {
-	        return true;
-	    }
-
-	    public boolean hasStableIds() {
-	        return true;
-	    }
-	}
-	
+ 
+    private void createGroupList() {
+        groupList = new ArrayList<String>();
+        groupList.add("Benefits for the baby");
+        groupList.add("Benefits for the mother");
+    }
+ 
+    private void createCollection() {
+        // preparing benefits collection(child)
+        String[] babyBenefits = { "A decrease in the number and severity of infections such as ear infections, urinary tract infections, and meningitis", 
+        		"A decrease in the postneonatal infant mortality rate by over 20%",
+                "A decrease in the incidence of type I diabetes, type II diabetes, childhood cancers, obesity and asthma",
+                "A decrease in pain experienced by infants during a procedure such as a blood draw or vaccination",
+                "A decrease in sudden infant death syndrome (SIDS)",
+                "Increased bonding and positive emotional attachment behaviors",
+                "Increased performance on cognitive development tests"};
+        String[] momBenefits = { "A decrease in blood loss after delivery due to increased contractions of the uterus, allowing it to return to its pre-pregnant size ",
+        		"A decrease in the development of breast and ovarian cancers",
+        		"A decrease in the incidence of type II diabetes and osteoporosis",
+        		"A quicker return to pre-pregnancy weight",
+        		"Increased feelings of bonding and attachment to the baby",
+        		"Cost savings compared to formula feeding"};
+ 
+        benefitCollection = new LinkedHashMap<String, List<String>>();
+ 
+        for (String benefit : groupList) {
+            if (benefit.equals("Benefits for the baby")) {
+                loadChild(babyBenefits);
+            }
+            else {
+                loadChild(momBenefits);
+            }
+ 
+            benefitCollection.put(benefit, childList);
+        }
+    }
+ 
+    private void loadChild(String[] benefits) {
+        childList = new ArrayList<String>();
+        for (String benefit : benefits)
+            childList.add(benefit);
+    }
+ 
+    private void setGroupIndicatorToRight() {
+        /* Get the screen width */
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int width = dm.widthPixels;
+ 
+        expListView.setIndicatorBounds(width - getDipsFromPixel(35), width
+                - getDipsFromPixel(5));
+    }
+ 
+    // Convert pixel to dip
+    public int getDipsFromPixel(float pixels) {
+        // Get the screen's density scale
+        final float scale = getResources().getDisplayMetrics().density;
+        // Convert the dps to pixels, based on density scale
+        return (int) (pixels * scale + 0.5f);
+    }
+ 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
 }
