@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:background="@color/LightSteelBlue">
+    android:background="@color/fuchsia">
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Is my baby latching correctly?"
+        android:text="Large Text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <CheckBox
@@ -52,6 +52,6 @@
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You are not in pain" />
+        android:text="(7)	You are not in pain" />
 
 </LinearLayout>

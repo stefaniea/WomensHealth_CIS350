@@ -38,11 +38,19 @@ public class LetsGetStarted extends Activity {
 	}
 	
 	//testing the Checkboxes page
-		public boolean onCheckBoxesClick(View v) {
-			Intent start = new Intent(this, LatchingCorrectly.class);
-			startActivity(start);
-		
-			return true;
-		}
+	public boolean onCheckBoxesClick(View v) {
+		Intent start = new Intent(this, LatchingCorrectly.class);
+		startActivity(start);
+
+		return true;
+	}
+	
+	//testing the Benefits page
+	public boolean onTestExpandableListClick(View v) {
+		Intent start = new Intent(this, BenefitsOfBreastfeeding.class);
+		startActivity(start);
+
+		return true;
+	}
 
 }
