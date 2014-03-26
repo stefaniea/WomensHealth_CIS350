@@ -21,13 +21,7 @@ public class LetsGetStarted extends Activity {
 		return true;
 	}
 	
-	public boolean onStartedClick(View v) {
-	//after clicking "let's get started" change the page	
-		Intent start = new Intent(this, PregnantPostpartum.class);
-		startActivity(start);
 	
-		return true;
-	}
 	
 	//testing the WhatToExpect page
 	public boolean onTestDropDownClick(View v) {
