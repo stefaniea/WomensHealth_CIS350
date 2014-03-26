@@ -23,6 +23,9 @@ public class LetsGetStarted extends Activity {
 	
 	public boolean onStartedClick(View v) {
 	//after clicking "let's get started" change the page	
+		Intent start = new Intent(this, PregnantPostpartum.class);
+		startActivity(start);
+	
 		return true;
 	}
 	
