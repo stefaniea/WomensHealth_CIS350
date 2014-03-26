@@ -33,5 +33,13 @@ public class LetsGetStarted extends Activity {
 	
 		return true;
 	}
+	
+	//testing the Checkboxes page
+		public boolean onCheckBoxesClick(View v) {
+			Intent start = new Intent(this, LatchingCorrectly.class);
+			startActivity(start);
+		
+			return true;
+		}
 
 }
