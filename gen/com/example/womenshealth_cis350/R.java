@@ -195,11 +195,11 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int LinearLayout01=0x7f0a0017;
-        public static final int ScrollView01=0x7f0a0019;
-        public static final int action_settings=0x7f0a001b;
-        public static final int age_content=0x7f0a001a;
-        public static final int age_spinner=0x7f0a0018;
+        public static final int LinearLayout01=0x7f0a0019;
+        public static final int ScrollView01=0x7f0a001b;
+        public static final int action_settings=0x7f0a001d;
+        public static final int age_content=0x7f0a001c;
+        public static final int age_spinner=0x7f0a001a;
         public static final int benefit=0x7f0a0003;
         public static final int benefit_list=0x7f0a0002;
         public static final int bip_btn=0x7f0a0016;
@@ -215,7 +215,9 @@ public final class R {
         public static final int checkBox7=0x7f0a000f;
         public static final int getstarted=0x7f0a0007;
         public static final int pal_btn=0x7f0a0011;
+        public static final int post_btn=0x7f0a0018;
         public static final int ppc_btn=0x7f0a0013;
+        public static final int pregnant_btn=0x7f0a0017;
         public static final int pump_btn=0x7f0a0014;
         public static final int rtw_btn=0x7f0a0015;
         public static final int subtitle=0x7f0a0001;
