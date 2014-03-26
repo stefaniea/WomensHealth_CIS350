@@ -39,43 +39,25 @@ public class GoalSetting extends Activity implements OnItemSelectedListener {
 		TextView content = (TextView) findViewById(R.id.age_content);
 		//position = at birth
 		if(arg3 == 1) {
-			content.setText(R.string.atbirth_wte);
+			content.setText(R.string.days_gs);
 		}
 		if(arg3 == 2) {
-			content.setText(R.string.twentyfourhours_wte);
+			content.setText(R.string.weeks_gs);
 		}
 		if(arg3 == 3) {
-			content.setText(R.string.twodays_wte);
+			content.setText(R.string.months_gs);
 		}
 		if(arg3 == 4) {
-			content.setText(R.string.threedays_wte);
+			content.setText(R.string.three_months_gs);
 		}
 		if(arg3 == 5) {
-			content.setText(R.string.fourdays_wte);
+			content.setText(R.string.four_months_gs);
 		}
 		if(arg3 == 6) {
-			content.setText(R.string.oneweek_wte);
+			content.setText(R.string.six_months_gs);
 		}
 		if(arg3 == 7) {
-			content.setText(R.string.twothreeweeks_wte);
-		}
-		if(arg3 == 8) {
-			content.setText(R.string.onemonth_wte);
-		}
-		if(arg3 == 9) {
-			content.setText(R.string.twomonths_wte);
-		}
-		if(arg3 == 10) {
-			content.setText(R.string.threemonths_wte);
-		}
-		if(arg3 == 11) {
-			content.setText(R.string.fourmonths_wte);
-		}
-		if(arg3 == 12) {
-			content.setText(R.string.sixmonths_wte);
-		}
-		if(arg3 == 13) {
-			content.setText(R.string.aftersixmonths_wte);
+			content.setText(R.string.morethan_six_months_gs);
 		}
 	}
 

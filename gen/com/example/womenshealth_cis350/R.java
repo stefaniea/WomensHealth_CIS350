@@ -195,9 +195,11 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0012;
-        public static final int age_content=0x7f0a0011;
-        public static final int age_spinner=0x7f0a0010;
+        public static final int LinearLayout01=0x7f0a0010;
+        public static final int ScrollView01=0x7f0a0012;
+        public static final int action_settings=0x7f0a0014;
+        public static final int age_content=0x7f0a0013;
+        public static final int age_spinner=0x7f0a0011;
         public static final int benefit=0x7f0a0003;
         public static final int benefit_list=0x7f0a0002;
         public static final int button1=0x7f0a0004;
@@ -236,14 +238,17 @@ public final class R {
         /**  what to expect strings/info "wte" = what to expect 
          */
         public static final int atbirth_wte=0x7f060003;
-        public static final int baby_latch_quest=0x7f060014;
+        public static final int baby_latch_quest=0x7f060017;
         public static final int days_gs=0x7f060010;
+        public static final int four_months_gs=0x7f060014;
         public static final int fourdays_wte=0x7f060007;
         public static final int fourmonths_wte=0x7f06000d;
         public static final int hello_world=0x7f060002;
         public static final int months_gs=0x7f060012;
+        public static final int morethan_six_months_gs=0x7f060016;
         public static final int onemonth_wte=0x7f06000a;
         public static final int oneweek_wte=0x7f060008;
+        public static final int six_months_gs=0x7f060015;
         public static final int sixmonths_wte=0x7f06000e;
         public static final int three_months_gs=0x7f060013;
         public static final int threedays_wte=0x7f060006;
