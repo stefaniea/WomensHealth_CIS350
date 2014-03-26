@@ -222,6 +222,7 @@ public final class R {
         /**  what to expect strings/info "wte" = what to expect 
          */
         public static final int atbirth_wte=0x7f060003;
+        public static final int baby_latch_quest=0x7f060010;
         public static final int fourdays_wte=0x7f060007;
         public static final int fourmonths_wte=0x7f06000d;
         public static final int hello_world=0x7f060002;
