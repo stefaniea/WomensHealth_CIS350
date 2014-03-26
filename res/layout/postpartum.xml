@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:layout_marginTop="50dp">
+    <Button
+        android:id="@+id/wte_btn"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:text="What to Expect" />
+    <Button
+        android:id="@+id/pal_btn"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="Position and Latch" />
+        <Button
+        android:id="@+id/tap_btn"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="Troubleshooting and Problems" />
+        
+        <Button
+        android:id="@+id/ppc_btn"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="Poop/Pee Chart" />
+        
+          <Button
+        android:id="@+id/pump_btn"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="Pumping" />
+          
+       <Button
+        android:id="@+id/rtw_btn"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="Returning to Work" />
+       
+          
+       <Button
+        android:id="@+id/bip_btn"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="Breastfeeding in Public" />
+        
+</LinearLayout>

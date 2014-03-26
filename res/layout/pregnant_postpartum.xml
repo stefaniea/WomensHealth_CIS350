@@ -2,12 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:layout_marginTop="50dp">
+
     <Button
         android:id="@+id/button1"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
-        android:text="Pregnant" />
+        android:text="Pregnant"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+         />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="207dp"
