@@ -6,24 +6,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class PregnantPostpartum extends Activity {
+public class Pregnant extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.pregnant_postpartum);
+		setContentView(R.layout.pregnant);
 	}
 	
-	public boolean onPregnantClick(View v) {
-		Intent start = new Intent(this, Pregnant.class);
+	public boolean onYesClick(View v) {
+		Intent start = new Intent(this, BreastfeedingYes.class);
 		startActivity(start);
 
 		return true;
 	}
 	
-	public boolean onPostpartumClick(View v) {
-		Intent start = new Intent(this, Postpartum.class);
+	/*public boolean onNoClick(View v) {
+		Intent start = new Intent(this, BreastfeedingNo.class);
 		startActivity(start);
 
 		return true;
-	}
+	}*/
 }

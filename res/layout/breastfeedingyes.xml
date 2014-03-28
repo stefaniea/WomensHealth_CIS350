@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        <Button
+        android:id="@+id/benefits_btn"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:onClick="onBenefitsClick"
+        android:text="Benefits of Breastfeeding" />
+
+    <Button
+        android:id="@+id/steps_btn"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="Steps to Successful Breastfeeding" />
+    <Button
+        android:id="@+id/goals_btn"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="Goal Setting" />
+
+</LinearLayout>

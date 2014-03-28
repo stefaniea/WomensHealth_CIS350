@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="134dp"
+        android:ems="10"
+        android:fontFamily="MyriadPro"
+        android:inputType="textMultiLine"
+        android:text="Have you thought about breastfeeding your baby?"
+        android:textSize="20sp"
+        android:width="140dp" />
+    
+    <Button
+        android:id="@+id/yesbreastfeeding_btn"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:onClick="onYesClick" />
+
+    <Button
+        android:id="@+id/nobreastfeeding_btn"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="No" 
+        android:onClick="onNoClick"/>
+    
+
+</LinearLayout>
