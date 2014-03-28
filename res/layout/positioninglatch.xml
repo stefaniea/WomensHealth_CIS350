@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+       <Button
+        android:id="@+id/whatPositions_btn"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:text="What are the different positions I can use to breastfeed?" />
+       
+        <Button
+        android:id="@+id/gettingEnough_btn"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:text="Is my baby getting enough?" />
+        
+        <Button
+        android:id="@+id/latchedOn_btn"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:text="Is my baby latched on correctly?" />
+        
+        <Button
+        android:id="@+id/howHungry_btn"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:text="How do I know if my baby is hungry?" />
+        
+        <Button
+        android:id="@+id/shouldPacifier_btn"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:onClick="onPacifierClick"
+        android:text="Should I use a pacifier?" />
+    
+
+</LinearLayout>

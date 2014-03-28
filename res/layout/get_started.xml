@@ -26,14 +26,6 @@
             android:text="CheckBoxes"
             android:onClick="onCheckBoxesClick" />
 
-        <Button
-            android:id="@+id/button3"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ExpandableList" 
-            android:onClick="onTestExpandableListClick" />
-
     </LinearLayout>
 
     <Button

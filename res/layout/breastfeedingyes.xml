@@ -20,6 +20,7 @@
         android:id="@+id/goals_btn"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
-        android:text="Goal Setting" />
+        android:text="Goal Setting" 
+        android:onClick="onGoalsClick"/>
 
 </LinearLayout>

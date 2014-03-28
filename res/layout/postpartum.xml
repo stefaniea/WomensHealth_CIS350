@@ -17,6 +17,7 @@
         android:id="@+id/pal_btn"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
+        android:onClick="onPositioningLatchClick"
         android:text="Position and Latch" />
         <Button
         android:id="@+id/tap_btn"

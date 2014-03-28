@@ -19,5 +19,12 @@ public class BreastfeedingYes extends Activity {
 
 		return true;
 	}
+	
+	public boolean onGoalsClick(View v) {
+		Intent start = new Intent(this, GoalSetting.class);
+		startActivity(start);
+
+		return true;
+	}
 }
 

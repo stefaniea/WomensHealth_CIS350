@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical" >
     
     <TextView
@@ -10,13 +11,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="134dp"
+        android:layout_marginBottom="50dp"
         android:ems="10"
         android:fontFamily="MyriadPro"
         android:inputType="textMultiLine"
         android:text="Have you thought about breastfeeding your baby?"
-        android:textSize="20sp"
-        android:width="140dp" />
+        android:textSize="20sp"/>
     
     <Button
         android:id="@+id/yesbreastfeeding_btn"

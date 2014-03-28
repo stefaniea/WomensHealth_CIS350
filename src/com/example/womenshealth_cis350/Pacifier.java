@@ -1,20 +1,22 @@
 package com.example.womenshealth_cis350;
+
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-  
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ExpandableListView;
-import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.Toast;
- 
-public class BenefitsOfBreastfeeding extends Activity {
- 
+import android.widget.ExpandableListView.OnChildClickListener;
+
+public class Pacifier extends Activity {
+	
+
     List<String> groupList;
     List<String> childList;
     Map<String, List<String>> itemCollection;
@@ -23,13 +25,13 @@ public class BenefitsOfBreastfeeding extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.benefits_main);
+        setContentView(R.layout.pacifier);
  
         createGroupList();
  
         createCollection();
  
-        expListView = (ExpandableListView) findViewById(R.id.benefit_list);
+        expListView = (ExpandableListView) findViewById(R.id.pacifier_list);
         final ExpandableListAdapter expListAdapter = new ExpandableListAdapter(
                 this, groupList, itemCollection);
         expListView.setAdapter(expListAdapter);
@@ -52,34 +54,26 @@ public class BenefitsOfBreastfeeding extends Activity {
  
     private void createGroupList() {
         groupList = new ArrayList<String>();
-        groupList.add("Benefits for the baby");
-        groupList.add("Benefits for the mother");
+        groupList.add("Pros of using a pacifier");
+        groupList.add("Cons of using a pacifier");
     }
  
     private void createCollection() {
-        // preparing benefits collection(child)
-        String[] babyBenefits = { "A decrease in the number and severity of infections such as ear infections, urinary tract infections, and meningitis", 
-        		"A decrease in the postneonatal infant mortality rate by over 20%",
-                "A decrease in the incidence of type I diabetes, type II diabetes, childhood cancers, obesity and asthma",
-                "A decrease in pain experienced by infants during a procedure such as a blood draw or vaccination",
-                "A decrease in sudden infant death syndrome (SIDS)",
-                "Increased bonding and positive emotional attachment behaviors",
-                "Increased performance on cognitive development tests"};
-        String[] momBenefits = { "A decrease in blood loss after delivery due to increased contractions of the uterus, allowing it to return to its pre-pregnant size ",
-        		"A decrease in the development of breast and ovarian cancers",
-        		"A decrease in the incidence of type II diabetes and osteoporosis",
-        		"A quicker return to pre-pregnancy weight",
-        		"Increased feelings of bonding and attachment to the baby",
-        		"Cost savings compared to formula feeding"};
+        String[] pros = { "May soothe baby", "May help settle a baby to sleep",
+                "May provide comfort during airplane rides",
+                "May help reduce the risk of sudden infant death syndrome (SIDS)"};
+        String[] cons = { "Early use of a pacifier may disrupt breastfeeding",
+        		"Baby may become dependent on pacifier",
+        		"Using pacifiers past the first few years of life may lead to dental problems"};
  
         itemCollection = new LinkedHashMap<String, List<String>>();
  
         for (String item : groupList) {
-            if (item.equals("Benefits for the baby")) {
-                loadChild(babyBenefits);
+            if (item.equals("Pros of using a pacifier")) {
+                loadChild(pros);
             }
             else {
-                loadChild(momBenefits);
+                loadChild(cons);
             }
  
             itemCollection.put(item, childList);
@@ -116,4 +110,5 @@ public class BenefitsOfBreastfeeding extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
 }

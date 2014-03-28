@@ -14,12 +14,13 @@
         android:ems="10"
         android:fontFamily="MyriadPro"
         android:inputType="textMultiLine"
-        android:text="Breastfeeding has many benefits for both the mother and the baby"
+        android:text="Should I use a pacifier?"
         android:textSize="20sp"/>
         
     <ExpandableListView
-        android:id="@+id/benefit_list"
+        android:id="@+id/pacifier_list"
         android:layout_width="match_parent"
         android:layout_height="fill_parent" >
     </ExpandableListView>
+
 </LinearLayout>

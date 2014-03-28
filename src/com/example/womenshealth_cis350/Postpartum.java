@@ -19,4 +19,11 @@ public class Postpartum extends Activity {
 
 		return true;
 	}
+	
+	public boolean onPositioningLatchClick(View v) {
+		Intent start = new Intent(this, PositioningLatch.class);
+		startActivity(start);
+
+		return true;
+	}
 }

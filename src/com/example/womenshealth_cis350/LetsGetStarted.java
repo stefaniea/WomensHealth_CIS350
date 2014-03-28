@@ -44,13 +44,5 @@ public class LetsGetStarted extends Activity {
 
 		return true;
 	}
-	
-	//testing the Benefits page
-	public boolean onTestExpandableListClick(View v) {
-		Intent start = new Intent(this, BenefitsOfBreastfeeding.class);
-		startActivity(start);
-
-		return true;
-	}
 
 }

@@ -15,18 +15,18 @@ import android.widget.TextView;
 public class ExpandableListAdapter extends BaseExpandableListAdapter {
  
     private Activity context;
-    private Map<String, List<String>> benefitCollections;
-    private List<String> benefits;
+    private Map<String, List<String>> itemCollections;
+    private List<String> items;
  
-    public ExpandableListAdapter(Activity context, List<String> benefits,
-            Map<String, List<String>> benefitCollections) {
+    public ExpandableListAdapter(Activity context, List<String> items,
+            Map<String, List<String>> itemCollections) {
         this.context = context;
-        this.benefitCollections = benefitCollections;
-        this.benefits = benefits;
+        this.itemCollections = itemCollections;
+        this.items = items;
     }
  
     public Object getChild(int groupPosition, int childPosition) {
-        return benefitCollections.get(benefits.get(groupPosition)).get(childPosition);
+        return itemCollections.get(items.get(groupPosition)).get(childPosition);
     }
  
     public long getChildId(int groupPosition, int childPosition) {
@@ -42,22 +42,22 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
             convertView = inflater.inflate(R.layout.child_item, null);
         }
  
-        TextView item = (TextView) convertView.findViewById(R.id.benefit);
+        TextView item = (TextView) convertView.findViewById(R.id.item);
 
         item.setText(benefit);
         return convertView;
     }
  
     public int getChildrenCount(int groupPosition) {
-        return benefitCollections.get(benefits.get(groupPosition)).size();
+        return itemCollections.get(items.get(groupPosition)).size();
     }
  
     public Object getGroup(int groupPosition) {
-        return benefits.get(groupPosition);
+        return items.get(groupPosition);
     }
  
     public int getGroupCount() {
-        return benefits.size();
+        return items.size();
     }
  
     public long getGroupId(int groupPosition) {
@@ -73,7 +73,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
             convertView = infalInflater.inflate(R.layout.group_item,
                     null);
         }
-        TextView item = (TextView) convertView.findViewById(R.id.benefit);
+        TextView item = (TextView) convertView.findViewById(R.id.item);
         item.setTypeface(null, Typeface.BOLD);
         item.setText(benefitName);
         return convertView;
