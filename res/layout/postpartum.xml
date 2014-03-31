@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
+    android:layout_marginTop="50dp"
     android:gravity="center_horizontal"
-    android:layout_marginTop="50dp">
+    android:orientation="vertical" >
 
     <Button
         android:id="@+id/wte_btn"
@@ -19,35 +19,12 @@
         android:layout_height="wrap_content"
         android:onClick="onPositioningLatchClick"
         android:text="Position and Latch" />
-        <Button
+
+    <Button
         android:id="@+id/tap_btn"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
+        android:onClick="onTroubleShootingClick"
         android:text="Troubleshooting and Problems" />
-        
-        <Button
-        android:id="@+id/ppc_btn"
-        android:layout_width="207dp"
-        android:layout_height="wrap_content"
-        android:text="Poop/Pee Chart" />
-        
-          <Button
-        android:id="@+id/pump_btn"
-        android:layout_width="207dp"
-        android:layout_height="wrap_content"
-        android:text="Pumping" />
-          
-       <Button
-        android:id="@+id/rtw_btn"
-        android:layout_width="207dp"
-        android:layout_height="wrap_content"
-        android:text="Returning to Work" />
-       
-          
-       <Button
-        android:id="@+id/bip_btn"
-        android:layout_width="207dp"
-        android:layout_height="wrap_content"
-        android:text="Breastfeeding in Public" />
-        
+
 </LinearLayout>

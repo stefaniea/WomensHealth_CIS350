@@ -26,4 +26,10 @@ public class Postpartum extends Activity {
 
 		return true;
 	}
+	public boolean onTroubleShootingClick(View v) {
+		Intent start = new Intent(this, TroubleShooting.class);
+		startActivity(start);
+
+		return true;
+	}
 }
