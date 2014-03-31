@@ -21,12 +21,14 @@
         android:id="@+id/latchedOn_btn"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
+        android:onClick="onLatchedClick"
         android:text="Is my baby latched on correctly?" />
         
         <Button
         android:id="@+id/howHungry_btn"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
+      
         android:text="How do I know if my baby is hungry?" />
         
         <Button

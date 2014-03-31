@@ -19,5 +19,19 @@ public class PositioningLatch extends Activity {
 
 		return true;
 	}
+	
+	public boolean onLatchedClick(View v) {
+		Intent start = new Intent(this, LatchingCorrectly.class);
+		startActivity(start);
+
+		return true;
+	}
+	//public boolean isBabyHungryClick(View v) {
+	//	Intent start = new Intent(this, BabyHungry.class);
+	//	startActivity(start);
+// -- add this   android:onClick="isBabyHungry" >
+	//	return true;
+	//}
+	
 
 }

@@ -9,10 +9,11 @@ package com.example.womenshealth_cis350;
 
 public final class R {
     public static final class array {
-        public static final int ages_array=0x7f070000;
+        public static final int ages_array=0x7f060001;
         /**  Strings for goal setting page, gs stands for goal setting 
          */
-        public static final int goalsetting_array=0x7f070001;
+        public static final int goalsetting_array=0x7f060002;
+        public static final int hungry_array=0x7f060000;
     }
     public static final class attr {
     }
@@ -195,93 +196,102 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int LinearLayout01=0x7f0a0023;
-        public static final int ScrollView01=0x7f0a0025;
-        public static final int action_settings=0x7f0a0027;
-        public static final int age_content=0x7f0a0026;
-        public static final int age_spinner=0x7f0a0024;
-        public static final int benefit_list=0x7f0a0002;
-        public static final int benefits_btn=0x7f0a0003;
-        public static final int bip_btn=0x7f0a001e;
-        public static final int button1=0x7f0a0007;
-        public static final int button2=0x7f0a0008;
-        public static final int checkBox1=0x7f0a000c;
-        public static final int checkBox2=0x7f0a000b;
-        public static final int checkBox3=0x7f0a000d;
-        public static final int checkBox4=0x7f0a000e;
-        public static final int checkBox5=0x7f0a000f;
-        public static final int checkBox6=0x7f0a0010;
-        public static final int checkBox7=0x7f0a0011;
-        public static final int getstarted=0x7f0a0009;
-        public static final int gettingEnough_btn=0x7f0a0014;
-        public static final int goals_btn=0x7f0a0005;
-        public static final int howHungry_btn=0x7f0a0016;
-        public static final int item=0x7f0a0006;
-        public static final int latchedOn_btn=0x7f0a0015;
-        public static final int nobreastfeeding_btn=0x7f0a0020;
-        public static final int pacifier_list=0x7f0a0012;
-        public static final int pal_btn=0x7f0a0019;
-        public static final int post_btn=0x7f0a0022;
-        public static final int ppc_btn=0x7f0a001b;
-        public static final int pregnant_btn=0x7f0a0021;
-        public static final int pump_btn=0x7f0a001c;
-        public static final int rtw_btn=0x7f0a001d;
-        public static final int shouldPacifier_btn=0x7f0a0017;
-        public static final int steps_btn=0x7f0a0004;
+        public static final int LinearLayout01=0x7f0a0002;
+        public static final int ScrollView01=0x7f0a0027;
+        public static final int ScrollView02=0x7f0a0004;
+        public static final int action_settings=0x7f0a0029;
+        public static final int age_content=0x7f0a0028;
+        public static final int age_content2=0x7f0a0005;
+        public static final int age_spinner=0x7f0a0026;
+        public static final int age_spinner2=0x7f0a0003;
+        public static final int benefit_list=0x7f0a0006;
+        public static final int benefits_btn=0x7f0a0007;
+        public static final int bip_btn=0x7f0a0021;
+        public static final int button1=0x7f0a000b;
+        public static final int checkBox1=0x7f0a000f;
+        public static final int checkBox2=0x7f0a000e;
+        public static final int checkBox3=0x7f0a0010;
+        public static final int checkBox4=0x7f0a0011;
+        public static final int checkBox5=0x7f0a0012;
+        public static final int checkBox6=0x7f0a0013;
+        public static final int checkBox7=0x7f0a0014;
+        public static final int getstarted=0x7f0a000c;
+        public static final int gettingEnough_btn=0x7f0a0017;
+        public static final int goals_btn=0x7f0a0009;
+        public static final int howHungry_btn=0x7f0a0019;
+        public static final int item=0x7f0a000a;
+        public static final int latchedOn_btn=0x7f0a0018;
+        public static final int nobreastfeeding_btn=0x7f0a0023;
+        public static final int pacifier_list=0x7f0a0015;
+        public static final int pal_btn=0x7f0a001c;
+        public static final int post_btn=0x7f0a0025;
+        public static final int ppc_btn=0x7f0a001e;
+        public static final int pregnant_btn=0x7f0a0024;
+        public static final int pump_btn=0x7f0a001f;
+        public static final int rtw_btn=0x7f0a0020;
+        public static final int shouldPacifier_btn=0x7f0a001a;
+        public static final int steps_btn=0x7f0a0008;
         public static final int subtitle=0x7f0a0001;
-        public static final int tap_btn=0x7f0a001a;
-        public static final int textView1=0x7f0a000a;
+        public static final int tap_btn=0x7f0a001d;
+        public static final int textView1=0x7f0a000d;
         public static final int title_screen=0x7f0a0000;
-        public static final int whatPositions_btn=0x7f0a0013;
-        public static final int wte_btn=0x7f0a0018;
-        public static final int yesbreastfeeding_btn=0x7f0a001f;
+        public static final int whatPositions_btn=0x7f0a0016;
+        public static final int wte_btn=0x7f0a001b;
+        public static final int yesbreastfeeding_btn=0x7f0a0022;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int benefits_main=0x7f030001;
-        public static final int breastfeedingyes=0x7f030002;
-        public static final int child_item=0x7f030003;
-        public static final int drawable=0x7f030004;
-        public static final int get_started=0x7f030005;
-        public static final int group_item=0x7f030006;
-        public static final int latching_correctly=0x7f030007;
-        public static final int pacifier=0x7f030008;
-        public static final int positioninglatch=0x7f030009;
-        public static final int postpartum=0x7f03000a;
-        public static final int pregnant=0x7f03000b;
-        public static final int pregnant_postpartum=0x7f03000c;
-        public static final int what_to_expect=0x7f03000d;
+        public static final int baby_hungry=0x7f030001;
+        public static final int benefits_main=0x7f030002;
+        public static final int breastfeedingyes=0x7f030003;
+        public static final int child_item=0x7f030004;
+        public static final int drawable=0x7f030005;
+        public static final int get_started=0x7f030006;
+        public static final int group_item=0x7f030007;
+        public static final int latching_correctly=0x7f030008;
+        public static final int pacifier=0x7f030009;
+        public static final int positioninglatch=0x7f03000a;
+        public static final int postpartum=0x7f03000b;
+        public static final int pregnant=0x7f03000c;
+        public static final int pregnant_postpartum=0x7f03000d;
+        public static final int what_to_expect=0x7f03000e;
     }
     public static final class menu {
         public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f060001;
-        public static final int aftersixmonths_wte=0x7f06000f;
-        public static final int app_name=0x7f060000;
+        public static final int action_settings=0x7f070005;
+        public static final int aftersixmonths_wte=0x7f070013;
+        public static final int app_name=0x7f070004;
         /**  what to expect strings/info "wte" = what to expect 
          */
-        public static final int atbirth_wte=0x7f060003;
-        public static final int baby_latch_quest=0x7f060017;
-        public static final int days_gs=0x7f060010;
-        public static final int four_months_gs=0x7f060014;
-        public static final int fourdays_wte=0x7f060007;
-        public static final int fourmonths_wte=0x7f06000d;
-        public static final int hello_world=0x7f060002;
-        public static final int months_gs=0x7f060012;
-        public static final int morethan_six_months_gs=0x7f060016;
-        public static final int onemonth_wte=0x7f06000a;
-        public static final int oneweek_wte=0x7f060008;
-        public static final int six_months_gs=0x7f060015;
-        public static final int sixmonths_wte=0x7f06000e;
-        public static final int three_months_gs=0x7f060013;
-        public static final int threedays_wte=0x7f060006;
-        public static final int threemonths_wte=0x7f06000c;
-        public static final int twentyfourhours_wte=0x7f060004;
-        public static final int twodays_wte=0x7f060005;
-        public static final int twomonths_wte=0x7f06000b;
-        public static final int twothreeweeks_wte=0x7f060009;
-        public static final int weeks_gs=0x7f060011;
+        public static final int atbirth_wte=0x7f070007;
+        public static final int baby_latch_quest=0x7f07001b;
+        /**  what to expect strings/info "wte" = what to expect 
+         */
+        public static final int birth_5_hungry=0x7f070000;
+        public static final int days_gs=0x7f070014;
+        public static final int four_months_gs=0x7f070018;
+        public static final int fourdays_wte=0x7f07000b;
+        public static final int fourmonths_wte=0x7f070011;
+        public static final int hello_world=0x7f070006;
+        public static final int month_10_12_hungry=0x7f070003;
+        public static final int month_4_6_hungry=0x7f070001;
+        public static final int month_5_9_hungry=0x7f070002;
+        public static final int months_gs=0x7f070016;
+        public static final int morethan_six_months_gs=0x7f07001a;
+        public static final int onemonth_wte=0x7f07000e;
+        public static final int oneweek_wte=0x7f07000c;
+        public static final int six_months_gs=0x7f070019;
+        public static final int sixmonths_wte=0x7f070012;
+        public static final int three_months_gs=0x7f070017;
+        public static final int threedays_wte=0x7f07000a;
+        public static final int threemonths_wte=0x7f070010;
+        public static final int twentyfourhours_wte=0x7f070008;
+        public static final int twodays_wte=0x7f070009;
+        public static final int twomonths_wte=0x7f07000f;
+        public static final int twothreeweeks_wte=0x7f07000d;
+        public static final int weeks_gs=0x7f070015;
     }
     public static final class style {
         /** 

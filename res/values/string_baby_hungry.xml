@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    
+      <string-array name="hungry_array">
+        <item>How do I know if my baby is hungry?</item>
+        <item>Birth through 5 months</item>
+        <item>4 months through 6 months</item>
+        <item>5 months through 9 months</item>
+        <item>8 months through 11 months</item>
+        <item>10 months through 12 months</item>
+    </string-array>
+    
+      <!-- what to expect strings/info "wte" = what to expect -->
+      <string name="birth_5_hungry">
+	     • Eyes fluttering before they open \n
+		 • Rooting \n
+	 	 • Mouth movements, lip smacking \n
+		 • Brings hand to mouth and sucks on fist   \n
+		 • Opens mouth while feeding to indicate wanting more \n
+		 • Cries or fusses \n
+      </string>
+      
+      <string name="month_4_6_hungry">
+	     • Smiles, gazes at you \n
+	 	 • Coos during feeding to indicate wanting more \n 
+	     • Cries or fusses \n
+      </string>
+      
+       <string name="month_5_9_hungry">
+         • Points to food \n
+ 		 • Reaches for Breast \n
+         • Gets excited when cued that breastfeeding is about to occur \n
+
+      </string>
+      <string name="month_10_12_hungry">
+         • Expresses desire for breastfeeding with words, gesture or sound \n
+ 
+      </string>
+      
+ 
+ </resources>
