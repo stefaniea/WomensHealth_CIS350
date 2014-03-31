@@ -26,4 +26,11 @@ public class NotEnoughMilk extends Activity {
 
 		return true;
 	}
+	
+	public boolean onGainingWeightClick(View v) {
+		Intent start = new Intent(this, BabyGainingWeight.class);
+		startActivity(start);
+
+		return true;
+	}
 }
