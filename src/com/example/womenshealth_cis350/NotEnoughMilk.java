@@ -19,11 +19,11 @@ public class NotEnoughMilk extends Activity {
 
 		return true;
 	}
-	/*
-	public boolean onPostpartumClick(View v) {
-		Intent start = new Intent(this, Postpartum.class);
+	
+	public boolean onHungryClick(View v) {
+		Intent start = new Intent(this, BabyHungry.class);
 		startActivity(start);
 
 		return true;
-	}*/
+	}
 }
