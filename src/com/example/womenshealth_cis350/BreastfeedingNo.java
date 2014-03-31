@@ -16,7 +16,6 @@ public class BreastfeedingNo extends Activity {
 	public boolean onDidYouKnowClick(View v) {
 		Intent start = new Intent(this, BenefitsOfBreastfeeding.class);
 		startActivity(start);
-
 		return true;
 	}
 	
@@ -26,5 +25,14 @@ public class BreastfeedingNo extends Activity {
 
 		return true;
 	}
+	
+	public boolean costsOfFormulaClick(View v) {
+		Intent start = new Intent(this, CostFormula.class);
+		startActivity(start);
+
+		return true;
+	}
+	
+	
 }
 
