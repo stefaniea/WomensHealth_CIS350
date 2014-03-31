@@ -281,6 +281,28 @@ solid foods and breastfeeding will help your baby digest these
 foods better \n
  </string>
  
+<string-array name="peepoop_array">
+    <item>How old is your baby?</item>
+    <item>Day One</item>
+    <item>Day Two</item>
+    <item>Day Three</item>
+    <item>Day Four</item>
+    <item>Day 5/6</item>
+    <item>Day Seven</item>
+</string-array>
+
+<string name="dayone_pp">1 wet diaper and 1 poopy </string>
+
+<string name="daytwo_pp">2 wet diapers and 3 poopy diapers that are thick, 
+tarry and black </string>
+<string name="daythree_pp">5-6 wet diapers and 3 poopy diapers that are looser, 
+greenish to yellow </string>
+<string name="dayfour_pp">6 wet diapers and 3 yellow, soft and watery </string>
+<string name="dayfivesix_pp">(e) 6 wet diapers and 3 loose and seedy, yellowy </string>
+<string name="dayseven_pp">(f) Day 7 = 6 wet diapers and 3 larger amounts of loose and 
+seedy, yellow </string>
+
+
 
 <string name="cracked">
 (1) Assess if your baby is latched on correctly \n
@@ -308,5 +330,7 @@ hydrogel pads or a nipple shield\n
 
 or worsens, call your health care provider.\n
 </string>
+
+
 
  </resources>

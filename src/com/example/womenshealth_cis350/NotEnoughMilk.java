@@ -13,13 +13,13 @@ public class NotEnoughMilk extends Activity {
 		setContentView(R.layout.not_enough_milk);
 	}
 	
-	/*public boolean on(View v) {
-		Intent start = new Intent(this, Pregnant.class);
+	public boolean onPeePoopClick(View v) {
+		Intent start = new Intent(this, IsPeePoop.class);
 		startActivity(start);
 
 		return true;
 	}
-	
+	/*
 	public boolean onPostpartumClick(View v) {
 		Intent start = new Intent(this, Postpartum.class);
 		startActivity(start);

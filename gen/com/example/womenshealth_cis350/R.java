@@ -14,6 +14,7 @@ public final class R {
          */
         public static final int goalsetting_array=0x7f060002;
         public static final int hungry_array=0x7f060000;
+        public static final int peepoop_array=0x7f060003;
     }
     public static final class attr {
     }
@@ -275,12 +276,18 @@ public final class R {
         /**  what to expect strings/info "wte" = what to expect 
          */
         public static final int atbirth_wte=0x7f070007;
-        public static final int baby_latch_quest=0x7f07001c;
+        public static final int baby_latch_quest=0x7f070022;
         /**  what to expect strings/info "wte" = what to expect 
          */
         public static final int birth_5_hungry=0x7f070000;
-        public static final int cracked=0x7f07001b;
+        public static final int cracked=0x7f070021;
+        public static final int dayfivesix_pp=0x7f07001f;
+        public static final int dayfour_pp=0x7f07001e;
+        public static final int dayone_pp=0x7f07001b;
         public static final int days_gs=0x7f070014;
+        public static final int dayseven_pp=0x7f070020;
+        public static final int daythree_pp=0x7f07001d;
+        public static final int daytwo_pp=0x7f07001c;
         public static final int four_months_gs=0x7f070018;
         public static final int fourdays_wte=0x7f07000b;
         public static final int fourmonths_wte=0x7f070011;
