@@ -6,11 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class TroubleShooting extends Activity {
+public class NotEnoughMilk extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.troubleshooting);
+		setContentView(R.layout.not_enough_milk);
 	}
 	
 	/*public boolean on(View v) {
@@ -19,11 +19,11 @@ public class TroubleShooting extends Activity {
 
 		return true;
 	}
-	*/
-	public boolean onNoMilkClick(View v) {
-		Intent start = new Intent(this, NotEnoughMilk.class);
+	
+	public boolean onPostpartumClick(View v) {
+		Intent start = new Intent(this, Postpartum.class);
 		startActivity(start);
 
 		return true;
-	}
+	}*/
 }
