@@ -15,7 +15,7 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.baby_hungry);
-		Spinner spinner = (Spinner) findViewById(R.id.age_spinner2);
+		Spinner spinner = (Spinner) findViewById(R.id.hungry_spinner);
 		// Create an ArrayAdapter using the string array and a default spinner layout
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
 		 R.array.hungry_array, android.R.layout.simple_spinner_item);
@@ -36,7 +36,7 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 	@Override
 	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
 			long arg3) {
-		TextView content = (TextView) findViewById(R.id.age_content2);
+		TextView content = (TextView) findViewById(R.id.hungry_content);
 		//position = at birth
 		if(arg3 == 1) {
 			content.setText(R.string.birth_5_hungry);

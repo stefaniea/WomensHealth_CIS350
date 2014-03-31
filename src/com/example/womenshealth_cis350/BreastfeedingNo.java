@@ -6,28 +6,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Pregnant extends Activity {
-
+public class BreastfeedingNo extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.pregnant);
+		setContentView(R.layout.breastfeedingno);
 	}
-
-	public boolean onYesClick(View v) {
-		Intent start = new Intent(this, BreastfeedingYes.class);
+	
+	public boolean onDidYouKnowClick(View v) {
+		Intent start = new Intent(this, BenefitsOfBreastfeeding.class);
 		startActivity(start);
 
 		return true;
 	}
-
-	public boolean onNoClick(View v) {
-			Intent start = new Intent(this, BreastfeedingNo.class);
-			startActivity(start);
 	
-		
-
+	public boolean mythBustersClick(View v) {
+		Intent start = new Intent(this, MythBusters.class);
+		startActivity(start);
 
 		return true;
 	}
 }
+

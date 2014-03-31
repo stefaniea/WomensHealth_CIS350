@@ -6,7 +6,7 @@
     android:orientation="vertical" >
 
     <Spinner
-        android:id="@+id/age_spinner2"
+        android:id="@+id/hungry_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp" />
@@ -15,7 +15,7 @@ android:layout_width="fill_parent"
 android:layout_height="fill_parent">
 
     <TextView
-        android:id="@+id/age_content2"
+        android:id="@+id/hungry_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.51"

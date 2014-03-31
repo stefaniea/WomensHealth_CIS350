@@ -28,7 +28,7 @@
         android:id="@+id/howHungry_btn"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
-      
+      android:onClick="isBabyHungryClick"
         android:text="How do I know if my baby is hungry?" />
         
         <Button

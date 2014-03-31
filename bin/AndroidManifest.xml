@@ -94,6 +94,19 @@
             <intent-filter>
             </intent-filter>
         </activity>
+         <activity
+            android:name="com.example.womenshealth_cis350.BreastfeedingNo"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.womenshealth_cis350.MythBusters"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        
     </application>
 
 </manifest>
