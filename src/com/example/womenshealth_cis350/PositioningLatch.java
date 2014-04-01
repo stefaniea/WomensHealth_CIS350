@@ -26,12 +26,29 @@ public class PositioningLatch extends Activity {
 
 		return true;
 	}
+	
 	public boolean isBabyHungryClick(View v) {
 		Intent start = new Intent(this, BabyHungry.class);
 		startActivity(start);
 // -- add this   android:onClick="isBabyHungry" >
 		return true;
 	}
+	
+	public boolean onPositionsClick(View v) {
+		Intent start = new Intent(this, DifferentPositions.class);
+		startActivity(start);
+		
+		return true;
+	}
+	
+	public boolean onEnoughClick(View v) {
+		Intent start = new Intent(this, BabyGettingEnoughMilk.class);
+		startActivity(start);
+		
+		return true;
+	}
+	
+	
 	
 
 }

@@ -35,5 +35,5 @@
         android:layout_width="207dp"
         android:layout_height="wrap_content"
         android:text="When to call your provider" 
-        android:onClick="onFeelFullClick"/>
+        android:onClick="onProviderClick"/>
 </LinearLayout>

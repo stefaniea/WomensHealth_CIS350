@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Baby looks healthy and alert" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Baby is nursing 8-12 feedings every 24 hours" />
+    
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="While breastfeeding you can hear the baby making swallowing noises" />
+    
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Baby is gaining 4 – 7 ounces per week (4 days after delivery)" />
+
+    <ExpandableListView
+        android:id="@+id/baby_enough_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+    </ExpandableListView>
+
+</LinearLayout>

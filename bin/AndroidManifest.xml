@@ -139,6 +139,34 @@
             </intent-filter>
         </activity>
         
+        <activity
+            android:name="com.example.womenshealth_cis350.DifferentPositions"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.womenshealth_cis350.BabyGettingEnoughMilk"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.womenshealth_cis350.NippleHurts"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.womenshealth_cis350.CallProvider"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        
     </application>
 
 </manifest>

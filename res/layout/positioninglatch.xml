@@ -9,12 +9,14 @@
         android:id="@+id/whatPositions_btn"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
+        android:onClick="onPositionsClick"
         android:text="What are the different positions I can use to breastfeed?" />
        
         <Button
         android:id="@+id/gettingEnough_btn"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
+        android:onClick="onEnoughClick"
         android:text="Is my baby getting enough?" />
         
         <Button

@@ -26,4 +26,18 @@ public class TroubleShooting extends Activity {
 
 		return true;
 	}
+	
+	public boolean onCrackedClick(View v) {
+		Intent start = new Intent(this, NippleHurts.class);
+		startActivity(start);
+
+		return true;
+	}
+	
+	public boolean onProviderClick(View v) {
+		Intent start = new Intent(this, CallProvider.class);
+		startActivity(start);
+
+		return true;
+	}
 }
