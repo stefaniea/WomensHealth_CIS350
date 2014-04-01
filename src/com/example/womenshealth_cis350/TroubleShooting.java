@@ -20,6 +20,13 @@ public class TroubleShooting extends Activity {
 		return true;
 	}
 	*/
+	public boolean onFeelFullClick(View v) {
+		Intent start = new Intent(this, FeelFull.class);
+		startActivity(start);
+
+		return true;
+	}
+	
 	public boolean onNoMilkClick(View v) {
 		Intent start = new Intent(this, NotEnoughMilk.class);
 		startActivity(start);
