@@ -167,6 +167,12 @@
             </intent-filter>
         </activity>
         
+         <activity
+            android:name="com.example.womenshealth_cis350.FeelFull"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
