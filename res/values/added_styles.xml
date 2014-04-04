@@ -17,6 +17,12 @@
         <item name="android:typeface">monospace</item>
     </style>
     
+     <style name="BackgroundYellow" parent="@android:style/Theme.Light">
+        <item name="android:background">@color/coloryellow</item>
+        <item name="android:textColor">@color/colorblue</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    
      <style name="BackgroundRed" parent="@android:style/Theme.Light">
         <item name="android:background">@color/colorred</item>
         <item name="android:textColor">@color/coloryellow</item>
@@ -25,7 +31,7 @@
     
     <style name="BackgroundOrange" parent="@android:style/Theme.Light">
         <item name="android:background">@color/colororange</item>
-        <item name="android:textColor">@color/colorgreen</item>
+        <item name="android:textColor">@color/colorred</item>
         <item name="android:typeface">monospace</item>
     </style>
     

@@ -18,7 +18,7 @@ public class WhatToExpect extends Activity implements OnItemSelectedListener {
 		Spinner spinner = (Spinner) findViewById(R.id.age_spinner);
 		// Create an ArrayAdapter using the string array and a default spinner layout
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-		 R.array.ages_array, android.R.layout.simple_spinner_item);
+		 R.array.ages_array, R.layout.dropdown_blue);
 		// Specify the layout to use when the list of choices appears
 		adapter.setDropDownViewResource(R.layout.spinner_item);
 		// Apply the adapter to the spinner
