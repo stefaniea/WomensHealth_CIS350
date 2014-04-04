@@ -6,30 +6,41 @@
     android:gravity="center_horizontal"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/pee_poop_btn"
-        style="@style/Button1"
-        android:layout_width="206dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"
-        android:onClick="onPeePoopClick"
-        android:text="Is the baby peeing/pooping?" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-    <Button
-        android:id="@+id/hunger_btn"
-        style="@style/Button1"
-        android:layout_width="207dp"
-        android:layout_height="wrap_content"
-        android:onClick="onHungryClick"
-        android:text="Is the baby showing signs of hunger?" />
+        <Button
+            android:id="@+id/gaining_weight_btn"
+            style="@style/Button1"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="onGainingWeightClick"
+            android:text="Is your baby gaining weight and growing?" />
 
-    <Button
-        android:id="@+id/gaining_weight_btn"
-        style="@style/Button1"
-        android:layout_width="207dp"
-        android:layout_height="wrap_content"
-        android:onClick="onGainingWeightClick"
-        android:text="Is your baby gaining weight and growing?" />
+        <Button
+            android:id="@+id/pee_poop_btn"
+            style="@style/Button1"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/gaining_weight_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:onClick="onPeePoopClick"
+            android:text="Is the baby peeing/pooping?" />
+
+        <Button
+            android:id="@+id/hunger_btn"
+            style="@style/Button1"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pee_poop_btn"
+            android:layout_alignLeft="@+id/pee_poop_btn"
+            android:onClick="onHungryClick"
+            android:text="Is the baby showing signs of hunger?" />
+
+    </RelativeLayout>
 
 </LinearLayout>
