@@ -28,5 +28,17 @@
         <item name="android:textColor">@color/colorgreen</item>
         <item name="android:typeface">monospace</item>
     </style>
+    
+    <style name="DropDownYellowBlue" parent="@android:style/Theme.Light">
+        <item name="android:background">@drawable/dropdown_yellow_blue</item>
+        <item name="android:textColor">@color/colorblue</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    
+      <style name="DropDownYellowRed" parent="@android:style/Theme.Light">
+        <item name="android:background">@drawable/dropdown_yellow_red</item>
+        <item name="android:textColor">@color/colorred</item>
+        <item name="android:typeface">monospace</item>
+    </style>
 
 </resources>

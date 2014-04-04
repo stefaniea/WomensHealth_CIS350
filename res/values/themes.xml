@@ -2,11 +2,11 @@
 <resources>
 
     <style name="Our_Theme" parent="@android:Theme.Light">
-        <item name="android:spinnerStyle">@style/Widget.Spinner</item>
+        <item name="android:spinnerStyle">@style/Widget.SpinnerBlueYellow</item>
     </style>
 
-    <style name="Widget.Spinner" parent="android:Widget">
-        <item name="android:background">@drawable/btn_dropdown</item>
+    <style name="Widget.SpinnerBlueYellow" parent="android:Widget">
+        <item name="android:background">@drawable/dropdown_yellow_blue</item>
         <item name="android:clickable">true</item>
     </style>
 

@@ -199,8 +199,11 @@ public final class R {
     }
     public static final class drawable {
         public static final int btn_dropdown=0x7f020000;
-        public static final int enterscreen=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
+        public static final int dropdown=0x7f020001;
+        public static final int dropdown_yellow_blue=0x7f020002;
+        public static final int dropdown_yellow_red=0x7f020003;
+        public static final int enterscreen=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
     }
     public static final class id {
         public static final int LinearLayout01=0x7f0a0007;
@@ -227,12 +230,12 @@ public final class R {
         public static final int diffpos_list=0x7f0a0014;
         public static final int feel_full_list=0x7f0a0015;
         public static final int feelfull_btn=0x7f0a0033;
-        public static final int gaining_weight_btn=0x7f0a0021;
+        public static final int gaining_weight_btn=0x7f0a001f;
         public static final int getstarted=0x7f0a0017;
         public static final int gettingEnough_btn=0x7f0a0024;
         public static final int goals_btn=0x7f0a0011;
         public static final int howHungry_btn=0x7f0a0026;
-        public static final int hunger_btn=0x7f0a0020;
+        public static final int hunger_btn=0x7f0a0021;
         public static final int hungry_content=0x7f0a000a;
         public static final int hungry_spinner=0x7f0a0008;
         public static final int item=0x7f0a0013;
@@ -245,7 +248,7 @@ public final class R {
         public static final int nomilk_btn=0x7f0a0032;
         public static final int pacifier_list=0x7f0a0022;
         public static final int pal_btn=0x7f0a0029;
-        public static final int pee_poop_btn=0x7f0a001f;
+        public static final int pee_poop_btn=0x7f0a0020;
         public static final int post_btn=0x7f0a002e;
         public static final int pregnant_btn=0x7f0a002d;
         public static final int shouldPacifier_btn=0x7f0a0027;
@@ -284,9 +287,10 @@ public final class R {
         public static final int postpartum=0x7f030013;
         public static final int pregnant=0x7f030014;
         public static final int pregnant_postpartum=0x7f030015;
-        public static final int successful_steps=0x7f030016;
-        public static final int troubleshooting=0x7f030017;
-        public static final int what_to_expect=0x7f030018;
+        public static final int spinner_item=0x7f030016;
+        public static final int successful_steps=0x7f030017;
+        public static final int troubleshooting=0x7f030018;
+        public static final int what_to_expect=0x7f030019;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -364,16 +368,18 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f040004;
+        public static final int AppBaseTheme=0x7f040006;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f040005;
+        public static final int AppTheme=0x7f040007;
         public static final int BackgroundBlue=0x7f040001;
         public static final int BackgroundOrange=0x7f040003;
         public static final int BackgroundRed=0x7f040002;
         public static final int Button1=0x7f040000;
-        public static final int Our_Theme=0x7f040006;
-        public static final int Widget_Spinner=0x7f040007;
+        public static final int DropDownYellowBlue=0x7f040004;
+        public static final int DropDownYellowRed=0x7f040005;
+        public static final int Our_Theme=0x7f040008;
+        public static final int Widget_SpinnerBlueYellow=0x7f040009;
     }
 }
