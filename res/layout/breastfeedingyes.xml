@@ -3,9 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-        <Button
+
+    <Button
         android:id="@+id/benefits_btn"
+        style="@style/Button1"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
         android:onClick="onBenefitsClick"
@@ -13,15 +14,16 @@
 
     <Button
         android:id="@+id/steps_btn"
+        style="@style/Button1"
         android:layout_width="207dp"
-        android:layout_height="wrap_content"
-        android:text="Steps to Successful Breastfeeding"
-        android:onClick="onSuccessfulStepsClick" />
+        android:layout_height="wrap_content"></Button>
+        
     <Button
         android:id="@+id/goals_btn"
+        style="@style/Button1"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
-        android:text="Goal Setting" 
-        android:onClick="onGoalsClick"/>
+        android:onClick="onGoalsClick"
+        android:text="Goal Setting" />
 
 </LinearLayout>

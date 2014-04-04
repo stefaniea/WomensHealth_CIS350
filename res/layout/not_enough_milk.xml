@@ -2,32 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
+    android:layout_marginTop="50dp"
     android:gravity="center_horizontal"
-    android:layout_marginTop="50dp">
+    android:orientation="vertical" >
 
     <Button
         android:id="@+id/pee_poop_btn"
+        style="@style/Button1"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
-        android:text="Is the baby peeing/pooping?"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
         android:onClick="onPeePoopClick"
-         />
+        android:text="Is the baby peeing/pooping?" />
 
     <Button
         android:id="@+id/hunger_btn"
+        style="@style/Button1"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
-        android:text="Is the baby showing signs of hunger?" 
-        android:onClick="onHungryClick"/>
-    
-     <Button
+        android:onClick="onHungryClick"
+        android:text="Is the baby showing signs of hunger?" />
+
+    <Button
         android:id="@+id/gaining_weight_btn"
+        style="@style/Button1"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
-        android:text="Is your baby gaining weight and growing?" 
-        android:onClick="onGainingWeightClick"/>
-     
+        android:onClick="onGainingWeightClick"
+        android:text="Is your baby gaining weight and growing?" />
+
 </LinearLayout>

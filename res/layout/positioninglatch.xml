@@ -4,41 +4,45 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical" >
-    
-       <Button
+
+    <Button
         android:id="@+id/whatPositions_btn"
+        style="@style/Button1"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
         android:onClick="onPositionsClick"
         android:text="What are the different positions I can use to breastfeed?" />
-       
-        <Button
+
+    <Button
         android:id="@+id/gettingEnough_btn"
+        style="@style/Button1"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
         android:onClick="onEnoughClick"
         android:text="Is my baby getting enough?" />
-        
-        <Button
+
+    <Button
         android:id="@+id/latchedOn_btn"
+        style="@style/Button1"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
         android:onClick="onLatchedClick"
         android:text="Is my baby latched on correctly?" />
-        
-        <Button
+
+    <Button
         android:id="@+id/howHungry_btn"
+        style="@style/Button1"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
-      android:onClick="isBabyHungryClick"
+        android:onClick="isBabyHungryClick"
         android:text="How do I know if my baby is hungry?" />
-        
-        <Button
+
+    <Button
         android:id="@+id/shouldPacifier_btn"
+        style="@style/Button1"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
         android:onClick="onPacifierClick"
         android:text="Should I use a pacifier?" />
-    
 
 </LinearLayout>

@@ -29,12 +29,4 @@ public class LetsGetStarted extends Activity {
 		return true;
 	}
 	
-	//testing the WhatToExpect page
-	public boolean onTestDropDownClick(View v) {
-		Intent start = new Intent(this, WhatToExpect.class);
-		startActivity(start);
-	
-		return true;
-	}
-	
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Button1" parent="@android:style/Theme.Light">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/coloryellow</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">@color/colorred</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    
+      <style name="BackgroundBlue" parent="@android:style/Theme.Light">
+        <item name="android:background">@color/colorblue</item>
+        <item name="android:textColor">@color/colororange</item>
+        <item name="android:typeface">monospace</item>
+     
+    </style>
+
+</resources>
