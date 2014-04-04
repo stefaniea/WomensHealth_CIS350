@@ -27,8 +27,9 @@ public class SuccessfulSteps extends Activity {
 		int page = 0;
 	}
 	
-	public boolean onNextClick(View v) {
+	public boolean onNextStep(View v) {
 		if (page == 0) {
+			System.out.println("DEBUG: getting here but getting a null pointer after");
 			content.setText(R.string.content_feeding);
 			title.setText(R.string.title_feeding);
 			page++;

@@ -31,7 +31,8 @@
        <Button
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:text="Next Step" >
+           android:text="Next Step"
+           android:onClick="onNextStep" >
 
 </Button>
        
