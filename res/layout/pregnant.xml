@@ -19,6 +19,7 @@
         android:textSize="20sp"/>
     
     <Button
+         style="@style/Button1"
         android:id="@+id/yesbreastfeeding_btn"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
@@ -29,10 +30,10 @@
 
     <Button
         android:id="@+id/nobreastfeeding_btn"
+        style="@style/Button1"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
-        android:text="No" 
-        android:onClick="onNoClick"/>
-    
+        android:onClick="onNoClick"
+        android:text="No" />
 
 </LinearLayout>

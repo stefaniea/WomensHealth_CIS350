@@ -8,6 +8,7 @@ import android.view.MotionEvent;
 
 public class MainActivity extends Activity {
 
+	//Bitmap image; 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -27,5 +28,12 @@ public class MainActivity extends Activity {
 		startActivity(start);
 	
 		return true;
+	}
+	
+	private void init() {
+		/* one-time initialization stuff */
+	//	setBackgroundResource(R.drawable.ic_launcher);
+	//	image = BitmapFactory.decodeResource(getResources(), R.drawable.unicorn);
+		//image = Bitmap.createScaledBitmap(image, 150, 150, false);
 	}
 }
