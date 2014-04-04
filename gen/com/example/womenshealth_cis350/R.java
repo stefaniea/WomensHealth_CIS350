@@ -364,14 +364,16 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f040002;
+        public static final int AppBaseTheme=0x7f040004;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f040003;
+        public static final int AppTheme=0x7f040005;
         public static final int BackgroundBlue=0x7f040001;
+        public static final int BackgroundOrange=0x7f040003;
+        public static final int BackgroundRed=0x7f040002;
         public static final int Button1=0x7f040000;
-        public static final int Our_Theme=0x7f040004;
-        public static final int Widget_Spinner=0x7f040005;
+        public static final int Our_Theme=0x7f040006;
+        public static final int Widget_Spinner=0x7f040007;
     }
 }
