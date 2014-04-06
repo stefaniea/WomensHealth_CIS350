@@ -57,6 +57,7 @@
         <item name="android:layout_height">fill_parent</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">30dp</item>
+        <item name="android:paddingBottom">35dp</item> <!-- because of shadow on bottom -->
     </style>
     
        <style name="BubbleYellow" parent="@android:style/Theme.Light">
@@ -67,6 +68,7 @@
         <item name="android:layout_height">fill_parent</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">30dp</item>
+         <item name="android:paddingBottom">35dp</item> <!-- because of shadow on bottom -->
     </style>
     
        <style name="BubbleGreen" parent="@android:style/Theme.Light">
@@ -77,6 +79,7 @@
         <item name="android:layout_height">fill_parent</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">30dp</item>
+         <item name="android:paddingBottom">35dp</item> <!-- because of shadow on bottom -->
     </style>
     
        <style name="BubbleOrange" parent="@android:style/Theme.Light">
@@ -87,6 +90,7 @@
         <item name="android:layout_height">fill_parent</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">30dp</item>
+         <item name="android:paddingBottom">35dp</item> <!-- because of shadow on bottom -->
     </style>
     
         <style name="BubbleRed" parent="@android:style/Theme.Light">
@@ -97,6 +101,7 @@
         <item name="android:layout_height">fill_parent</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">30dp</item>
+         <item name="android:paddingBottom">35dp</item> <!-- because of shadow on bottom -->
     </style>
 
 </resources>

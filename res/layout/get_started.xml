@@ -29,8 +29,9 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/getstarted"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="37dp"
-            android:text="Hey" />
+            android:layout_alignRight="@+id/getstarted"
+            android:layout_marginBottom="81dp"
+            android:text="“Welcome! I’m glad you’re here to learn more about breastfeeding! Lets get started!”" />
 
     </RelativeLayout>
 
