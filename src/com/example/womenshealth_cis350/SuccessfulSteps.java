@@ -9,11 +9,13 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class SuccessfulSteps extends Activity {
-	TextView title;
-	TextView content;
+	static TextView title;
+	static TextView content;
+	static Button btn;
 	String[] content_strings;
 	String[] title_strings;
 	int page;
+	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,35 +23,36 @@ public class SuccessfulSteps extends Activity {
 		setContentView(R.layout.successful_steps);
 		title = (TextView) this.findViewById(R.id.title_step);
 		content = (TextView) this.findViewById(R.id.step_content);
+		btn = (Button) this.findViewById(R.id.step_button);
 		
 		title.setText(R.string.title_rooming_in);
 		content.setText(R.string.content_rooming_in);
-		int page = 0;
+		page = 0;
+		
 	}
 	
 	public boolean onNextStep(View v) {
 		if (page == 0) {
-			System.out.println("DEBUG: getting here but getting a null pointer after");
-			content.setText(R.string.content_feeding);
+		   content.setText(R.string.content_feeding);
 			title.setText(R.string.title_feeding);
 			page++;
 		}
-		if (page == 1) {
+		else if (page == 1) {
 			content.setText(R.string.content_exclusivity);
 			title.setText(R.string.title_exclusivity);
 			page++;
 		}
-		if (page == 2) {
+		else if (page == 2) {
 			content.setText(R.string.content_pacifier);
 			title.setText(R.string.title_pacifier);
-			Button btn = (Button) this.findViewById(R.id.steps_btn);
-			btn.setText("Back to Pregnant Page");
+			btn.setText(R.string.back_first_step);
 			page++;
 		}
-		if (page == 3) {
+		else if (page == 3) {
 			page = 0;
-			Intent start = new Intent(this, Pregnant.class);
-			startActivity(start);
+			//btn.setText(R.string.back_first_step);
+			title.setText(R.string.title_rooming_in);
+			content.setText(R.string.content_rooming_in);
 		}
 		
 		return true;

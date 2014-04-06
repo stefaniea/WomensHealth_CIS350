@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+        android:gravity="center"
     android:orientation="vertical" >
 
     <Button
@@ -16,7 +17,11 @@
         android:id="@+id/steps_btn"
         style="@style/Button1"
         android:layout_width="207dp"
-        android:layout_height="wrap_content"></Button>
+        android:layout_height="wrap_content"
+        android:text="Steps to Successful Breastfeeding"
+        android:onClick="onSuccessfulStepsClick">
+     
+    </Button>
         
     <Button
         android:id="@+id/goals_btn"

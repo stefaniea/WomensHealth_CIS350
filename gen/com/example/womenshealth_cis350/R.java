@@ -212,17 +212,17 @@ public final class R {
     }
     public static final class id {
         public static final int LinearLayout01=0x7f0a0007;
-        public static final int ScrollView01=0x7f0a0037;
+        public static final int ScrollView01=0x7f0a0038;
         public static final int ScrollView02=0x7f0a0009;
-        public static final int action_settings=0x7f0a0039;
-        public static final int age_content=0x7f0a0038;
-        public static final int age_spinner=0x7f0a0036;
+        public static final int action_settings=0x7f0a003a;
+        public static final int age_content=0x7f0a0039;
+        public static final int age_spinner=0x7f0a0037;
         public static final int baby_enough_list=0x7f0a0006;
         public static final int benefit_list=0x7f0a000b;
         public static final int benefits_btn=0x7f0a000f;
         public static final int bubble=0x7f0a0018;
         public static final int call_provider_list=0x7f0a0012;
-        public static final int callprovider_btn=0x7f0a0035;
+        public static final int callprovider_btn=0x7f0a0036;
         public static final int checkBox1=0x7f0a0002;
         public static final int checkBox2=0x7f0a0003;
         public static final int checkBox3=0x7f0a0004;
@@ -231,17 +231,17 @@ public final class R {
         public static final int checkBox6=0x7f0a001b;
         public static final int checkBox7=0x7f0a001c;
         public static final int costsOfFormula_bn=0x7f0a000e;
-        public static final int cracked_btn=0x7f0a0032;
+        public static final int cracked_btn=0x7f0a0033;
         public static final int didYouKnow_bn=0x7f0a000c;
         public static final int diffpos_list=0x7f0a0014;
         public static final int feel_full_list=0x7f0a0015;
-        public static final int feelfull_btn=0x7f0a0034;
-        public static final int gaining_weight_btn=0x7f0a0020;
+        public static final int feelfull_btn=0x7f0a0035;
+        public static final int gaining_weight_btn=0x7f0a0021;
         public static final int getstarted=0x7f0a0017;
         public static final int gettingEnough_btn=0x7f0a0025;
         public static final int goals_btn=0x7f0a0011;
         public static final int howHungry_btn=0x7f0a0027;
-        public static final int hunger_btn=0x7f0a0022;
+        public static final int hunger_btn=0x7f0a0020;
         public static final int hungry_content=0x7f0a000a;
         public static final int hungry_spinner=0x7f0a0008;
         public static final int item=0x7f0a0013;
@@ -251,13 +251,14 @@ public final class R {
         public static final int nipplehurts_list=0x7f0a001f;
         public static final int nipplehurts_pos=0x7f0a001e;
         public static final int nobreastfeeding_btn=0x7f0a002d;
-        public static final int nomilk_btn=0x7f0a0033;
+        public static final int nomilk_btn=0x7f0a0034;
         public static final int pacifier_list=0x7f0a0023;
         public static final int pal_btn=0x7f0a002a;
-        public static final int pee_poop_btn=0x7f0a0021;
+        public static final int pee_poop_btn=0x7f0a0022;
         public static final int post_btn=0x7f0a002f;
         public static final int pregnant_btn=0x7f0a002e;
         public static final int shouldPacifier_btn=0x7f0a0028;
+        public static final int step_button=0x7f0a0032;
         public static final int step_content=0x7f0a0031;
         public static final int steps_btn=0x7f0a0010;
         public static final int subtitle=0x7f0a0001;
@@ -304,54 +305,55 @@ public final class R {
     }
     public static final class string {
         public static final int action_settings=0x7f080005;
-        public static final int aftersixmonths_wte=0x7f080013;
+        public static final int aftersixmonths_wte=0x7f080014;
         public static final int app_name=0x7f080004;
         /**  what to expect strings/info "wte" = what to expect 
          */
-        public static final int atbirth_wte=0x7f080007;
-        public static final int baby_latch_quest=0x7f080023;
+        public static final int atbirth_wte=0x7f080008;
+        public static final int baby_latch_quest=0x7f080024;
+        public static final int back_first_step=0x7f080007;
         /**  what to expect strings/info "wte" = what to expect 
          */
         public static final int birth_5_hungry=0x7f080000;
-        public static final int content_exclusivity=0x7f080028;
-        public static final int content_feeding=0x7f08002a;
-        public static final int content_pacifier=0x7f08002c;
-        public static final int content_rooming_in=0x7f080025;
-        public static final int cracked=0x7f080021;
-        public static final int dayfivesix_pp=0x7f08001f;
-        public static final int dayfour_pp=0x7f08001e;
-        public static final int dayone_pp=0x7f08001b;
-        public static final int days_gs=0x7f080014;
-        public static final int dayseven_pp=0x7f080020;
-        public static final int daythree_pp=0x7f08001d;
-        public static final int daytwo_pp=0x7f08001c;
-        public static final int four_months_gs=0x7f080018;
-        public static final int fourdays_wte=0x7f08000b;
-        public static final int fourmonths_wte=0x7f080011;
-        public static final int gain_weight=0x7f080022;
+        public static final int content_exclusivity=0x7f080029;
+        public static final int content_feeding=0x7f08002b;
+        public static final int content_pacifier=0x7f08002d;
+        public static final int content_rooming_in=0x7f080026;
+        public static final int cracked=0x7f080022;
+        public static final int dayfivesix_pp=0x7f080020;
+        public static final int dayfour_pp=0x7f08001f;
+        public static final int dayone_pp=0x7f08001c;
+        public static final int days_gs=0x7f080015;
+        public static final int dayseven_pp=0x7f080021;
+        public static final int daythree_pp=0x7f08001e;
+        public static final int daytwo_pp=0x7f08001d;
+        public static final int four_months_gs=0x7f080019;
+        public static final int fourdays_wte=0x7f08000c;
+        public static final int fourmonths_wte=0x7f080012;
+        public static final int gain_weight=0x7f080023;
         public static final int hello_world=0x7f080006;
         public static final int month_10_12_hungry=0x7f080003;
         public static final int month_4_6_hungry=0x7f080001;
         public static final int month_5_9_hungry=0x7f080002;
-        public static final int months_gs=0x7f080016;
-        public static final int morethan_six_months_gs=0x7f08001a;
-        public static final int onemonth_wte=0x7f08000e;
-        public static final int oneweek_wte=0x7f08000c;
-        public static final int six_months_gs=0x7f080019;
-        public static final int sixmonths_wte=0x7f080012;
-        public static final int three_months_gs=0x7f080017;
-        public static final int threedays_wte=0x7f08000a;
-        public static final int threemonths_wte=0x7f080010;
-        public static final int title_exclusivity=0x7f080027;
-        public static final int title_feeding=0x7f080029;
-        public static final int title_pacifier=0x7f08002b;
-        public static final int title_rooming_in=0x7f080024;
-        public static final int title_skintoskin=0x7f080026;
-        public static final int twentyfourhours_wte=0x7f080008;
-        public static final int twodays_wte=0x7f080009;
-        public static final int twomonths_wte=0x7f08000f;
-        public static final int twothreeweeks_wte=0x7f08000d;
-        public static final int weeks_gs=0x7f080015;
+        public static final int months_gs=0x7f080017;
+        public static final int morethan_six_months_gs=0x7f08001b;
+        public static final int onemonth_wte=0x7f08000f;
+        public static final int oneweek_wte=0x7f08000d;
+        public static final int six_months_gs=0x7f08001a;
+        public static final int sixmonths_wte=0x7f080013;
+        public static final int three_months_gs=0x7f080018;
+        public static final int threedays_wte=0x7f08000b;
+        public static final int threemonths_wte=0x7f080011;
+        public static final int title_exclusivity=0x7f080028;
+        public static final int title_feeding=0x7f08002a;
+        public static final int title_pacifier=0x7f08002c;
+        public static final int title_rooming_in=0x7f080025;
+        public static final int title_skintoskin=0x7f080027;
+        public static final int twentyfourhours_wte=0x7f080009;
+        public static final int twodays_wte=0x7f08000a;
+        public static final int twomonths_wte=0x7f080010;
+        public static final int twothreeweeks_wte=0x7f08000e;
+        public static final int weeks_gs=0x7f080016;
     }
     public static final class style {
         /** 
@@ -384,10 +386,20 @@ public final class R {
         public static final int BackgroundOrange=0x7f040004;
         public static final int BackgroundRed=0x7f040003;
         public static final int BackgroundYellow=0x7f040002;
+        /**  because of shadow on bottom 
+         */
         public static final int BubbleBlue=0x7f040007;
+        /**  because of shadow on bottom 
+         */
         public static final int BubbleGreen=0x7f040009;
+        /**  because of shadow on bottom 
+         */
         public static final int BubbleOrange=0x7f04000a;
+        /**  because of shadow on bottom 
+         */
         public static final int BubbleRed=0x7f04000b;
+        /**  because of shadow on bottom 
+         */
         public static final int BubbleYellow=0x7f040008;
         public static final int Button1=0x7f040000;
         public static final int DropDownYellowBlue=0x7f040005;

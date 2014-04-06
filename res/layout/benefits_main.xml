@@ -3,23 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
+
+    <ExpandableListView
+        android:id="@+id/benefit_list"
+        android:layout_width="match_parent"
+        android:layout_height="202dp" >
+    </ExpandableListView>
+
     <TextView
         android:id="@+id/subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        style="@style/BubbleGreen"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
         android:layout_marginBottom="10dp"
         android:ems="10"
         android:fontFamily="MyriadPro"
         android:inputType="textMultiLine"
         android:text="Breastfeeding has many benefits for both the mother and the baby"
-        android:textSize="20sp"/>
-        
-    <ExpandableListView
-        android:id="@+id/benefit_list"
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent" >
-    </ExpandableListView>
+        android:textSize="20sp" />
+
 </LinearLayout>

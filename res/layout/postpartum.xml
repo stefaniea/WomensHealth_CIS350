@@ -2,29 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="50dp"
-    android:gravity="center_horizontal"
-    android:orientation="vertical" >
+    android:gravity="center"
+    android:orientation="vertical"
+    style="@style/BackgroundOrange" >
 
     <Button
-         style="@style/Button1"
         android:id="@+id/wte_btn"
+        style="@style/Button1"
         android:layout_width="206dp"
         android:layout_height="wrap_content"
         android:onClick="onWhatToExpectClick"
         android:text="What to Expect" />
 
     <Button
-         style="@style/Button1"
         android:id="@+id/pal_btn"
+        style="@style/Button1"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
         android:onClick="onPositioningLatchClick"
         android:text="Position and Latch" />
 
     <Button
-         style="@style/Button1"
         android:id="@+id/tap_btn"
+        style="@style/Button1"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
         android:onClick="onTroubleShootingClick"

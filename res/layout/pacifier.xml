@@ -2,25 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:orientation="vertical"
+    style="@style/BackgroundOrange" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <ExpandableListView
+        android:id="@+id/pacifier_list"
+        android:layout_width="match_parent"
+        android:layout_height="245dp" >
+    </ExpandableListView>
+
     <TextView
         android:id="@+id/subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
+        style="@style/BubbleGreen"
+        android:layout_width="240dp"
+        android:layout_height="130dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pacifier_list"
+        android:layout_marginTop="18dp"
         android:ems="10"
         android:fontFamily="MyriadPro"
         android:inputType="textMultiLine"
         android:text="Should I use a pacifier?"
-        android:textSize="20sp"/>
-        
-    <ExpandableListView
-        android:id="@+id/pacifier_list"
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent" >
-    </ExpandableListView>
+        android:textSize="20sp" />
+
+    </RelativeLayout>
 
 </LinearLayout>

@@ -2,47 +2,40 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical" >
+    android:gravity="center"
+    android:orientation="vertical"
+    style="@style/BackgroundBlue" >
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content" >
 
-    <TextView
-        android:id="@+id/subtitle"
-        style="@style/BubbleYellow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/nobreastfeeding_btn"
-        android:ems="10"
-        android:fontFamily="MyriadPro"
-        android:inputType="textMultiLine"
-        android:text="Have you thought about breastfeeding your baby?"
-        android:textSize="20sp" />
+        <Button
+            android:id="@+id/yesbreastfeeding_btn"
+            style="@style/Button1"
+            android:onClick="onYesClick"
+            android:text="Yes" />
 
-    <Button
-        android:id="@+id/nobreastfeeding_btn"
-        style="@style/Button1"
-        android:layout_width="207dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/yesbreastfeeding_btn"
-        android:layout_centerHorizontal="true"
-        android:onClick="onNoClick"
-        android:text="No" />
+        <Button
+            android:id="@+id/nobreastfeeding_btn"
+            style="@style/Button1"
+            android:layout_below="@+id/yesbreastfeeding_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="onNoClick"
+            android:text="No" />
 
-    <Button
-        android:id="@+id/yesbreastfeeding_btn"
-        style="@style/Button1"
-        android:layout_width="206dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/subtitle"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="18dp"
-        android:onClick="onYesClick"
-        android:text="Yes" />
-    
+        <TextView
+            android:id="@+id/subtitle"
+            style="@style/BubbleYellow"
+            android:layout_height="148dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nobreastfeeding_btn"
+            android:layout_marginTop="27dp"
+            android:fontFamily="MyriadPro"
+            android:text="Have you thought about breastfeeding your baby?"
+            android:textSize="20sp" />
+
     </RelativeLayout>
 
 </LinearLayout>
