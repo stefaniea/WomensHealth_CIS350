@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnChildClickListener;
+import android.widget.TextView;
 import android.widget.Toast;
  
 public class BenefitsOfBreastfeeding extends Activity {
@@ -33,6 +34,12 @@ public class BenefitsOfBreastfeeding extends Activity {
         final ExpandableListAdapter expListAdapter = new ExpandableListAdapter(
                 this, groupList, itemCollection);
         expListView.setAdapter(expListAdapter);
+        
+        TextView bubble = (TextView) findViewById(R.id.subtitle);
+        bubble.setText("Breastfeeding has many benefits for both the mother and the baby");
+        bubble.setBackgroundResource(R.drawable.bubble_blue);
+        bubble.setPadding(30, 30, 30, 35);
+        bubble.setTextColor(getResources().getColor(R.color.colorred));
  
         //setGroupIndicatorToRight();
  
