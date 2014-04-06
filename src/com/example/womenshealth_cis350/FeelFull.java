@@ -9,13 +9,16 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Menu;
+import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.TextView;
 
 public class FeelFull extends Activity{
 	List<String> groupList;
     List<String> childList;
     Map<String, List<String>> itemCollection;
     ExpandableListView expListView;
+    TextView bubble;
     
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,7 @@ public class FeelFull extends Activity{
         final ExpandableListAdapter expListAdapter = new ExpandableListAdapter(
                 this, groupList, itemCollection);
         expListView.setAdapter(expListAdapter);
+        
  
         //setGroupIndicatorToRight();
 	
@@ -84,6 +88,8 @@ public class FeelFull extends Activity{
  
             itemCollection.put(item, childList);
         }
+        
+       
     }
  
     private void loadChild(String[] items) {
@@ -105,5 +111,11 @@ public class FeelFull extends Activity{
         // Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+    
+    public boolean onScreenClick(View v) {
+    	TextView view = (TextView) expListView.getChildAt(0);
+    	view.setText("HEYY");
+    	return true;
     }
 }
