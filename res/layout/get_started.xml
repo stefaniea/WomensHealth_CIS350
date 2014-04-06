@@ -15,19 +15,23 @@
             style="@style/Button1"
             android:layout_width="257dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:layout_marginTop="53dp"
             android:onClick="onStartedClick"
             android:text="Let&apos;s Get Started!"
             android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/bubble"
+            style="@style/BubbleYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/getstarted"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="37dp"
+            android:text="Hey" />
+
     </RelativeLayout>
 
-<Button
-    android:id="@+id/getstarted"
-    android:layout_width="fill_parent"
-    android:layout_height="200dp"
-    android:gravity="center"
-    android:onClick="onStartedClick"
-    android:text="Let&apos;s Get Started!"
-    android:textAlignment="center" />
 </LinearLayout>
