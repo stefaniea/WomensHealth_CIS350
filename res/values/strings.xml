@@ -165,18 +165,11 @@ and your baby by keeping it up for this long! \n
         <item>3 months</item>
         <item>4 months</item>
         <item>6 months</item>
-        <item>Greater than 6 months</item>
-        <item>1 month</item>
-        <item>2 months</item>
-        <item>3 months</item>
-        <item>4 months</item>
-        <item>6 months</item>
         <item>6 months and beyond</item>
     </string-array>
     
  <string name="days_gs">
-     • That’s great! Congratulations on making the commitment to feed 
-your baby for a few days in the hospital!\n
+   
 • By choosing to breastfeed for a few days in the hospital, you are 
 providing colostrum for your baby\n
 	\t - Colostrum is easy for your baby to digest, full of nutrients 
@@ -185,8 +178,6 @@ infections\n
  </string>
  
 <string name="weeks_gs">
-• That’s great! Congratulations on making the commitment to feed 
-baby [name] for 1-3 weeks!\n
 • By choosing to breastfeed for 1-3 weeks you will lower your 
 baby’s risk of developing\n
 	\t- Type II diabetes\n
@@ -195,8 +186,6 @@ baby’s risk of developing\n
  </string>
  
 <string name="months_gs">
-• That’s great! Congratulations on making the commitment to feed 
-your baby for 1-2 months! \n
 • By choosing to breastfeed for 1-2 months you will lower the risk 
 of your baby developing \n
 	\t- Type II diabetes \n
@@ -207,8 +196,6 @@ of your baby developing \n
  </string>
  
 <string name="three_months_gs">
-•  That’s great! Congratulations on making the commitment to feed 
-your baby for 3 months! \n
 •  By choosing to breastfeed for 3 months you will lower the risk of 
 your baby developing \n
 \t- Type II diabetes \n
@@ -223,8 +210,6 @@ your baby developing \n
  </string>
  
 <string name="four_months_gs">
-•  That’s great! Congratulations on making the commitment to feed 
-your baby for 4 months! \n
 •  By choosing to breastfeed for 4 months you will lower the risk of 
 your baby developing \n
 \t- Type II diabetes \n
@@ -241,8 +226,6 @@ your baby developing \n
  </string>
  
 <string name="six_months_gs">
-•  That’s great! Congratulations on making the commitment to feed 
-your baby for 4 months! \n
 •  By choosing to breastfeed for 4 months you will lower the risk of 
 your baby developing \n
 \t- Type II diabetes \n
@@ -260,8 +243,6 @@ your baby developing \n
  </string>
  
 <string name="morethan_six_months_gs">
-•  That’s great! Congratulations on making the commitment to feed 
-your baby for 4 months! \n
 •  By choosing to breastfeed for 4 months you will lower the risk of 
 your baby developing \n
 \t- Type II diabetes \n

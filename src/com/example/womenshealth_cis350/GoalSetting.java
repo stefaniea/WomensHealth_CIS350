@@ -11,10 +11,12 @@ import android.widget.TextView;
 
 public class GoalSetting extends Activity implements OnItemSelectedListener {
 
+	static TextView bubble;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.what_to_expect);
+		setContentView(R.layout.goal_setting);
 		Spinner spinner = (Spinner) findViewById(R.id.age_spinner);
 		// Create an ArrayAdapter using the string array and a default spinner layout
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -24,6 +26,10 @@ public class GoalSetting extends Activity implements OnItemSelectedListener {
 		// Apply the adapter to the spinner
 		spinner.setAdapter(adapter);
 		spinner.setOnItemSelectedListener(this);
+		
+		bubble = (TextView) this.findViewById(R.id.bubble_goalsetting);
+		bubble.setVisibility(bubble.INVISIBLE); //set invisible before selected something
+		
 	}
 
 	@Override
@@ -36,28 +42,52 @@ public class GoalSetting extends Activity implements OnItemSelectedListener {
 	@Override
 	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
 			long arg3) {
-		TextView content = (TextView) findViewById(R.id.age_content);
-		//position = at birth
+		TextView content = (TextView) findViewById(R.id.goal_setting_content);
+		if(arg3 == 0) {
+			bubble.setVisibility(bubble.INVISIBLE); //invisible again
+			content.setText("");
+		}
 		if(arg3 == 1) {
-			content.setText(R.string.days_gs);
+			content.setText(R.string.days_gs); 
+			bubble.setText("That's great!  Congratulations on making the comittment to feed " +
+					"your baby for a few days in the hospital!");
+			bubble.setVisibility(bubble.VISIBLE); //visible now
 		}
 		if(arg3 == 2) {
 			content.setText(R.string.weeks_gs);
+			bubble.setText("That's great!  Congratulations on making the comittment to feed" +
+					"your baby for 1-3 weeks!");
+			bubble.setVisibility(bubble.VISIBLE); //visible now
 		}
 		if(arg3 == 3) {
 			content.setText(R.string.months_gs);
+			bubble.setText("That's great!  Congratulations on making the comittment to feed " +
+					"your baby for a 1-2 months!");
+			bubble.setVisibility(bubble.VISIBLE); //visible now
 		}
 		if(arg3 == 4) {
 			content.setText(R.string.three_months_gs);
+			bubble.setText("That's great!  Congratulations on making the comittment to feed " +
+					"your baby for 3 months!");
+			bubble.setVisibility(bubble.VISIBLE); //visible now
 		}
 		if(arg3 == 5) {
 			content.setText(R.string.four_months_gs);
+			bubble.setText("That's great!  Congratulations on making the comittment to feed " +
+					"your baby for 4 months!");
+			bubble.setVisibility(bubble.VISIBLE); //visible now
 		}
 		if(arg3 == 6) {
 			content.setText(R.string.six_months_gs);
+			bubble.setText("That's great!  Congratulations on making the comittment to feed " +
+					"your baby for 6 months!");
+			bubble.setVisibility(bubble.VISIBLE); //visible now
 		}
 		if(arg3 == 7) {
 			content.setText(R.string.morethan_six_months_gs);
+			bubble.setText("That's great!  Congratulations on making the comittment to feed " +
+					"your baby for greater than 6 months!");
+			bubble.setVisibility(bubble.VISIBLE); //visible now
 		}
 	}
 
