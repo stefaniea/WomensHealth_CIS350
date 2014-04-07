@@ -31,10 +31,12 @@
             android:layout_height="148dp"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/nobreastfeeding_btn"
-            android:layout_marginTop="27dp"
-            android:fontFamily="MyriadPro"
+            android:layout_marginTop="0dp"
+            android:fontFamily="serif"
+            android:paddingBottom="35dp"
             android:text="Have you thought about breastfeeding your baby?"
-            android:textSize="20sp" />
+            android:textAlignment="center"
+            android:textSize="18sp" />
 
     </RelativeLayout>
 

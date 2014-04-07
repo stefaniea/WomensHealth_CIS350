@@ -7,44 +7,44 @@
         <item name="android:background">@color/coloryellow</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:textColor">@color/colorred</item>
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">serif</item>
         <item name="android:layout_margin">10dp</item>
     </style>
 
     <style name="BackgroundBlue" parent="@android:style/Theme.Light">
         <item name="android:background">@color/colorblue</item>
         <item name="android:textColor">@color/coloryellow</item>
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">serif</item>
     </style>
     
      <style name="BackgroundYellow" parent="@android:style/Theme.Light">
         <item name="android:background">@color/coloryellow</item>
         <item name="android:textColor">@color/colorblue</item>
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">serif</item>
     </style>
     
      <style name="BackgroundRed" parent="@android:style/Theme.Light">
         <item name="android:background">@color/colorred</item>
         <item name="android:textColor">@color/coloryellow</item>
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">serif</item>
     </style>
     
     <style name="BackgroundOrange" parent="@android:style/Theme.Light">
         <item name="android:background">@color/colororange</item>
         <item name="android:textColor">@color/colorred</item>
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">serif</item>
     </style>
     
     <style name="DropDownYellowBlue" parent="@android:style/Theme.Light">
         <item name="android:background">@drawable/dropdown_yellow_blue</item>
         <item name="android:textColor">@color/colorblue</item>
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">serif</item>
     </style>
     
       <style name="DropDownYellowRed" parent="@android:style/Theme.Light">
         <item name="android:background">@drawable/dropdown_yellow_red</item>
         <item name="android:textColor">@color/colorred</item>
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">serif</item>
        
 
     </style>
@@ -52,7 +52,7 @@
       <style name="BubbleBlue" parent="@android:style/Theme.Light">
         <item name="android:background">@drawable/bubble_blue</item>
         <item name="android:textColor">@color/coloryellow</item>
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">serif</item>
          <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:gravity">center</item>
@@ -63,18 +63,18 @@
        <style name="BubbleYellow" parent="@android:style/Theme.Light">
         <item name="android:background">@drawable/bubble_yellow</item>
         <item name="android:textColor">@color/colorred</item>
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">serif</item>
          <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:gravity">center</item>
-        <item name="android:padding">30dp</item>
-         <item name="android:paddingBottom">35dp</item> <!-- because of shadow on bottom -->
+         <item name="android:paddingBottom">50dp</item> <!-- because of shadow on bottom -->
+         <item name="android:paddingLeft">10dp</item>
     </style>
     
        <style name="BubbleGreen" parent="@android:style/Theme.Light">
         <item name="android:background">@drawable/bubble_green</item>
         <item name="android:textColor">@color/colorred</item>
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">serif</item>
          <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:gravity">center</item>
@@ -85,7 +85,7 @@
        <style name="BubbleOrange" parent="@android:style/Theme.Light">
         <item name="android:background">@drawable/bubble_orange</item>
         <item name="android:textColor">@color/colorred</item>
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">serif</item>
          <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:gravity">center</item>
@@ -96,7 +96,7 @@
         <style name="BubbleRed" parent="@android:style/Theme.Light">
         <item name="android:background">@drawable/bubble_red</item>
         <item name="android:textColor">@color/coloryellow</item>
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">serif</item>
          <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:gravity">center</item>

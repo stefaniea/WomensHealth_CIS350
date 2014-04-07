@@ -4,23 +4,12 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@color/colorblue"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:paddingTop="100dp" >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-
-        <Button
-            android:id="@+id/getstarted"
-            style="@style/Button1"
-            android:layout_width="257dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="47dp"
-            android:onClick="onStartedClick"
-            android:text="Let&apos;s Get Started!"
-            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/bubble"
@@ -30,7 +19,19 @@
             android:layout_alignLeft="@+id/getstarted"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="60dp"
-            android:text="“Welcome! I’m glad you’re here to learn more about breastfeeding! Lets get started!”" />
+            android:text="“Welcome! I’m glad you’re here to learn more about breastfeeding! Let's get started!”" />
+
+        <Button
+            android:id="@+id/getstarted"
+            style="@style/Button1"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:onClick="onStartedClick"
+            android:text="Let&apos;s Get Started!"
+            android:textAlignment="center" />
 
     </RelativeLayout>
 
