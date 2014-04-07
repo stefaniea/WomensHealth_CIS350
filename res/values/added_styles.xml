@@ -65,12 +65,7 @@
          <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:gravity">center</item>
-<<<<<<< HEAD
-         <item name="android:paddingBottom">50dp</item> <!-- because of shadow on bottom -->
-         <item name="android:paddingLeft">10dp</item>
-=======
 
->>>>>>> FETCH_HEAD
     </style>
     
        <style name="BubbleGreen" parent="@android:style/Theme.Light">

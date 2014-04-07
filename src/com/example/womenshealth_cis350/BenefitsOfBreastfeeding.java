@@ -38,7 +38,7 @@ public class BenefitsOfBreastfeeding extends Activity {
         TextView bubble = (TextView) findViewById(R.id.subtitle);
         bubble.setText("Breastfeeding has many benefits for both the mother and the baby");
         bubble.setBackgroundResource(R.drawable.bubble_blue);
-        bubble.setPadding(30, 30, 30, 35);
+        //bubble.setPadding(50, 50, 50, 50);
         bubble.setTextColor(getResources().getColor(R.color.colorred));
  
         //setGroupIndicatorToRight();

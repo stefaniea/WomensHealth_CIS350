@@ -221,7 +221,7 @@ public final class R {
         public static final int back_btn=0x7f0a001b;
         public static final int benefit_list=0x7f0a000b;
         public static final int benefits_btn=0x7f0a000f;
-        public static final int bubble=0x7f0a001f;
+        public static final int bubble=0x7f0a001e;
         public static final int bubble_feel_full=0x7f0a001a;
         public static final int bubble_gaining_weight=0x7f0a001d;
         public static final int bubble_goalsetting=0x7f0a0021;
@@ -241,7 +241,7 @@ public final class R {
         public static final int engorgement_btn=0x7f0a0017;
         public static final int feelfull_btn=0x7f0a003f;
         public static final int gaining_weight_btn=0x7f0a002b;
-        public static final int getstarted=0x7f0a001e;
+        public static final int getstarted=0x7f0a001f;
         public static final int gettingEnough_btn=0x7f0a002f;
         public static final int goal_setting_content=0x7f0a0022;
         public static final int goals_btn=0x7f0a0011;
@@ -396,20 +396,10 @@ public final class R {
         public static final int BackgroundOrange=0x7f040004;
         public static final int BackgroundRed=0x7f040003;
         public static final int BackgroundYellow=0x7f040002;
-        /**  because of shadow on bottom 
-         */
         public static final int BubbleBlue=0x7f040007;
-        /**  because of shadow on bottom 
-         */
         public static final int BubbleGreen=0x7f040009;
-        /**  because of shadow on bottom 
-         */
         public static final int BubbleOrange=0x7f04000a;
-        /**  because of shadow on bottom 
-         */
         public static final int BubbleRed=0x7f04000b;
-        /**  because of shadow on bottom 
-         */
         public static final int BubbleYellow=0x7f040008;
         public static final int Button1=0x7f040000;
         public static final int DropDownYellowBlue=0x7f040005;

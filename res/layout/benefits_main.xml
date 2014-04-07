@@ -18,6 +18,7 @@
         android:ems="10"
         android:fontFamily="serif"
         android:inputType="textMultiLine"
-        android:textSize="20sp" />
+        android:textSize="20sp" 
+        android:textAlignment="center"/>
 
 </LinearLayout>
