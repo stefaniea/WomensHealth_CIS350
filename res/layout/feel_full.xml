@@ -38,13 +38,20 @@
         android:layout_width="207dp"
         android:layout_height="wrap_content"
         android:onClick="onCallProviderClick"
-        android:text="When to call my health provider" />
+        android:text="When should I call my health provider?" />
 
-    <TextView
-        android:id="@+id/bubble_feel_full"
-        style="@style/BubbleBlue"
-        android:layout_height="124dp"
-        android:layout_weight="0.56" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.20" >
+
+        <TextView
+            android:id="@+id/bubble_feel_full"
+            style="@style/BubbleBlue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
 
     <Button
         android:id="@+id/back_btn"

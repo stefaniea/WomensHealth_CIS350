@@ -115,7 +115,7 @@ public class FeelFull extends Activity{
         
 		//make other buttons invisible
 		engorgement.setVisibility(engorgement.GONE);
-		help.setVisibility(help.GONE);
+		help.setVisibility(callprovider.GONE);
 		normal.setVisibility(normal.GONE);
 		
 		return true;
