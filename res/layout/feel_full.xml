@@ -41,6 +41,7 @@
         android:text="When should I call my health provider?" />
 
     <ScrollView
+        android:id="@+id/bubble_scrollview"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_weight="0.20" >

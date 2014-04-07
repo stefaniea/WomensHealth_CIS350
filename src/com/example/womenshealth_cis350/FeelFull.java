@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class FeelFull extends Activity{
@@ -21,21 +22,27 @@ public class FeelFull extends Activity{
     Map<String, List<String>> itemCollection;
     ExpandableListView expListView;
     TextView bubble;
+    ScrollView bubble_scroll;
     Button help;
     Button normal;
     Button callprovider;
     Button engorgement;
+    Button back;
     
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.feel_full);
 		bubble = (TextView) findViewById(R.id.bubble_feel_full);
-		bubble.setVisibility(bubble.INVISIBLE);
+		bubble.setVisibility(bubble.GONE);
 		help = (Button) findViewById(R.id.helpwithengorgement_btn);
 		normal = (Button) findViewById(R.id.normal);
 		callprovider = (Button) findViewById(R.id.callprovider_btn);
 		engorgement = (Button) findViewById(R.id.engorgement_btn);
+		back = (Button) findViewById(R.id.back_btn);
+		back.setVisibility(back.GONE);
+		bubble_scroll = (ScrollView) findViewById(R.id.bubble_scrollview);
+		bubble_scroll.setVisibility(bubble_scroll.GONE);
 		makeStrings();
 		createChildren();
 		//createGroupList(); 
@@ -55,6 +62,7 @@ public class FeelFull extends Activity{
 	public boolean onNormalClick(View v) {
 		//expand the button
 		bubble.setVisibility(bubble.VISIBLE);
+		bubble_scroll.setVisibility(bubble_scroll.VISIBLE);
 		bubble.setText("Your breasts may become larger and heavier, " +
         		"and even a little tender when you start making more milk.");
 		
@@ -63,6 +71,8 @@ public class FeelFull extends Activity{
 		callprovider.setVisibility(callprovider.GONE);
 		engorgement.setVisibility(engorgement.GONE);
 		
+		back.setVisibility(back.VISIBLE);
+		
 	
 		return true;
 	}
@@ -70,6 +80,7 @@ public class FeelFull extends Activity{
 	public boolean onEngorgementClick(View v) {
 		//expand the button
 		bubble.setVisibility(bubble.VISIBLE);
+		bubble_scroll.setVisibility(bubble_scroll.VISIBLE);
 		bubble.setText("When your milk builds up in your breasts, " +
         		"they may feel very hard and painful, swollen, feel warm to the touch, may " +
         		"feel like they are throbbing");
@@ -79,12 +90,15 @@ public class FeelFull extends Activity{
 		callprovider.setVisibility(callprovider.GONE);
 		normal.setVisibility(normal.GONE);
 		
+		back.setVisibility(back.VISIBLE);
+		
 	
 		return true;
 	}
 	
 	public boolean onHelpClick(View v) {
 		//expand the button
+		bubble_scroll.setVisibility(bubble_scroll.VISIBLE);
 		bubble.setVisibility(bubble.VISIBLE);
 		bubble.setText("(i) Breastfeed often for as long as the baby wants\n"+
 		"(ii) Make sure that the baby is positioned well and latched on correctly\n"+
@@ -101,12 +115,15 @@ public class FeelFull extends Activity{
 		callprovider.setVisibility(callprovider.GONE);
 		normal.setVisibility(normal.GONE);
 		
+		back.setVisibility(back.VISIBLE);
+		
 		return true;
 	}
 	
 	public boolean onCallProviderClick(View v) {
 		//expand the button
 		bubble.setVisibility(bubble.VISIBLE);
+		bubble_scroll.setVisibility(bubble_scroll.VISIBLE);
 		bubble.setText("(i) You develop a fever\n"+
         		"(ii) The engorgement does lasts for two days or more\n"+
         		"(iii) Your symptoms worsen\n"+"(iv) You are concerned \n" +
@@ -117,19 +134,22 @@ public class FeelFull extends Activity{
 		engorgement.setVisibility(engorgement.GONE);
 		help.setVisibility(callprovider.GONE);
 		normal.setVisibility(normal.GONE);
-		
+	
+		back.setVisibility(back.VISIBLE);
 		return true;
 	}
 	
 	public boolean onBackClick(View v) {
 		//invisible bubble (and avatar? idk)
-		bubble.setVisibility(bubble.INVISIBLE);
+		bubble.setVisibility(bubble.GONE);
+		bubble_scroll.setVisibility(bubble_scroll.GONE);
 		
 		//make other buttons visible again
 		help.setVisibility(help.VISIBLE);
 		callprovider.setVisibility(callprovider.VISIBLE);
 		engorgement.setVisibility(engorgement.VISIBLE);
 		normal.setVisibility(normal.VISIBLE);
+		back.setVisibility(back.GONE);
 		
 	
 		return true;

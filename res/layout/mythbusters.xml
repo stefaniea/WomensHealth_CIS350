@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BackgroundOrange"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/hurts_btn"
+        style="@style/Button1"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:onClick="onHurtClick"
+        android:text="Breastfeeding hurts" />
+
+    <Button
+        android:id="@+id/milk_btn"
+        style="@style/Button1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:onClick="onMilkClick"
+        android:text="I won't make enough milk" />
+
+    <Button
+        android:id="@+id/saggy_btn"
+        style="@style/Button1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:onClick="onSagClick"
+        android:text="My breast will be saggy" />
+
+    <Button
+        android:id="@+id/spoiled_btn"
+        style="@style/Button1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:onClick="onSpoiledClick"
+        android:text="My baby will be spoiled." />
+    
+    <Button
+        android:id="@+id/work_btn"
+        style="@style/Button1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:onClick="onWorkClick"
+        android:text="I have to go back to school or work" />
+    
+    <Button
+        android:id="@+id/sleep_btn"
+        style="@style/Button1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:onClick="onSleepClick"
+        android:text="I'll never get any sleep" />
+    
+    <Button
+        android:id="@+id/attached_btn"
+        style="@style/Button1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:onClick="onAttachedClick"
+        android:text="My baby's father won't be attached to the baby" />
+
+    <ScrollView
+        android:id="@+id/bubble_scrollview_mythbusters"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.20" >
+
+        <TextView
+            android:id="@+id/bubble_mythbusters"
+            style="@style/BubbleBlue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+             />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/back_btn_mythbusters"
+        style="@style/Button1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:onClick="onBackClick"
+        android:text="Back" />
+
+</LinearLayout>
