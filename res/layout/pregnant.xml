@@ -28,7 +28,6 @@
         <TextView
             android:id="@+id/subtitle"
             style="@style/BubbleYellow"
-            android:layout_height="148dp"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/nobreastfeeding_btn"
             android:layout_marginTop="0dp"

@@ -1,13 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/BackgroundOrange"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
     android:orientation="vertical" >
 
-    <ExpandableListView
-        android:id="@+id/feel_full_list"
+    <Button
+        android:id="@+id/normal"
+        style="@style/Button1"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:onClick="onNormalClick"
+        android:text="Is it normal for my breasts to feel full?" />
+
+    <Button
+        android:id="@+id/engorgement_btn"
+        style="@style/Button1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:onClick="onEngorgementClick"
+        android:text="What is Engorgement?" />
+
+    <Button
+        android:id="@+id/helpwithengorgement_btn"
+        style="@style/Button1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:onClick="onHelpClick"
+        android:text="What can I do to help with engorgement?" />
+
+    <Button
+        android:id="@+id/callprovider_btn"
+        style="@style/Button1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:onClick="onCallProviderClick"
+        android:text="When should I call my health provider?" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </ExpandableListView>
-    
+        android:layout_height="50dp"
+        android:layout_weight="0.20" >
+
+        <TextView
+            android:id="@+id/bubble_feel_full"
+            style="@style/BubbleBlue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+             />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/back_btn"
+        style="@style/Button1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:onClick="onBackClick"
+        android:text="Back" />
+
 </LinearLayout>

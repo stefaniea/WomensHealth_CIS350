@@ -5,11 +5,13 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import android.app.ActionBar.LayoutParams;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
@@ -19,25 +21,121 @@ public class FeelFull extends Activity{
     Map<String, List<String>> itemCollection;
     ExpandableListView expListView;
     TextView bubble;
+    Button help;
+    Button normal;
+    Button callprovider;
+    Button engorgement;
     
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.feel_full);
-		createGroupList(); 
-        createCollection();
+		bubble = (TextView) findViewById(R.id.bubble_feel_full);
+		bubble.setVisibility(bubble.INVISIBLE);
+		help = (Button) findViewById(R.id.helpwithengorgement_btn);
+		normal = (Button) findViewById(R.id.normal);
+		callprovider = (Button) findViewById(R.id.callprovider_btn);
+		engorgement = (Button) findViewById(R.id.engorgement_btn);
+		makeStrings();
+		createChildren();
+		//createGroupList(); 
+        //createCollection();
  
-        expListView = (ExpandableListView) findViewById(R.id.feel_full_list);
-        final ExpandableListAdapter expListAdapter = new ExpandableListAdapter(
-                this, groupList, itemCollection);
-        expListView.setAdapter(expListAdapter);
+       // expListView = (ExpandableListView) findViewById(R.id.feel_full_list);
+        //final ExpandableListAdapter expListAdapter = new ExpandableListAdapter(
+          //      this, groupList, itemCollection);
+        //expListView.setAdapter(expListAdapter);
         
  
         //setGroupIndicatorToRight();
 	
 	}
 	
-	private void createGroupList() {
+	
+	public boolean onNormalClick(View v) {
+		//expand the button
+		bubble.setVisibility(bubble.VISIBLE);
+		bubble.setText("Your breasts may become larger and heavier, " +
+        		"and even a little tender when you start making more milk.");
+		
+		//make other buttons invisible
+		help.setVisibility(help.GONE);
+		callprovider.setVisibility(callprovider.GONE);
+		engorgement.setVisibility(engorgement.GONE);
+		
+	
+		return true;
+	}
+	
+	public boolean onEngorgementClick(View v) {
+		//expand the button
+		bubble.setVisibility(bubble.VISIBLE);
+		bubble.setText("When your milk builds up in your breasts, " +
+        		"they may feel very hard and painful, swollen, feel warm to the touch, may " +
+        		"feel like they are throbbing");
+		
+		//make other buttons invisible
+		help.setVisibility(help.GONE);
+		callprovider.setVisibility(callprovider.GONE);
+		normal.setVisibility(normal.GONE);
+		
+	
+		return true;
+	}
+	
+	public boolean onHelpClick(View v) {
+		//expand the button
+		bubble.setVisibility(bubble.VISIBLE);
+		bubble.setText("(i) Breastfeed often for as long as the baby wants\n"+
+		"(ii) Make sure that the baby is positioned well and latched on correctly\n"+
+		"(iii) Hand express or pump a little milk to soften the breast\n " +
+		"so baby can have a better latch\n"+
+		"(iv) Massage the breast\n" + "(v) You may use cold compress (ice pack) \n" +
+				"in between feedings to help make the pain better\n"+
+		"(vi) Drink adequate amount of fluids\n"+ "(vii) Res\nt"+ "(viii) Eat well\n"+
+		"(ix) Avoid wearing bras or clothing that are too tight");
+        
+        
+		//make other buttons invisible
+		engorgement.setVisibility(engorgement.GONE);
+		callprovider.setVisibility(callprovider.GONE);
+		normal.setVisibility(normal.GONE);
+		
+		return true;
+	}
+	
+	public boolean onCallProviderClick(View v) {
+		//expand the button
+		bubble.setVisibility(bubble.VISIBLE);
+		bubble.setText("(i) You develop a fever\n"+
+        		"(ii) The engorgement does lasts for two days or more\n"+
+        		"(iii) Your symptoms worsen\n"+"(iv) You are concerned \n" +
+        				"that your baby is not able to feed appropriately");
+        
+        
+		//make other buttons invisible
+		engorgement.setVisibility(engorgement.GONE);
+		help.setVisibility(callprovider.GONE);
+		normal.setVisibility(normal.GONE);
+		
+		return true;
+	}
+	
+	public boolean onBackClick(View v) {
+		//invisible bubble (and avatar? idk)
+		bubble.setVisibility(bubble.INVISIBLE);
+		
+		//make other buttons visible again
+		help.setVisibility(help.VISIBLE);
+		callprovider.setVisibility(callprovider.VISIBLE);
+		engorgement.setVisibility(engorgement.VISIBLE);
+		normal.setVisibility(normal.VISIBLE);
+		
+	
+		return true;
+	}
+	
+	private void makeStrings() {
         groupList = new ArrayList<String>();
         groupList.add("Is it normal for my breasts to feel full?");
         groupList.add("What is engorgement?");
@@ -45,7 +143,7 @@ public class FeelFull extends Activity{
         groupList.add("Call your health care provider if:");
     }
  
-    private void createCollection() {
+    private void createChildren() {
         String[] normal = { "Your breasts may become larger and heavier, " +
         		"and even a little tender when you start making more milk"};
         
@@ -98,24 +196,18 @@ public class FeelFull extends Activity{
             childList.add(item);
     }
  
-    // Convert pixel to dip
+ /*   // Convert pixel to dip
     public int getDipsFromPixel(float pixels) {
         // Get the screen's density scale
         final float scale = getResources().getDisplayMetrics().density;
         // Convert the dps to pixels, based on density scale
         return (int) (pixels * scale + 0.5f);
-    }
+    }*/
  
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
-    
-    public boolean onScreenClick(View v) {
-    	TextView view = (TextView) expListView.getChildAt(0);
-    	view.setText("HEYY");
-    	return true;
     }
 }
