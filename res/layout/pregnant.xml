@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BackgroundBlue"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical"
-    style="@style/BackgroundBlue" >
+    android:orientation="vertical" >
 
     <RelativeLayout
         android:layout_width="260dp"
@@ -13,30 +13,46 @@
         <Button
             android:id="@+id/yesbreastfeeding_btn"
             style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="onYesClick"
             android:text="Yes" />
 
         <Button
             android:id="@+id/nobreastfeeding_btn"
             style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/yesbreastfeeding_btn"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:onClick="onNoClick"
             android:text="No" />
 
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
         <TextView
             android:id="@+id/subtitle"
             style="@style/BubbleYellow"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/nobreastfeeding_btn"
-            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
             android:fontFamily="serif"
-            android:paddingBottom="35dp"
             android:text="Have you thought about breastfeeding your baby?"
-            android:textAlignment="center"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_below="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/avatar1" />
     </RelativeLayout>
 
 </LinearLayout>

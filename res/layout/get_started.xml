@@ -4,12 +4,22 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@color/colorblue"
-    android:orientation="vertical"
-    android:paddingTop="100dp" >
+    android:orientation="vertical" >
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:layout_above="@+id/getstarted"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bubble"
+            android:layout_weight="0.47"
+            android:scaleType="fitStart"
+            android:src="@drawable/avatar1" />
 
         <TextView
             android:id="@+id/bubble"
@@ -17,18 +27,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/getstarted"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="60dp"
-            android:text="“Welcome! I’m glad you’re here to learn more about breastfeeding! Let's get started!”" />
+            android:layout_alignParentTop="true"
+            android:text="“Welcome! I’m glad you’re here to learn more about breastfeeding! Let&apos;s get started!”" />
 
         <Button
             android:id="@+id/getstarted"
             style="@style/Button1"
             android:layout_width="257dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
             android:onClick="onStartedClick"
             android:text="Let&apos;s Get Started!"
             android:textAlignment="center" />

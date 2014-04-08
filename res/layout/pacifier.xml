@@ -9,25 +9,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-    <ExpandableListView
-        android:id="@+id/pacifier_list"
-        android:layout_width="match_parent"
-        android:layout_height="245dp" >
-    </ExpandableListView>
+        <ExpandableListView
+            android:id="@+id/pacifier_list"
+            android:layout_width="match_parent"
+            android:layout_height="245dp" >
+        </ExpandableListView>
 
-    <TextView
-        android:id="@+id/subtitle"
-        style="@style/BubbleGreen"
-        android:layout_width="240dp"
-        android:layout_height="130dp"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/pacifier_list"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:fontFamily="MyriadPro"
-        android:inputType="textMultiLine"
-        android:text="Should I use a pacifier?"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/subtitle"
+            style="@style/BubbleGreen"
+            android:layout_width="480dp"
+            android:layout_height="260dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pacifier_list"
+            android:ems="10"
+            android:fontFamily="MyriadPro"
+            android:inputType="textMultiLine"
+            android:text="Should I use a pacifier?"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtitle"
+            android:scaleType="fitStart"
+            android:src="@drawable/avatar1" />
 
     </RelativeLayout>
 

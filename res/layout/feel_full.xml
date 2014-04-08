@@ -56,6 +56,12 @@
 
     </ScrollView>
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        android:src="@drawable/avatar1" />
+
     <Button
         android:id="@+id/back_btn"
         style="@style/Button1"
