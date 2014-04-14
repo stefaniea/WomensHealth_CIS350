@@ -1,5 +1,6 @@
 package com.example.womenshealth_cis350;
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -89,6 +90,16 @@ public class GoalSetting extends Activity implements OnItemSelectedListener {
 					"your baby for greater than 6 months!");
 			bubble.setVisibility(bubble.VISIBLE); //visible now
 		}
+		
+		//replace your baby with name of baby if there is one
+		String c = (String) content.getText();
+		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+		String babyname = settings.getString("babyName", "your baby");
+		if(babyname.equals("")) babyname = "your baby";
+		c = c.replace("your baby", babyname);
+		c = c.replace("Your baby", babyname);
+		c = c.replace("Your Baby", babyname);
+		content.setText(c);
 	}
 
 	@Override

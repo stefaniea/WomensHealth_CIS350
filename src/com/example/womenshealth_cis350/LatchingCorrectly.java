@@ -13,8 +13,8 @@ public class LatchingCorrectly extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.latching_correctly);
-		Intent browserIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://www.google.com"));
-		startActivity(browserIntent);
+		//Intent browserIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://www.google.com"));
+	//	startActivity(browserIntent);
 	
 		String c = (String) ((TextView)findViewById(R.id.textView1)).getText();
 		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);

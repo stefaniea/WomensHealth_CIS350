@@ -11,6 +11,8 @@ public class PregnantPostpartum extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.pregnant_postpartum);
+		
+		
 	}
 	
 	public boolean onPregnantClick(View v) {

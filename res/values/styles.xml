@@ -15,7 +15,7 @@
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
-        <item name="android:windowBackground">@color/colorred</item>
+        <item name="android:windowBackground">@color/colorgreen</item>
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 

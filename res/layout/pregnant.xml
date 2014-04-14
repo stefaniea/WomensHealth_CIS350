@@ -36,7 +36,7 @@
         android:layout_height="match_parent" >
 
         <TextView
-            android:id="@+id/subtitle"
+            android:id="@+id/breastfeedyesno_bubble"
             style="@style/BubbleYellow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_below="@+id/subtitle"
+            android:layout_below="@+id/breastfeedyesno_bubble"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitStart"

@@ -2,9 +2,11 @@ package com.example.womenshealth_cis350;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class Pregnant extends Activity {
 
@@ -12,6 +14,15 @@ public class Pregnant extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.pregnant);
+		TextView bubble = (TextView) findViewById(R.id.breastfeedyesno_bubble);
+		
+		//replace your baby with name of baby if there is one
+		String c = (String) bubble.getText();
+		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+		String babyname = settings.getString("babyName", "your baby");
+		if(babyname.equals("")) babyname = "your baby";
+		c = c.replace("your baby", babyname);
+		bubble.setText(c);
 	}
 
 	public boolean onYesClick(View v) {
