@@ -10,40 +10,28 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:gravity="center" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.00"
-            android:text="Name:" />
+            android:text="Baby&apos;s Name:" />
 
         <EditText
-            android:id="@+id/yourname"
-            android:layout_width="wrap_content"
+            android:id="@+id/babyname"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
+            android:layout_weight="0.00"
             android:ems="10" />
     </LinearLayout>
     
      <LinearLayout
          android:layout_width="270dp"
          android:layout_height="50dp"
-         android:orientation="horizontal" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.00"
-        android:text="Baby's Name:" />
-
-    <EditText
-        android:id="@+id/babyname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
+         android:gravity="center"
+         android:orientation="vertical" >
     </LinearLayout>
 
      
@@ -52,11 +40,17 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.00"
         android:text="Choose an Avatar:" />
-     
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="224dp"
+       android:orientation="vertical" >
+
      <LinearLayout
-         android:layout_width="192dp"
+         android:layout_width="match_parent"
          android:layout_height="50dp"
-         android:layout_weight="0.52"
+         android:layout_weight="0.06"
+         android:gravity="center"
          android:orientation="horizontal" >
          
            <ImageButton
@@ -65,7 +59,8 @@
          android:layout_height="102dp"
          android:src="@drawable/avatar1"
          android:scaleType="fitXY"  
-         android:onClick="onAvatarClick"/>
+         android:onClick="onAvatarClick"
+           android:gravity="center"/>
 
            <ImageButton
                android:id="@+id/imageButton2"
@@ -76,17 +71,31 @@
                android:onClick="onAvatarClick"/>
 
      </LinearLayout>
+
      <LinearLayout
-         android:layout_width="190dp"
-              android:layout_height="50dp"
-              android:layout_weight="0.33"
-              android:orientation="vertical">
-         <LinearLayout android:layout_width="190dp" android:layout_height="50dp" android:layout_weight="0.33" android:orientation="horizontal">
-             <ImageButton android:id="@+id/imageButton3" android:layout_width="89dp" android:layout_height="102dp" android:onClick="onAvatarClick" android:scaleType="fitXY" android:src="@drawable/avatar3"/>
-             <ImageButton android:id="@+id/imageButton4" android:layout_width="90dp" android:layout_height="101dp" android:onClick="onAvatarClick" android:scaleType="fitXY" android:src="@drawable/avatar4"/>
-         </LinearLayout>
+         android:layout_width="261dp"
+         android:layout_height="50dp"
+         android:layout_weight="0.05"
+         android:gravity="center"
+         android:orientation="horizontal" >
+
+         <ImageButton
+             android:id="@+id/imageButton3"
+             android:layout_width="89dp"
+             android:layout_height="102dp"
+             android:onClick="onAvatarClick"
+             android:scaleType="fitXY"
+             android:src="@drawable/avatar3" />
+
+         <ImageButton
+             android:id="@+id/imageButton4"
+             android:layout_width="90dp"
+             android:layout_height="101dp"
+             android:onClick="onAvatarClick"
+             android:scaleType="fitXY"
+             android:src="@drawable/avatar4" />
      </LinearLayout>
-          
+     </LinearLayout>
 
      <Button
          android:id="@+id/submit_btn"

@@ -38,12 +38,10 @@ public class SetUp extends Activity {
 	public boolean onSubmitClick(View v) {
 		//get the information:
 		String babyname = ((EditText)findViewById(R.id.babyname)).getText().toString();
-		String username = ((EditText)findViewById(R.id.yourname)).getText().toString();
 		
 	  SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
 	  SharedPreferences.Editor editor = settings.edit();
 	  editor.putString("babyName", babyname); //put baby name there
-	  editor.putString("userName", username);
 	  
 	  
 	  editor.putBoolean("filledOut", true); //keep track of having filled out this form
