@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Pregnant extends Activity {
@@ -23,6 +24,12 @@ public class Pregnant extends Activity {
 		if(babyname.equals("")) babyname = "your baby";
 		c = c.replace("your baby", babyname);
 		bubble.setText(c);
+		
+		//set correct avatar:
+		ImageView avatar = (ImageView) findViewById(R.id.imageView1);
+		int img = settings.getInt("avatar", R.drawable.avatar1);
+		avatar.setImageResource(img);
+		
 	}
 
 	public boolean onYesClick(View v) {

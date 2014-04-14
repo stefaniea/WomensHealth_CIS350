@@ -14,13 +14,24 @@ import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
+
 public class SetUp extends Activity {	
+	ImageButton img1;
+	ImageButton img2;
+	ImageButton img3;
+	ImageButton img4;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.set_up);
+		
+		img1 = (ImageButton) findViewById(R.id.imageButton1);
+		img2 = (ImageButton) findViewById(R.id.imageButton2);
+		img3 = (ImageButton) findViewById(R.id.imageButton3);
+		img4 = (ImageButton) findViewById(R.id.imageButton4);
 		
 	}
 	
@@ -34,6 +45,7 @@ public class SetUp extends Activity {
 	  editor.putString("babyName", babyname); //put baby name there
 	  editor.putString("userName", username);
 	  
+	  
 	  editor.putBoolean("filledOut", true); //keep track of having filled out this form
 	  editor.commit();
 	
@@ -43,14 +55,39 @@ public class SetUp extends Activity {
 	}
 	
 	public boolean onAvatarClick(View v) {
+		//get rid of other filters
+		img1.getBackground().setColorFilter(null);
+		img2.getBackground().setColorFilter(null);
+		img3.getBackground().setColorFilter(null);
+		img4.getBackground().setColorFilter(null);
 		//if(v.isSelected()) {
-		  v.getBackground().setColorFilter(R.color.colorred, Mode.SRC_ATOP);
+		
+		//put filter on selected
+		  v.getBackground().setColorFilter(R.color.white, Mode.SRC_ATOP);
           v.invalidate();
-		//}
-		/*else {
-			 v.getBackground().setColorFilter(null);
-	         v.invalidate();
-		}*/
+          
+          SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+    	  SharedPreferences.Editor editor = settings.edit();
+    	  
+    	  
+    	  //which image was pressed?
+    	  if(v.getId() == img1.getId()) {
+    	  editor.putInt("avatar", R.drawable.avatar1);
+    	  }
+    	  else if(v.getId() == img2.getId()) {
+        	  editor.putInt("avatar", R.drawable.avatar2);
+        	  }
+    	  else if(v.getId() == img3.getId()) {
+        	  editor.putInt("avatar", R.drawable.avatar3);
+        	  }
+    	  else if(v.getId() == img4.getId()) {
+        	  editor.putInt("avatar", R.drawable.avatar4);
+        	  }
+    	  //editor.putString("avatar",v.toString()); 
+    	  editor.commit();
+    
+    	  
+		
 		return true;
 	}
 	

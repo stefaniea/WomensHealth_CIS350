@@ -6,11 +6,13 @@ import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.ExpandableListView.OnChildClickListener;
 
@@ -26,6 +28,12 @@ public class Pacifier extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pacifier);
+        
+		//set correct avatar:
+		ImageView avatar = (ImageView) findViewById(R.id.imageView1);
+		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+		int img = settings.getInt("avatar", R.drawable.avatar1);
+		avatar.setImageResource(img);
  
         createGroupList();
  

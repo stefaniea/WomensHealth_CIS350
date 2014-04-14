@@ -5,11 +5,13 @@ import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
 import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.Toast;
 
@@ -24,6 +26,12 @@ public class CostFormula extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.benefits_main);
+		
+		//set correct avatar:
+		ImageView avatar = (ImageView) findViewById(R.id.imageView1);
+		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+		int img = settings.getInt("avatar", R.drawable.avatar1);
+		avatar.setImageResource(img);
 
 		createGroupList();
 
@@ -60,9 +68,9 @@ public class CostFormula extends Activity {
 		String[] costFormula = { "Formula itself is very expensive and costs most families over $1000 per year, just"+ 
 				"this does not include the cost of bottles, nipples, hot water for running the dishwasher, etc.", 
 				"There are also significant costs indirectly related to formula feeding that one needs to consider. " +
-				"Mothers of formula fed babies: \n •	Miss more days of work than their breastfeeding counterparts"+ 
-				"\n•	Have more emergency room visits with associated costs" + 
-				"\n•	Have sicker babies who require more visits to the pediatrician’s office",
+				"Mothers of formula fed babies: \n -	Miss more days of work than their breastfeeding counterparts"+ 
+				"\n-	Have more emergency room visits with associated costs" + 
+				"\n-	Have sicker babies who require more visits to the pediatrician's office",
 				"Change your mind?  [takes user to YES screens]"}; 
 
 
