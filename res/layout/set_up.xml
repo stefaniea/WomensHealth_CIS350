@@ -3,7 +3,6 @@
     style="@style/BackgroundBlue"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/colorblue"
     android:gravity="center"
     android:orientation="vertical" >
 
@@ -14,17 +13,24 @@
         android:gravity="center" >
 
         <TextView
+            android:textColor="@color/coloryellow"
+            android:textColorLink="@color/coloryellow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.00"
-            android:text="Baby&apos;s Name:" />
+            android:text="Baby&apos;s Name:"
+            android:typeface="normal" />
 
         <EditText
             android:id="@+id/babyname"
             android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.00"
-            android:ems="10" />
+            android:ems="10"
+            android:textColor="@color/coloryellow"
+            android:textColorLink="@color/coloryellow"
+            android:typeface="serif" />
+
     </LinearLayout>
     
      <LinearLayout
@@ -36,6 +42,7 @@
 
      
      <TextView
+          style="@style/BackgroundBlue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.00"
