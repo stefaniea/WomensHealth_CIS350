@@ -3,10 +3,12 @@ package com.example.womenshealth_cis350;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.Menu;
 import android.view.MotionEvent;
 
 public class MainActivity extends Activity {
+	public static final String USER_PREFERENCES = "myUserPrefs";
 
 	//Bitmap image; 
 	@Override
@@ -24,8 +26,16 @@ public class MainActivity extends Activity {
 
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
-		Intent start = new Intent(this, LetsGetStarted.class);
+		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+		if(settings.getBoolean("filledOut", false)) {
+			Intent start = new Intent(this, LetsGetStarted.class);
+			startActivity(start);
+		}
+		
+		else {
+		Intent start = new Intent(this, SetUp.class);
 		startActivity(start);
+		}
 	
 		return true;
 	}

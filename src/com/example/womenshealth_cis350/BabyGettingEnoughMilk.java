@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ExpandableListView;
@@ -15,6 +16,7 @@ public class BabyGettingEnoughMilk extends Activity{
     List<String> childList;
     Map<String, List<String>> itemCollection;
     ExpandableListView expListView;
+    String customString;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +36,14 @@ public class BabyGettingEnoughMilk extends Activity{
 	}
 	
 	private void createGroupList() {
-        groupList = new ArrayList<String>();
-        groupList.add("Is the baby peeing and pooping?");
+		groupList = new ArrayList<String>();
+		customString = "Is the baby peeing and pooping?";
+    	//replace your baby with name of baby if there is one
+		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+		String babyname = settings.getString("babyName", "the baby");
+		if(babyname.equals("")) babyname = "the baby";
+		customString = customString.replace("the baby", babyname);
+        groupList.add(customString);        
     }
  
     private void createCollection() {
@@ -49,7 +57,7 @@ public class BabyGettingEnoughMilk extends Activity{
         itemCollection = new LinkedHashMap<String, List<String>>();
  
         for (String item : groupList) {
-            if (item.equals("Is the baby peeing and pooping?")) {
+            if (item.equals(customString)) {
                 loadChild(peepoop);
             }
  

@@ -2,6 +2,7 @@ package com.example.womenshealth_cis350;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,6 +16,13 @@ public class LatchingCorrectly extends Activity {
 		Intent browserIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://www.google.com"));
 		startActivity(browserIntent);
 	
+		String c = (String) ((TextView)findViewById(R.id.textView1)).getText();
+		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+		String babyname = settings.getString("babyName", "your baby");
+		if(babyname.equals("")) babyname = "your baby";
+		c = c.replace("my baby", babyname);
+		c = c.replace("Baby", babyname);
+		((TextView)findViewById(R.id.textView1)).setText(c);
 	}
 
 	@Override

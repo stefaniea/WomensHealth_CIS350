@@ -1,6 +1,7 @@
 package com.example.womenshealth_cis350;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -77,6 +78,16 @@ public class WhatToExpect extends Activity implements OnItemSelectedListener {
 		if(arg3 == 13) {
 			content.setText(R.string.aftersixmonths_wte);
 		}
+		
+		//replace your baby with name of baby if there is one
+		String c = (String) content.getText();
+		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+		String babyname = settings.getString("babyName", "your baby");
+		if(babyname.equals("")) babyname = "your baby";
+		c = c.replace("your baby", babyname);
+		c = c.replace("Your baby", babyname);
+		c = c.replace("Your Baby", babyname);
+		content.setText(c);
 	}
 
 	@Override
