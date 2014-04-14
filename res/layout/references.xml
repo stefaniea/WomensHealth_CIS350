@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/Mayo_Clinic"
+        style="@style/Button1"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:onClick="Mayo_ClinicClick"
+        android:text="Mayo Clinic" />
+
+    <Button
+        android:id="@+id/Mayo_Clinic_Pacifier"
+        style="@style/Button1"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:onClick="Mayo_Clinic_PacifierClick"
+        android:text="Mayo Clinic - Pacifier Use" />
+
+    <Button
+        android:id="@+id/laLecheLeague"
+        style="@style/Button1"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:onClick="laLecheLeagueClick"
+        android:text="La Leche League International" />
+
+    <Button
+        android:id="@+id/WIC_FeedingCues"
+        style="@style/Button1"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:onClick="WIC_FeedingCuesClick"
+        android:text="WIC - Feeding Cues" />
+
+    <Button
+        android:id="@+id/Womenshealth_gov"
+        style="@style/Button1"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:onClick="Womenshealth_govClick"
+        android:text="Womenshealth.gov" />
+    
+    
+
+</LinearLayout>

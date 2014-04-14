@@ -30,4 +30,12 @@
         android:onClick="onTroubleShootingClick"
         android:text="Troubleshooting and Problems" />
 
+     <Button
+        android:id="@+id/referencesButton"
+        style="@style/Button1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:onClick="referencesButtonClick"
+        android:text="References" />
+    
 </LinearLayout>

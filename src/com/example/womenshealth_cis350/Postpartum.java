@@ -32,4 +32,11 @@ public class Postpartum extends Activity {
 
 		return true;
 	}
+	
+	public boolean referencesButtonClick(View v) {
+		Intent start = new Intent(this, References.class);
+		startActivity(start);
+
+		return true;
+	}
 }

@@ -213,10 +213,14 @@ public final class R {
     }
     public static final class id {
         public static final int LinearLayout01=0x7f0a0007;
-        public static final int ScrollView01=0x7f0a004c;
+        public static final int Mayo_Clinic=0x7f0a0047;
+        public static final int Mayo_Clinic_Pacifier=0x7f0a0048;
+        public static final int ScrollView01=0x7f0a0052;
         public static final int ScrollView02=0x7f0a0009;
-        public static final int action_settings=0x7f0a004e;
-        public static final int age_content=0x7f0a004d;
+        public static final int WIC_FeedingCues=0x7f0a004a;
+        public static final int Womenshealth_gov=0x7f0a004b;
+        public static final int action_settings=0x7f0a0054;
+        public static final int age_content=0x7f0a0053;
         public static final int age_spinner=0x7f0a0022;
         public static final int attached_btn=0x7f0a002f;
         public static final int baby_enough_list=0x7f0a0006;
@@ -241,11 +245,11 @@ public final class R {
         public static final int checkBox6=0x7f0a0027;
         public static final int checkBox7=0x7f0a0028;
         public static final int costsOfFormula_bn=0x7f0a000f;
-        public static final int cracked_btn=0x7f0a0049;
+        public static final int cracked_btn=0x7f0a004f;
         public static final int didYouKnow_bn=0x7f0a000d;
         public static final int diffpos_list=0x7f0a0015;
         public static final int engorgement_btn=0x7f0a0018;
-        public static final int feelfull_btn=0x7f0a004b;
+        public static final int feelfull_btn=0x7f0a0051;
         public static final int gaining_weight_btn=0x7f0a0037;
         public static final int getstarted=0x7f0a0020;
         public static final int gettingEnough_btn=0x7f0a003b;
@@ -259,6 +263,7 @@ public final class R {
         public static final int hurts_btn=0x7f0a0029;
         public static final int imageView1=0x7f0a000c;
         public static final int item=0x7f0a0014;
+        public static final int laLecheLeague=0x7f0a0049;
         public static final int latchedOn_btn=0x7f0a003c;
         public static final int lblListItem=0x7f0a0016;
         public static final int milk_btn=0x7f0a002a;
@@ -266,31 +271,32 @@ public final class R {
         public static final int nipplehurts_latch=0x7f0a0033;
         public static final int nipplehurts_list=0x7f0a0035;
         public static final int nipplehurts_pos=0x7f0a0034;
-        public static final int nobreastfeeding_btn=0x7f0a0043;
-        public static final int nomilk_btn=0x7f0a004a;
+        public static final int nobreastfeeding_btn=0x7f0a0044;
+        public static final int nomilk_btn=0x7f0a0050;
         public static final int normal=0x7f0a0017;
         public static final int pacifier_list=0x7f0a0039;
         public static final int pal_btn=0x7f0a0040;
         public static final int pee_poop_btn=0x7f0a0038;
-        public static final int post_btn=0x7f0a0045;
-        public static final int pregnant_btn=0x7f0a0044;
+        public static final int post_btn=0x7f0a0046;
+        public static final int pregnant_btn=0x7f0a0045;
+        public static final int referencesButton=0x7f0a0042;
         public static final int saggy_btn=0x7f0a002b;
         public static final int shouldPacifier_btn=0x7f0a003e;
         public static final int sleep_btn=0x7f0a002e;
         public static final int spoiled_btn=0x7f0a002c;
-        public static final int step_button=0x7f0a0048;
-        public static final int step_content=0x7f0a0047;
+        public static final int step_button=0x7f0a004e;
+        public static final int step_content=0x7f0a004d;
         public static final int steps_btn=0x7f0a0011;
         public static final int subtitle=0x7f0a0001;
         public static final int tap_btn=0x7f0a0041;
         public static final int textView1=0x7f0a0025;
         public static final int title_screen=0x7f0a0000;
-        public static final int title_step=0x7f0a0046;
+        public static final int title_step=0x7f0a004c;
         public static final int weight_content=0x7f0a001e;
         public static final int whatPositions_btn=0x7f0a003a;
         public static final int work_btn=0x7f0a002d;
         public static final int wte_btn=0x7f0a003f;
-        public static final int yesbreastfeeding_btn=0x7f0a0042;
+        public static final int yesbreastfeeding_btn=0x7f0a0043;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -319,10 +325,11 @@ public final class R {
         public static final int postpartum=0x7f030017;
         public static final int pregnant=0x7f030018;
         public static final int pregnant_postpartum=0x7f030019;
-        public static final int spinner_item=0x7f03001a;
-        public static final int successful_steps=0x7f03001b;
-        public static final int troubleshooting=0x7f03001c;
-        public static final int what_to_expect=0x7f03001d;
+        public static final int references=0x7f03001a;
+        public static final int spinner_item=0x7f03001b;
+        public static final int successful_steps=0x7f03001c;
+        public static final int troubleshooting=0x7f03001d;
+        public static final int what_to_expect=0x7f03001e;
     }
     public static final class menu {
         public static final int main=0x7f090000;
