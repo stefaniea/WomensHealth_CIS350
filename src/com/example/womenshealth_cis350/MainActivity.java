@@ -27,7 +27,9 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
 		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
-		if(settings.getBoolean("filledOut", false)) {
+		
+		
+		/*if(settings.getBoolean("filledOut", false)) {
 			Intent start = new Intent(this, LetsGetStarted.class);
 			startActivity(start);
 		}
@@ -35,8 +37,12 @@ public class MainActivity extends Activity {
 		else {
 		Intent start = new Intent(this, SetUp.class);
 		startActivity(start);
-		}
+		}*/
 	
+		
+		//FOR TESTING, USE ABOVE FOR REAL THING
+		Intent start = new Intent(this, SetUp.class);
+		startActivity(start);
 		return true;
 	}
 	

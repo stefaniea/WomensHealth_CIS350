@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.PorterDuff.Mode;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -38,6 +39,18 @@ public class SetUp extends Activity {
 	
 		Intent start = new Intent(this, LetsGetStarted.class);
 		startActivity(start);
+		return true;
+	}
+	
+	public boolean onAvatarClick(View v) {
+		//if(v.isSelected()) {
+		  v.getBackground().setColorFilter(R.color.colorred, Mode.SRC_ATOP);
+          v.invalidate();
+		//}
+		/*else {
+			 v.getBackground().setColorFilter(null);
+	         v.invalidate();
+		}*/
 		return true;
 	}
 	
