@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
         		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
                 Intent start;
                 
-            	if(settings.getBoolean("filledOut", false)) {
+            	/*if(settings.getBoolean("filledOut", false)) {
         			start = new Intent(MainActivity.this, LetsGetStarted.class);
         			startActivity(start);
         		}
@@ -37,7 +37,11 @@ public class MainActivity extends Activity {
         		startActivity(start);
         		}
             	
-                startActivity(start);
+                startActivity(start);*/
+                
+        		//FOR TESTING, USE ABOVE FOR REAL THING
+        		start = new Intent(MainActivity.this, SetUp.class);
+        		startActivity(start);
  
                 finish();
             }

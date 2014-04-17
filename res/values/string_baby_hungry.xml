@@ -12,7 +12,7 @@
         <item>10 months through 12 months</item>
     </string-array>
     
-      <!-- what to expect strings/info "wte" = what to expect -->
+      <string name="ishungry"></string>
       <string name="birth_5_hungry">
 	     • Eyes fluttering before they open \n
 		 • Rooting \n

@@ -297,9 +297,9 @@ public class MythBusters extends Activity {
 		" and going to the pediatricians office because your baby is sick"}; 
 		
 		String[] attachedFather = {
-		"Many women have this feeling and are worried that the baby's father will not be as involved", 
-		"Fathers play a very crucial role in breastfeeding by being the main support person for you when you're having a difficult time", 
-		"There are many other ways for fathers to be involved and feel attached to their baby including \n 	Burping " +
+		"Many women have this feeling and are worried that the baby's father will not be as involved.\n", 
+		"Fathers play a very crucial role in breastfeeding by being the main support person for you when you're having a difficult time.\n", 
+		"There are many other ways for fathers to be involved and feel attached to their baby including: \n 	Burping " +
 		"the baby \n 	Changing the baby's diaper \n	Soothing the baby to sleep"}; 
 
 

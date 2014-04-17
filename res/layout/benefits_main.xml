@@ -7,7 +7,8 @@
     <ExpandableListView
         android:id="@+id/benefit_list"
         android:layout_width="match_parent"
-        android:layout_height="202dp" >
+        android:layout_height="202dp" 
+        android:typeface="serif">
     </ExpandableListView>
 
     <TextView
@@ -16,7 +17,7 @@
         android:layout_height="186dp"
         android:layout_marginBottom="10dp"
         android:ems="10"
-        android:fontFamily="serif"
+        android:typeface="serif"
         android:inputType="textMultiLine"
         android:textAlignment="center"
         android:textSize="20sp" />

@@ -18,9 +18,9 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 		Spinner spinner = (Spinner) findViewById(R.id.hungry_spinner);
 		// Create an ArrayAdapter using the string array and a default spinner layout
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-		 R.array.hungry_array, android.R.layout.simple_spinner_item);
+		 R.array.hungry_array, R.layout.dropdown_blue);
 		// Specify the layout to use when the list of choices appears
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		adapter.setDropDownViewResource(R.layout.spinner_item);
 		// Apply the adapter to the spinner
 		spinner.setAdapter(adapter);
 		spinner.setOnItemSelectedListener(this);
@@ -38,6 +38,9 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 			long arg3) {
 		TextView content = (TextView) findViewById(R.id.hungry_content);
 		//position = at birth
+		if(arg3==0) {
+			content.setText(R.string.ishungry);
+		}
 		if(arg3 == 1) {
 			content.setText(R.string.birth_5_hungry);
 		}

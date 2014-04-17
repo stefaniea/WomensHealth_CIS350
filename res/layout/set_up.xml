@@ -13,12 +13,11 @@
         android:gravity="center" >
 
         <TextView
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:text="If you&apos;ve thought about a name, what is the baby&apos;s name?"
             android:textColor="@color/coloryellow"
             android:textColorLink="@color/coloryellow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.00"
-            android:text="Baby&apos;s Name:"
             android:typeface="normal" />
 
         <EditText

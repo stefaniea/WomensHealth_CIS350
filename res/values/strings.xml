@@ -7,7 +7,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="back_first_step">"Back to First Step</string>
       <string-array name="ages_array">
-        <item>What is the Age of your Baby?</item>
+        <item>What is your baby\'s age?</item>
         <item>At birth</item>
         <item>First 24 Hours</item>
         <item>2 days</item>
@@ -24,16 +24,17 @@
     </string-array>
     
       <!-- what to expect strings/info "wte" = what to expect -->
+      <string name="wte"></string>
       <string name="atbirth_wte">
 	     • Almost immediately after birth, your baby is in a unique alert stage and may 
-	    latch on for the first time seeming like a pro \n
+	    latch on for the first time seeming like a pro \n \n
 		 • Allow the baby to stay with you skin-to-skin while the baby seeks 
-		out the breast and nipple 
+		out the breast and nipple \n \n
 	 	• While some babies may latch on at this time, many will simply 
-		“explore” by licking, bobbing their head, and possibly taking a few small sucks \n
+		“explore” by licking, bobbing their head, and possibly taking a few small sucks \n \n
 		 • Remember, all of this is normal and the most important thing at this 
 		time is to be skin-to-skin with your baby and allow the baby access to your 
-		breast for a feeding attempt if the baby seems interested   \n
+		breast for a feeding attempt if the baby seems interested   \n \n
       </string>
       
       <string name="twentyfourhours_wte">
@@ -264,12 +265,12 @@ foods better \n
  
 <string-array name="peepoop_array">
     <item>How old is your baby?</item>
-    <item>Day One</item>
-    <item>Day Two</item>
-    <item>Day Three</item>
-    <item>Day Four</item>
+    <item>Day 1</item>
+    <item>Day 2</item>
+    <item>Day 3</item>
+    <item>Day 4</item>
     <item>Day 5/6</item>
-    <item>Day Seven</item>
+    <item>Day 7</item>
 </string-array>
 
 <string name="dayone_pp">1 wet diaper and 1 poopy </string>
