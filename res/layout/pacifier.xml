@@ -7,34 +7,42 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:minHeight="100dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pacifier_list"
+            android:scaleType="fitStart"
+            android:src="@drawable/avatar1" 
+             android:visibility="gone"/> <!-- no avatar here for now -->
 
         <ExpandableListView
             android:id="@+id/pacifier_list"
             android:layout_width="match_parent"
-            android:layout_height="245dp" >
+            android:layout_height="245dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
         </ExpandableListView>
 
         <TextView
             android:id="@+id/subtitle"
             style="@style/BubbleGreen"
             android:layout_width="480dp"
-            android:layout_height="260dp"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/pacifier_list"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="100dp"
             android:ems="10"
             android:fontFamily="MyriadPro"
             android:inputType="textMultiLine"
             android:text="Should I use a pacifier?"
-            android:textSize="20sp" />
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/subtitle"
-            android:scaleType="fitStart"
-            android:src="@drawable/avatar1" />
+            android:textSize="20sp" 
+             android:visibility="gone"/><!-- no avatar here for now -->
 
     </RelativeLayout>
 

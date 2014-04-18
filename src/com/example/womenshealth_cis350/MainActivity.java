@@ -56,7 +56,7 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-	@Override
+	/*@Override
 	public boolean onTouchEvent(MotionEvent event) {
 		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
 		
@@ -73,10 +73,10 @@ public class MainActivity extends Activity {
 	
 		
 		//FOR TESTING, USE ABOVE FOR REAL THING
-		Intent start = new Intent(this, SetUp.class);
-		startActivity(start);
-		return true;
-	}
+		//Intent start = new Intent(this, SetUp.class);
+		//startActivity(start);
+		//return true;
+	//}
 	
 	private void init() {
 		/* one-time initialization stuff */
