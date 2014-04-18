@@ -19,7 +19,7 @@
     
      <style name="BackgroundYellow" parent="@android:style/Theme.Light">
         <item name="android:background">@color/coloryellow</item>
-        <item name="android:textColor">@color/colorblue</item>
+        <item name="android:textColor">@color/colorred</item>
         <item name="android:typeface">serif</item>
     </style>
     

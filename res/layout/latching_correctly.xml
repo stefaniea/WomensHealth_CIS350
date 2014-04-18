@@ -11,13 +11,13 @@
         android:layout_height="wrap_content"
         android:text="Is my baby latching correctly?"
         android:fontFamily="serif"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        style="@style/BackgroundYellow"/>
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
+        style="@style/BackgroundYellow"
         android:text="Baby is correctly positioned" 
         />
 
@@ -25,42 +25,42 @@
         android:id="@+id/checkBox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
+        style="@style/BackgroundYellow"
         android:text="Baby’s mouth is flanged on your nipple" />
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
+        style="@style/BackgroundYellow"
         android:text="Baby’s nose is almost touching the breast" />
 
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
+        style="@style/BackgroundYellow"
         android:text="Most of your areola is in the baby’s mouth" />
 
     <CheckBox
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
+        style="@style/BackgroundYellow"
         android:text="Baby’s jaws are moving all the way back to his ears" />
 
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
+        style="@style/BackgroundYellow"
         android:text="You can hear the baby swallowing the milk" />
 
     <CheckBox
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
+        style="@style/BackgroundYellow"
         android:text="You are not in pain" />
 
 </LinearLayout>

@@ -12,11 +12,15 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 public class WhatToExpect extends Activity implements OnItemSelectedListener {
+	
+	private String babyname;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.what_to_expect);
 		Spinner spinner = (Spinner) findViewById(R.id.age_spinner);
+		
 		// Create an ArrayAdapter using the string array and a default spinner layout
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
 		 R.array.ages_array, R.layout.dropdown_blue);
@@ -39,6 +43,9 @@ public class WhatToExpect extends Activity implements OnItemSelectedListener {
 			long arg3) {
 		TextView content = (TextView) findViewById(R.id.age_content);
 		//position = at birth
+		if (arg3 == 0) {
+			content.setText(R.string.wte);
+		}
 		if(arg3 == 1) {
 			content.setText(R.string.atbirth_wte);
 		}
