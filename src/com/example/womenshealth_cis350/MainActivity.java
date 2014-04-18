@@ -84,4 +84,5 @@ public class MainActivity extends Activity {
 	//	image = BitmapFactory.decodeResource(getResources(), R.drawable.unicorn);
 		//image = Bitmap.createScaledBitmap(image, 150, 150, false);
 	}
+	
 }

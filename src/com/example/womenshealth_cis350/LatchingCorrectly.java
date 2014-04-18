@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 public class LatchingCorrectly extends Activity {
@@ -18,11 +19,56 @@ public class LatchingCorrectly extends Activity {
 	
 		String c = (String) ((TextView)findViewById(R.id.textView1)).getText();
 		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
-		String babyname = settings.getString("babyName", "your baby");
-		if(babyname.equals("")) babyname = "your baby";
+		String babyname = settings.getString("babyName", "baby");
+		if(!babyname.equals(""))  {
 		c = c.replace("my baby", babyname);
 		c = c.replace("Baby", babyname);
 		((TextView)findViewById(R.id.textView1)).setText(c);
+		
+		
+		  CheckBox check = (CheckBox) findViewById(R.id.checkBox4);
+	        String custom = check.getText().toString();
+	        custom = custom.replace("the baby", babyname);
+	        custom = custom.replace("Baby", babyname);
+	        check.setText(custom);
+	        
+	        check = (CheckBox) findViewById(R.id.checkBox5);
+	        custom = check.getText().toString();
+	        custom = custom.replace("the baby", babyname);
+	        custom = custom.replace("Baby", babyname);
+	        check.setText(custom);
+	        
+	        check = (CheckBox) findViewById(R.id.checkBox6);
+	        custom = check.getText().toString();
+	        custom = custom.replace("the baby", babyname);
+	        custom = custom.replace("Baby", babyname);
+	        check.setText(custom);
+	        
+	        check = (CheckBox) findViewById(R.id.checkBox7);
+	        custom = check.getText().toString();
+	        custom = custom.replace("the baby", babyname);
+	        custom = custom.replace("Baby", babyname);
+	        check.setText(custom);
+	        
+	        check = (CheckBox) findViewById(R.id.checkBox1);
+	        custom = check.getText().toString();
+	        custom = custom.replace("the baby", babyname);
+	        custom = custom.replace("Baby", babyname);
+	        check.setText(custom);
+	        
+	        check = (CheckBox) findViewById(R.id.checkBox2);
+	        custom = check.getText().toString();
+	        custom = custom.replace("the baby", babyname);
+	        custom = custom.replace("Baby", babyname);
+	        check.setText(custom);
+	        
+	        check = (CheckBox) findViewById(R.id.checkBox3);
+	        custom = check.getText().toString();
+	        custom = custom.replace("the baby", babyname);
+	        custom = custom.replace("Baby", babyname);
+	        check.setText(custom);
+		}
+		
 	}
 
 	@Override
