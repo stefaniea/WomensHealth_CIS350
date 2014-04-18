@@ -4,43 +4,63 @@
     style="@style/BackgroundOrange"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:gravity="center" >
+    android:gravity="center"
+    android:orientation="vertical" >
 
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
-
-    <Spinner
-        android:id="@+id/age_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="72dp" />
-
-    <ScrollView
-        
-        style="@style/BackgroundOrange"
-        android:layout_width="fill_parent"
-        android:layout_height="199dp"
-        android:padding="10dp"
-        android:layout_above="@+id/bubble_goalsetting" >
-
-        <TextView
-            android:id="@+id/goal_setting_content"
-            style="@style/BackgroundOrange"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </ScrollView>
-
-    <TextView
-        android:id="@+id/bubble_goalsetting"
-        style="@style/BubbleRed"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="40dp" />
+        android:layout_height="0dp"
+        android:layout_weight="0.51" >
+
+        <Spinner
+            android:id="@+id/age_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp" />
+
+        <ScrollView
+            style="@style/BackgroundOrange"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/age_spinner"
+            android:gravity="top"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/goal_setting_content"
+                style="@style/BackgroundOrange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical|top"
+                android:gravity="top"
+                android:padding="0dp"
+                android:textAlignment="gravity" />
+        </ScrollView>
 
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <TextView
+            android:id="@+id/bubble_goalsetting"
+            style="@style/BubbleRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="347dp"
+        android:layout_height="110dp"
+        android:layout_gravity="left"
+        android:scaleType="fitStart"
+        android:src="@drawable/avatar1" />
 
 </LinearLayout>

@@ -236,7 +236,7 @@ public final class R {
         public static final int bubble=0x7f0a0021;
         public static final int bubble_feel_full=0x7f0a001c;
         public static final int bubble_gaining_weight=0x7f0a001f;
-        public static final int bubble_goalsetting=0x7f0a0023;
+        public static final int bubble_goalsetting=0x7f0a0024;
         public static final int bubble_mythbusters=0x7f0a0031;
         public static final int bubble_scrollview=0x7f0a001b;
         public static final int bubble_scrollview_mythbusters=0x7f0a0030;
@@ -258,7 +258,7 @@ public final class R {
         public static final int gaining_weight_btn=0x7f0a0037;
         public static final int getstarted=0x7f0a0020;
         public static final int gettingEnough_btn=0x7f0a003b;
-        public static final int goal_setting_content=0x7f0a0024;
+        public static final int goal_setting_content=0x7f0a0023;
         public static final int goals_btn=0x7f0a0012;
         public static final int helpwithengorgement_btn=0x7f0a0019;
         public static final int howHungry_btn=0x7f0a003d;

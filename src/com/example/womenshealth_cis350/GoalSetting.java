@@ -56,7 +56,7 @@ public class GoalSetting extends Activity implements OnItemSelectedListener {
 		}
 		if(arg3 == 2) {
 			content.setText(R.string.weeks_gs);
-			bubble.setText("That's great!  Congratulations on making the comittment to feed" +
+			bubble.setText("That's great!  Congratulations on making the comittment to feed " +
 					"your baby for 1-3 weeks!");
 			bubble.setVisibility(bubble.VISIBLE); //visible now
 		}
@@ -100,6 +100,11 @@ public class GoalSetting extends Activity implements OnItemSelectedListener {
 		c = c.replace("Your baby", babyname);
 		c = c.replace("Your Baby", babyname);
 		content.setText(c);
+		
+		c = (String) bubble.getText();
+		if(babyname.equals("")) babyname = "your baby";
+		c = c.replace("your baby", babyname);
+		bubble.setText(c);
 	}
 
 	@Override
