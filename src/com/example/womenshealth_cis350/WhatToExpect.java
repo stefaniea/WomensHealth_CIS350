@@ -29,6 +29,15 @@ public class WhatToExpect extends Activity implements OnItemSelectedListener {
 		// Apply the adapter to the spinner
 		spinner.setAdapter(adapter);
 		spinner.setOnItemSelectedListener(this);
+		
+		/*CharSequence title =  adapter.getItem(0);
+		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+		String babyname = settings.getString("babyName", "your baby");
+		String custom = title.toString().replace("your baby", babyname);*/
+		
+		
+		
+		
 	}
 
 	@Override
@@ -94,6 +103,7 @@ public class WhatToExpect extends Activity implements OnItemSelectedListener {
 		c = c.replace("your baby", babyname);
 		c = c.replace("Your baby", babyname);
 		c = c.replace("Your Baby", babyname);
+		c = c.replace("the baby", babyname);
 		content.setText(c);
 	}
 
