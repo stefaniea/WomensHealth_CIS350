@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/BackgroundOrange"
+    style="@style/BackgroundBlue"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -9,32 +9,40 @@
         android:id="@+id/title_step"
         android:layout_width="match_parent"
         android:layout_height="82dp"
+        android:background="@drawable/bubble_orange"
+        android:fontFamily="serif"
+        android:gravity="center"
         android:padding="20dp"
         android:textAlignment="gravity"
-        android:textSize="20sp" 
-        android:fontFamily="serif"/>
+        android:textColor="@color/colorred"
+        android:textSize="18sp"
+        android:typeface="serif" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_height="140dp"
         android:layout_weight="0.96"
         android:orientation="vertical" >
 
         <TextView
             android:id="@+id/step_content"
             android:layout_width="match_parent"
-            android:layout_height="301dp"
+            android:layout_height="26dp"
+            android:fontFamily="serif"
+            android:gravity="left"
             android:padding="20dp"
             android:textAlignment="gravity"
+            android:textColor="@color/coloryellow"
             android:textSize="15sp"
-            android:fontFamily="serif" />
+            android:typeface="serif" />
     </ScrollView>
 
     <Button
-        style="@style/Button1"
         android:id="@+id/step_button"
+        style="@style/Button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+       android:background = "@color/colororange"
         android:onClick="onNextStep"
         android:text="Next Step" >
     </Button>
