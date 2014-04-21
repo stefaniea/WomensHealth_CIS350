@@ -268,8 +268,8 @@ public final class R {
         public static final int hurts_btn=0x7f0a0029;
         public static final int imageButton1=0x7f0a004e;
         public static final int imageButton2=0x7f0a004f;
-        public static final int imageButton3=0x7f0a0050;
-        public static final int imageButton4=0x7f0a0051;
+        public static final int imageButton3=0x7f0a0051;
+        public static final int imageButton4=0x7f0a0050;
         public static final int imageView1=0x7f0a000c;
         public static final int item=0x7f0a0014;
         public static final int laLecheLeague=0x7f0a004a;
