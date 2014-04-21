@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.CheckBox;
 import android.widget.ExpandableListView;
 
 public class BabyGettingEnoughMilk extends Activity{
@@ -31,7 +32,37 @@ public class BabyGettingEnoughMilk extends Activity{
         final ExpandableListAdapter expListAdapter = new ExpandableListAdapter(
                 this, groupList, itemCollection);
         expListView.setAdapter(expListAdapter);
- 
+      //replace your baby with name of baby if there is one
+      		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+      		String babyname = settings.getString("babyName", "baby");
+       if(babyname != "") {
+      //customize with baby name:
+        CheckBox c = (CheckBox) findViewById(R.id.checkBox1);
+        String custom = c.getText().toString();
+        custom = custom.replace("the baby", babyname);
+        custom = custom.replace("Baby", babyname);
+        c.setText(custom);
+        
+        c = (CheckBox) findViewById(R.id.checkBox2);
+        custom = c.getText().toString();
+        custom = custom.replace("the baby", babyname);
+        custom = custom.replace("Baby", babyname);
+        c.setText(custom);
+        
+        c = (CheckBox) findViewById(R.id.checkBox3);
+        custom = c.getText().toString();
+        custom = custom.replace("the baby", babyname);
+        custom = custom.replace("Baby", babyname);
+        c.setText(custom);
+        
+        c = (CheckBox) findViewById(R.id.checkBox4);
+        custom = c.getText().toString();
+        custom = custom.replace("the baby", babyname);
+        custom = custom.replace("Baby", babyname);
+        c.setText(custom);
+        
+       
+       }
         //setGroupIndicatorToRight();
 	}
 	

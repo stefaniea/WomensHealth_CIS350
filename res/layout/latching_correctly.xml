@@ -11,56 +11,72 @@
         android:layout_height="wrap_content"
         android:text="Is my baby latching correctly?"
         android:fontFamily="serif"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        style="@style/BackgroundYellow"
+         android:drawablePadding="-50dp"
+        android:paddingLeft="40dp"/>
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
+        style="@style/BackgroundYellow"
         android:text="Baby is correctly positioned" 
+         android:drawablePadding="-50dp"
+        android:paddingLeft="40dp"
         />
 
     <CheckBox
         android:id="@+id/checkBox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Baby’s mouth is flanged on your nipple" />
+        style="@style/BackgroundYellow"
+        android:text="Baby’s mouth is flanged on your nipple" 
+         android:drawablePadding="-50dp"
+        android:paddingLeft="40dp"/>
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Baby’s nose is almost touching the breast" />
+        style="@style/BackgroundYellow"
+        android:text="Baby’s nose is almost touching the breast" 
+         android:drawablePadding="-50dp"
+        android:paddingLeft="40dp"/>
 
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Most of your areola is in the baby’s mouth" />
+        style="@style/BackgroundYellow"
+        android:text="Most of your areola is in the baby’s mouth" 
+         android:drawablePadding="-50dp"
+        android:paddingLeft="40dp"/>
 
     <CheckBox
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Baby’s jaws are moving all the way back to his ears" />
+        style="@style/BackgroundYellow"
+        android:text="Baby’s jaws are moving all the way back to his ears"
+         android:drawablePadding="-50dp"
+        android:paddingLeft="40dp" />
 
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="You can hear the baby swallowing the milk" />
+        style="@style/BackgroundYellow"
+        android:text="You can hear the baby swallowing the milk" 
+         android:drawablePadding="-50dp"
+        android:paddingLeft="40dp"/>
 
     <CheckBox
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="You are not in pain" />
+        style="@style/BackgroundYellow"
+        android:text="You are not in pain"
+          android:drawablePadding="-50dp"
+        android:paddingLeft="40dp" />
 
 </LinearLayout>

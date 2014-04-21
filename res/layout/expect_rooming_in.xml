@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BackgroundOrange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_expecting_roomingIn"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@drawable/bubble_green"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="0dp"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorred"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:text="Expect Rooming-In" />
+
+    <TextView
+        android:id="@+id/title_expecting_roomingIn_content"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:fontFamily="serif"
+        android:gravity="left"
+        android:text="Rooming-in is when you and your baby remain together for 24 hrs a day after your baby is born [picture]"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorred"
+        android:textSize="12sp"
+        android:typeface="serif" />
+
+    <ExpandableListView
+        android:id="@+id/expectRoomingInList"
+        style="@style/BackgroundOrange"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textSize="12sp" >
+    </ExpandableListView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.96"
+        android:orientation="vertical" >
+      <TextView
+        android:id="@+id/title_expecting_roomingIn_bottomline"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="serif"
+        android:gravity="left"
+        android:text="The Bottom Line
+ • Watch the baby, not the clock! Get to know your baby’s feeding cues and allow the baby to nurse when he or she seems ready. Babies cannot tell  time, so trying to put them on a schedule will only stress you and your  baby out. Its important not that a baby go 2-3 hours between feedings,  but that they get the correct number of feedings overall. "
+        android:textAlignment="gravity"
+        android:textColor="@color/colorred"
+        android:textSize="12sp"
+        android:typeface="serif" />
+      </ScrollView>
+    <Button
+        android:id="@+id/step_button"
+        style="@style/Button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onNextStep"
+        android:text="Next Step" >
+    </Button>
+    
+     
+
+</LinearLayout>

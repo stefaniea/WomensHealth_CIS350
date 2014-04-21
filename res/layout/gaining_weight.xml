@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    style="@style/BackgroundBlue">
 
     <ScrollView
         android:id="@+id/ScrollView02"
@@ -17,11 +18,13 @@
         android:padding="20dp"
         android:text="Is your baby gaining weight?"
         android:textAlignment="gravity"
-        android:textSize="20sp" />
+        android:textSize="20sp" 
+        android:typeface="serif"
+        android:textColor="@color/coloryellow"/>
 
     <TextView
         android:id="@+id/bubble_gaining_weight"
-        style="@style/BubbleGreen"
+        style="@style/BubbleYellow"
         android:layout_width="match_parent"
         android:layout_height="228dp"
         android:text="@string/gain_weight" />
