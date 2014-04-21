@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,10 +21,11 @@ public class Pregnant extends Activity {
 		//replace your baby with name of baby if there is one
 		String c = (String) bubble.getText();
 		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
-		String babyname = settings.getString("babyName", "your baby");
-		if(babyname.equals("")) babyname = "your baby";
-		c = c.replace("your baby", babyname);
-		bubble.setText(c);
+		String babyname = settings.getString("babyName", "");
+		if(!babyname.equals("")) {
+		c = c.replace("your baby", "<b>"+babyname+"</b>");
+		bubble.setText(Html.fromHtml(c));
+		}
 		
 		//set correct avatar:
 		ImageView avatar = (ImageView) findViewById(R.id.imageView1);

@@ -2,6 +2,7 @@ package com.example.womenshealth_cis350;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -102,9 +103,11 @@ public class GoalSetting extends Activity implements OnItemSelectedListener {
 		content.setText(c);
 		
 		c = (String) bubble.getText();
-		if(babyname.equals("")) babyname = "your baby";
-		c = c.replace("your baby", babyname);
-		bubble.setText(c);
+		if(!babyname.equals("")){
+		c = c.replace("your baby",  "<b>"+babyname+"</b>");
+		bubble.setText(Html.fromHtml(c));
+		}
+		
 	}
 
 	@Override
