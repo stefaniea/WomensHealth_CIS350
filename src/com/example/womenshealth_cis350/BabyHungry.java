@@ -1,16 +1,40 @@
 package com.example.womenshealth_cis350;
 
+import java.text.BreakIterator;
+import java.util.Locale;
+
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.TextPaint;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
+import android.widget.PopupWindow;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.TextView.BufferType;
+import android.widget.Toast;
 
 public class BabyHungry extends Activity implements OnItemSelectedListener {
+	PopupWindow popUp;
+	LinearLayout layout;
+    TextView tv;
+    LayoutParams params;
+	View v;
+	boolean dismissPop = false;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -24,6 +48,22 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 		// Apply the adapter to the spinner
 		spinner.setAdapter(adapter);
 		spinner.setOnItemSelectedListener(this);
+		
+		
+		// for definition pop-up
+		layout = new LinearLayout(this);
+	    popUp = new PopupWindow(this);
+	    tv = new TextView(this);
+	    params = new LayoutParams(LayoutParams.WRAP_CONTENT,
+                LayoutParams.WRAP_CONTENT);
+        layout.setOrientation(LinearLayout.VERTICAL);
+        tv.setText("Rooting is a type of reflex that your baby may do in response to his/her cheek being stroked. " +
+	        "Your baby may turn his/her head and make sucking movements towards your chest/nipple.");
+        
+        tv.setTextColor(Color.WHITE);
+        layout.addView(tv, params);
+        popUp.setContentView(layout);
+	    v = this.findViewById(android.R.id.content);
 	}
 
 	@Override
@@ -36,6 +76,7 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 	@Override
 	public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
 			long arg3) {
+		
 		TextView content = (TextView) findViewById(R.id.hungry_content);
 		//position = at birth
 		if(arg3==0) {
@@ -54,6 +95,8 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 			content.setText(R.string.month_10_12_hungry);
 		}
 		
+		init();
+		
 	}
 
 	@Override
@@ -61,5 +104,54 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	private void init() {
+		TextView definitionView = (TextView) findViewById(R.id.hungry_content);
+	    String definition = definitionView.getText().toString();
+	   
+	    definitionView.setMovementMethod(LinkMovementMethod.getInstance());
+	    definitionView.setText(definition, BufferType.SPANNABLE);
+	    Spannable spans = (Spannable) definitionView.getText();
+	    BreakIterator iterator = BreakIterator.getWordInstance(Locale.US);
+	    iterator.setText(definition);
+	    
+	    int start = iterator.first();
+	    for (int end = iterator.next(); end != BreakIterator.DONE; start = end, end = iterator
+	            .next()) {
+	        String possibleWord = definition.substring(start, end);
+	        if (possibleWord.equalsIgnoreCase("rooting")) {
+	        if (Character.isLetterOrDigit(possibleWord.charAt(0))) {
+	        	ClickableSpan clickSpan = getClickableSpan(possibleWord);
+	            spans.setSpan(clickSpan, start, end,
+	                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+	            }
+	        }
+	    }
+	}
+
+	private ClickableSpan getClickableSpan(final String word) {
+	    return new ClickableSpan() {
+	        //final String mWord = "Rooting is a type of reflex that your baby may do in response to his/her cheek being stroked.  " +
+	        //		"Your baby may turn his/her head and make sucking movements towards your chest/nipple.";
+	       
+	        @Override
+	        public void onClick(View widget) {
+	            //Log.d("tapped on:", mWord);
+	            //Toast.makeText(widget.getContext(), mWord, Toast.LENGTH_LONG).show();
+	            if (!dismissPop) {
+	            	popUp.showAtLocation(v, Gravity.CENTER, 10, 10);
+	            	popUp.update((int) v.getWidth()/2, 200);
+	            } else {
+	            	popUp.dismiss();
+	            }
+	            dismissPop = !dismissPop;
+	        }
+
+	        public void updateDrawState(TextPaint ds) {
+	            super.updateDrawState(ds);
+	        }
+	    };
+	}
+	
 	
 }
