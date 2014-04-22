@@ -8,12 +8,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 public class GoalSetting extends Activity implements OnItemSelectedListener {
 
 	static TextView bubble;
+	static SharedPreferences settings;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,13 @@ public class GoalSetting extends Activity implements OnItemSelectedListener {
 		// Apply the adapter to the spinner
 		spinner.setAdapter(adapter);
 		spinner.setOnItemSelectedListener(this);
+		
+		settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+
+		//set correct avatar:
+		ImageView avatar = (ImageView) findViewById(R.id.imageView1);
+		int img = settings.getInt("avatar", R.drawable.avatar1);
+		avatar.setImageResource(img);
 		
 		bubble = (TextView) this.findViewById(R.id.bubble_goalsetting);
 		bubble.setVisibility(bubble.INVISIBLE); //set invisible before selected something
@@ -47,7 +56,8 @@ public class GoalSetting extends Activity implements OnItemSelectedListener {
 		TextView content = (TextView) findViewById(R.id.goal_setting_content);
 		if(arg3 == 0) {
 			bubble.setVisibility(bubble.INVISIBLE); //invisible again
-			content.setText("");
+			bubble.setText("");
+			content.setText(R.string.empty);
 		}
 		if(arg3 == 1) {
 			content.setText(R.string.days_gs); 
@@ -94,7 +104,6 @@ public class GoalSetting extends Activity implements OnItemSelectedListener {
 		
 		//replace your baby with name of baby if there is one
 		String c = (String) content.getText();
-		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
 		String babyname = settings.getString("babyName", "your baby");
 		if(babyname.equals("")) babyname = "your baby";
 		c = c.replace("your baby", babyname);
