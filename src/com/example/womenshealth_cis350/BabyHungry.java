@@ -5,6 +5,7 @@ import java.util.Locale;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.TextPaint;
@@ -55,7 +56,7 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 		layout = new LinearLayout(this);
 		layout.setBackgroundColor(this.getResources().getColor(R.color.coloryellow));
 		
-		layout.setPadding(10, 10, 10, 10);
+		layout.setPadding(40, 40, 40, 40);
 		
 	    popUp = new PopupWindow(this);
 	    tv = new TextView(this);
@@ -68,6 +69,7 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
         tv.setTextColor(this.getResources().getColor(R.color.colorred));
         layout.addView(tv, params);
         popUp.setContentView(layout);
+        popUp.setBackgroundDrawable(new BitmapDrawable()); //gets rid of border
 	    v = this.findViewById(android.R.id.content);
 	}
 

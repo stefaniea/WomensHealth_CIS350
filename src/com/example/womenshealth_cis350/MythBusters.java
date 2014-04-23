@@ -5,12 +5,14 @@ import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.ExpandableListView.OnChildClickListener;
@@ -51,6 +53,12 @@ public class MythBusters extends Activity {
 		back.setVisibility(back.GONE);
 		bubble_scroll = (ScrollView) findViewById(R.id.bubble_scrollview_mythbusters);
 		bubble_scroll.setVisibility(bubble_scroll.GONE);
+		
+		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
+		//set correct avatar:
+		ImageView avatar = (ImageView) findViewById(R.id.imageView1);
+		int img = settings.getInt("avatar", R.drawable.avatar1);
+		avatar.setImageResource(img);
 	}
 	
 	
