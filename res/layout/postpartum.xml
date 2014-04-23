@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BackgroundOrange"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    style="@style/BackgroundOrange" >
+    android:gravity="bottom|center"
+    android:orientation="vertical" >
 
     <Button
         android:id="@+id/wte_btn"
@@ -30,12 +30,39 @@
         android:onClick="onTroubleShootingClick"
         android:text="Troubleshooting and Problems" />
 
-     <Button
+    <Button
         android:id="@+id/referencesButton"
         style="@style/Button1"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
         android:onClick="referencesButtonClick"
         android:text="References" />
+
+ <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/breastfeedyesno_bubble"
+            style="@style/BubbleYellow"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="serif"
+            android:text="Congratulations to you and your baby!"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/avatar1" />
+
+    </RelativeLayout>
     
 </LinearLayout>
+

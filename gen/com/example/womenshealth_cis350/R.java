@@ -232,7 +232,7 @@ public final class R {
         public static final int back_btn_mythbusters=0x7f0a0035;
         public static final int benefit_list=0x7f0a000b;
         public static final int benefits_btn=0x7f0a0010;
-        public static final int breastfeedyesno_bubble=0x7f0a004a;
+        public static final int breastfeedyesno_bubble=0x7f0a0048;
         public static final int bubble=0x7f0a0026;
         public static final int bubble_feel_full=0x7f0a0021;
         public static final int bubble_gaining_weight=0x7f0a0024;
@@ -281,7 +281,7 @@ public final class R {
         public static final int nipplehurts_latch=0x7f0a0038;
         public static final int nipplehurts_list=0x7f0a003a;
         public static final int nipplehurts_pos=0x7f0a0039;
-        public static final int nobreastfeeding_btn=0x7f0a0049;
+        public static final int nobreastfeeding_btn=0x7f0a004a;
         public static final int nomilk_btn=0x7f0a005b;
         public static final int normal=0x7f0a001c;
         public static final int pacifier_list=0x7f0a003e;
@@ -310,7 +310,7 @@ public final class R {
         public static final int whatPositions_btn=0x7f0a003f;
         public static final int work_btn=0x7f0a0032;
         public static final int wte_btn=0x7f0a0044;
-        public static final int yesbreastfeeding_btn=0x7f0a0048;
+        public static final int yesbreastfeeding_btn=0x7f0a0049;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
