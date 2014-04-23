@@ -18,7 +18,8 @@
             android:text="If you&apos;ve thought about a name, what is the baby&apos;s name?"
             android:textColor="@color/coloryellow"
             android:textColorLink="@color/coloryellow"
-            android:typeface="normal" />
+            android:typeface="serif" 
+            android:textSize="13dp"/>
 
         <EditText
             android:id="@+id/babyname"

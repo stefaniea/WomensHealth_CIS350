@@ -44,7 +44,7 @@
             android:layout_alignParentTop="true"
             android:fontFamily="serif"
             android:text="Have you thought about breastfeeding your baby?"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/imageView1"

@@ -43,24 +43,24 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp" >
+        android:layout_height="300dp" >
 
         <TextView
             android:id="@+id/bubble_goalsetting"
             style="@style/BubbleRed"
             android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />      
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_below="@+id/bubble_goalsetting"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true" />
+            android:scaleType="fitStart"
+            android:src="@drawable/avatar1" />
 
     </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="347dp"
-        android:layout_height="110dp"
-        android:layout_gravity="left"
-        android:scaleType="fitStart"
-        android:src="@drawable/avatar1" />
 
 </LinearLayout>

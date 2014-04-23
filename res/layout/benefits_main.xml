@@ -4,29 +4,41 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <ExpandableListView
-        android:id="@+id/benefit_list"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="202dp" 
-        android:typeface="serif">
-    </ExpandableListView>
+        android:layout_height="wrap_content" >
 
-    <TextView
-        android:id="@+id/subtitle"
-        android:layout_width="240dp"
-        android:layout_height="186dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:typeface="serif"
-        android:inputType="textMultiLine"
-        android:textAlignment="center"
-        android:textSize="20sp" />
+        <ExpandableListView
+            android:id="@+id/benefit_list"
+            android:layout_width="match_parent"
+            android:layout_height="202dp"
+            android:typeface="serif" >
+        </ExpandableListView>
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="fitStart"
-        android:src="@drawable/avatar1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/subtitle"
+            style="@style/BubbleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_below="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/avatar1" />
+        
+    </RelativeLayout>
 
 </LinearLayout>
