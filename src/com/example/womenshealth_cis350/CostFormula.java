@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.Toast;
 
@@ -32,6 +33,9 @@ public class CostFormula extends Activity {
 		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
 		int img = settings.getInt("avatar", R.drawable.avatar1);
 		avatar.setImageResource(img);
+		
+		TextView bubble = (TextView) findViewById(R.id.subtitle);
+		bubble.setText("Formula is expensive!");
 
 		createGroupList();
 
