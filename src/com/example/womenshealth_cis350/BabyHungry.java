@@ -13,6 +13,7 @@ import android.text.style.ClickableSpan;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -70,6 +71,15 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	
+	//touch anywhere and popup goes away
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		popUp.dismiss();
+		dismissPop = true;
+		popUp.
 		return true;
 	}
 
@@ -152,6 +162,8 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 	        }
 	    };
 	}
+	
+
 	
 	
 }
