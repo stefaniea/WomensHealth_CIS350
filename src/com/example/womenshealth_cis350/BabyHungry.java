@@ -79,7 +79,6 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 	public boolean onTouchEvent(MotionEvent event) {
 		popUp.dismiss();
 		dismissPop = true;
-		popUp.
 		return true;
 	}
 

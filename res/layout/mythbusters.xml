@@ -75,8 +75,8 @@
     <ScrollView
         android:id="@+id/bubble_scrollview_mythbusters"
         android:layout_width="match_parent"
-        android:layout_height="0dip"
-        android:layout_weight="0.20" >
+        android:layout_height="wrap_content"
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -93,9 +93,9 @@
                 android:scaleType="fitStart" />
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/imageView1" 
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="150dp"
                 android:layout_below="@+id/bubble_mythbusters"
                 android:scaleType="fitStart"
                 android:src="@drawable/avatar1" />
