@@ -53,6 +53,10 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 		
 		// for definition pop-up
 		layout = new LinearLayout(this);
+		layout.setBackgroundColor(this.getResources().getColor(R.color.coloryellow));
+		
+		layout.setPadding(10, 10, 10, 10);
+		
 	    popUp = new PopupWindow(this);
 	    tv = new TextView(this);
 	    params = new LayoutParams(LayoutParams.WRAP_CONTENT,
@@ -61,7 +65,7 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
         tv.setText("Rooting is a type of reflex that your baby may do in response to his/her cheek being stroked. " +
 	        "Your baby may turn his/her head and make sucking movements towards your chest/nipple.");
         
-        tv.setTextColor(Color.WHITE);
+        tv.setTextColor(this.getResources().getColor(R.color.colorred));
         layout.addView(tv, params);
         popUp.setContentView(layout);
 	    v = this.findViewById(android.R.id.content);
@@ -150,6 +154,7 @@ public class BabyHungry extends Activity implements OnItemSelectedListener {
 	            if (!dismissPop) {
 	            	popUp.showAtLocation(v, Gravity.CENTER, 10, 10);
 	            	popUp.update((int) v.getWidth()/2, 200);
+
 	            } else {
 	            	popUp.dismiss();
 	            }
