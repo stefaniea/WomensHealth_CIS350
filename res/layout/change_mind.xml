@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BackgroundBlue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/yesbreastfeeding_btn"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onYesClick"
+            android:text="Yes" />
+
+        <Button
+            android:id="@+id/nobreastfeeding_btn"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yesbreastfeeding_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="onNoClick"
+            android:text="No" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/breastfeedyesno_bubble"
+            style="@style/BubbleYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="serif"
+            android:text="Have you changed your mind about breastfeeding?"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_below="@+id/breastfeedyesno_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/avatar1" />
+    </RelativeLayout>
+
+</LinearLayout>

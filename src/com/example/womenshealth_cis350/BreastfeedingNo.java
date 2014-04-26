@@ -15,6 +15,8 @@ public class BreastfeedingNo extends Activity {
 	
 	public boolean onDidYouKnowClick(View v) {
 		Intent start = new Intent(this, BenefitsOfBreastfeeding.class);
+		start.putExtra("activity","second");
+		
 		startActivity(start);
 		return true;
 	}

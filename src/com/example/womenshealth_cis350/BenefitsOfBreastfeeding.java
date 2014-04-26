@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
   
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -26,8 +27,14 @@ public class BenefitsOfBreastfeeding extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.benefits_main);
-        
+        Intent intent = getIntent();
+        String activity = intent.getStringExtra("activity");
+        if (activity.equals("first")){
+             setContentView(R.layout.benefits_main);
+        } else {
+        	 setContentView(R.layout.benefits_main_changemind);
+        }
+        	
 		//set correct avatar:
 		ImageView avatar = (ImageView) findViewById(R.id.imageView1);
 		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
@@ -124,6 +131,14 @@ public class BenefitsOfBreastfeeding extends Activity {
         // Convert the dps to pixels, based on density scale
         return (int) (pixels * scale + 0.5f);
     }
+    
+    public boolean onChangeMind(View v) {
+		Intent start = new Intent(this, ChangeMind.class);
+		startActivity(start);
+
+		return true;
+	}
+    
  
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

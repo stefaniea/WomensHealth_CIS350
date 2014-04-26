@@ -11,11 +11,14 @@ public class BreastfeedingYes extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.breastfeedingyes);
+		
 	}
 	
 	public boolean onBenefitsClick(View v) {
 		Intent start = new Intent(this, BenefitsOfBreastfeeding.class);
+        start.putExtra("activity","first");
 		startActivity(start);
+		
 
 		return true;
 	}

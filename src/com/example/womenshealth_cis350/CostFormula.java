@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -26,14 +27,14 @@ public class CostFormula extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.benefits_main);
-		
+		setContentView(R.layout.benefits_main_changemind);
+
 		//set correct avatar:
 		ImageView avatar = (ImageView) findViewById(R.id.imageView1);
 		SharedPreferences settings = getSharedPreferences(MainActivity.USER_PREFERENCES, 0);
 		int img = settings.getInt("avatar", R.drawable.avatar1);
 		avatar.setImageResource(img);
-		
+
 		TextView bubble = (TextView) findViewById(R.id.subtitle);
 		bubble.setText("Formula is expensive!");
 
@@ -72,22 +73,22 @@ public class CostFormula extends Activity {
 		String[] costFormula = { "Formula itself is very expensive and costs most families over $1000 per year, just"+ 
 				"this does not include the cost of bottles, nipples, hot water for running the dishwasher, etc.", 
 				"There are also significant costs indirectly related to formula feeding that one needs to consider. " +
-				"Mothers of formula fed babies: \n -	Miss more days of work than their breastfeeding counterparts"+ 
-				"\n-	Have more emergency room visits with associated costs" + 
-				"\n-	Have sicker babies who require more visits to the pediatrician's office",
-				"Change your mind?  [takes user to YES screens]"}; 
+						"Mothers of formula fed babies: \n -	Miss more days of work than their breastfeeding counterparts"+ 
+						"\n-	Have more emergency room visits with associated costs" + 
+						"\n-	Have sicker babies who require more visits to the pediatrician's office",
+		"Change your mind?  [takes user to YES screens]"}; 
 
 
-		
+
 
 
 		itemCollection = new LinkedHashMap<String, List<String>>();
 
 		for (String item : groupList) {
 			//if (item.equals("Costs of formula")) {
-				loadChild(costFormula);
+			loadChild(costFormula);
 			//}
-			
+
 			itemCollection.put(item, childList);
 		}
 	}
@@ -114,6 +115,13 @@ public class CostFormula extends Activity {
 		final float scale = getResources().getDisplayMetrics().density;
 		// Convert the dps to pixels, based on density scale
 		return (int) (pixels * scale + 0.5f);
+	}
+
+	public boolean onChangeMind(View v) {
+		Intent start = new Intent(this, ChangeMind.class);
+		startActivity(start);
+
+		return true;
 	}
 
 	@Override

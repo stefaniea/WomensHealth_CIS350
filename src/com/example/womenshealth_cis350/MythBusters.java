@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -364,6 +365,13 @@ public class MythBusters extends Activity {
 		// Convert the dps to pixels, based on density scale
 		return (int) (pixels * scale + 0.5f);
 	}
+	
+	 public boolean onChangeMind(View v) {
+			Intent start = new Intent(this, ChangeMind.class);
+			startActivity(start);
+
+			return true;
+		}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
