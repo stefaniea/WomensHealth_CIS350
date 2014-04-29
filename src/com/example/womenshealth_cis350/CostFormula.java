@@ -55,8 +55,7 @@ public class CostFormula extends Activity {
 					int groupPosition, int childPosition, long id) {
 				final String selected = (String) expListAdapter.getChild(
 						groupPosition, childPosition);
-				Toast.makeText(getBaseContext(), selected, Toast.LENGTH_LONG)
-				.show();
+				//Toast.makeText(getBaseContext(), selected, Toast.LENGTH_LONG).show();
 
 				return true;
 			}
@@ -75,8 +74,7 @@ public class CostFormula extends Activity {
 				"There are also significant costs indirectly related to formula feeding that one needs to consider. " +
 						"Mothers of formula fed babies: \n -	Miss more days of work than their breastfeeding counterparts"+ 
 						"\n-	Have more emergency room visits with associated costs" + 
-						"\n-	Have sicker babies who require more visits to the pediatrician's office",
-		"Change your mind?  [takes user to YES screens]"}; 
+						"\n-	Have sicker babies who require more visits to the pediatrician's office"}; 
 
 
 
