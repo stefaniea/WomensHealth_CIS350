@@ -1,19 +1,32 @@
 package com.example.womenshealth_cis350;
+import java.text.BreakIterator;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
   
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.TextPaint;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
 import android.util.DisplayMetrics;
+import android.view.Gravity;
 import android.view.Menu;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnChildClickListener;
+import android.widget.LinearLayout.LayoutParams;
+import android.widget.TextView.BufferType;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
  
@@ -23,6 +36,13 @@ public class BenefitsOfBreastfeeding extends Activity {
     List<String> childList;
     Map<String, List<String>> itemCollection;
     ExpandableListView expListView;
+    
+	PopupWindow popUp;
+	LinearLayout layout;
+	TextView tv;
+	LayoutParams params;
+	View v;
+	boolean dismissPop = false;
  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,12 +86,46 @@ public class BenefitsOfBreastfeeding extends Activity {
                         groupPosition, childPosition);
                 Toast.makeText(getBaseContext(), selected, Toast.LENGTH_LONG)
                         .show();
- 
+
                 return true;
             }
         });
+
+        // for definition pop-up
+        layout = new LinearLayout(this);
+        layout.setBackgroundColor(this.getResources().getColor(R.color.coloryellow));
+
+        layout.setPadding(20,20, 20, 20);
+
+        popUp = new PopupWindow(this);
+        tv = new TextView(this);
+        params = new LayoutParams(LayoutParams.MATCH_PARENT,
+        		LayoutParams.MATCH_PARENT);
+        layout.setOrientation(LinearLayout.VERTICAL);
+        popUp.setHeight(90);
+        popUp.setWidth(90);
+
+        tv.setText("The number of infant deaths occurring after 28 days of life and before 12 months of life.");
+
+        tv.setTextSize(10);
+        tv.setTextColor(this.getResources().getColor(R.color.colorred));
+        layout.addView(tv, params);
+
+
+        popUp.setContentView(layout);
+
+        popUp.setBackgroundDrawable(new BitmapDrawable()); //gets rid of border
+        v = this.findViewById(android.R.id.content);
     }
- 
+    
+	//touch anywhere and popup goes away
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		popUp.dismiss();
+		dismissPop = true;
+		return true;
+	}
+
     private void createGroupList() {
         groupList = new ArrayList<String>();
         groupList.add("Benefits for the baby");
@@ -106,6 +160,8 @@ public class BenefitsOfBreastfeeding extends Activity {
  
             itemCollection.put(item, childList);
         }
+        
+        //init();
     }
  
     private void loadChild(String[] items) {
@@ -146,4 +202,54 @@ public class BenefitsOfBreastfeeding extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+    
+
+	/*private void init() {
+		TextView definitionView = (TextView) findViewById(R.id.benefit_list);
+		String definition = definitionView.getText().toString();
+
+		definitionView.setMovementMethod(LinkMovementMethod.getInstance());
+		definitionView.setText(definition, BufferType.SPANNABLE);
+		Spannable spans = (Spannable) definitionView.getText();
+		BreakIterator iterator = BreakIterator.getWordInstance(Locale.US);
+		iterator.setText(definition);
+
+		int start = iterator.first();
+		for (int end = iterator.next(); end != BreakIterator.DONE; start = end, end = iterator
+				.next()) {
+			String possibleWord = definition.substring(start, end);
+			if (possibleWord.equalsIgnoreCase("postneonatal infant mortality rate")) {
+				if (Character.isLetterOrDigit(possibleWord.charAt(0))) {
+					ClickableSpan clickSpan = getClickableSpan(possibleWord);
+					spans.setSpan(clickSpan, start, end,
+							Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+				}
+			}
+		}
+	}
+
+	private ClickableSpan getClickableSpan(final String word) {
+		return new ClickableSpan() {
+			//final String mWord = "Rooting is a type of reflex that your baby may do in response to his/her cheek being stroked.  " +
+			//		"Your baby may turn his/her head and make sucking movements towards your chest/nipple.";
+
+			@Override
+			public void onClick(View widget) {
+				//Log.d("tapped on:", mWord);
+				//Toast.makeText(widget.getContext(), mWord, Toast.LENGTH_LONG).show();
+				if (!dismissPop) {
+					popUp.showAtLocation(v, Gravity.CENTER, 10, 10);
+					popUp.update((int) v.getWidth()/2, 200);
+
+				} else {
+					popUp.dismiss();
+				}
+				dismissPop = !dismissPop;
+			}
+
+			public void updateDrawState(TextPaint ds) {
+				super.updateDrawState(ds);
+			}
+		};
+	}*/
 }
