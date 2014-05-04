@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -36,6 +37,18 @@ public class LetsGetStarted extends Activity {
 		startActivity(start);
 	
 		return true;
+	}
+	
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle presses on the action bar items
+	    switch (item.getItemId()) {
+	        case R.id.changeavatarname :
+	        Intent start = new Intent(this, SetUp.class);
+			startActivity(start);
+	           return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
 	}
 	
 }

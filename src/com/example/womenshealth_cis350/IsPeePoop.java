@@ -1,8 +1,10 @@
 package com.example.womenshealth_cis350;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -62,5 +64,18 @@ public class IsPeePoop extends Activity implements OnItemSelectedListener {
 		// TODO Auto-generated method stub
 		
 	}
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle presses on the action bar items
+	    switch (item.getItemId()) {
+	        case R.id.changeavatarname :
+	        Intent start = new Intent(this, SetUp.class);
+			startActivity(start);
+	           return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
+	}
+	
+	
 	
 }

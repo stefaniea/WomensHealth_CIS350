@@ -18,6 +18,7 @@ import android.text.style.ClickableSpan;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ExpandableListView;
@@ -203,53 +204,15 @@ public class BenefitsOfBreastfeeding extends Activity {
         return true;
     }
     
-
-	/*private void init() {
-		TextView definitionView = (TextView) findViewById(R.id.benefit_list);
-		String definition = definitionView.getText().toString();
-
-		definitionView.setMovementMethod(LinkMovementMethod.getInstance());
-		definitionView.setText(definition, BufferType.SPANNABLE);
-		Spannable spans = (Spannable) definitionView.getText();
-		BreakIterator iterator = BreakIterator.getWordInstance(Locale.US);
-		iterator.setText(definition);
-
-		int start = iterator.first();
-		for (int end = iterator.next(); end != BreakIterator.DONE; start = end, end = iterator
-				.next()) {
-			String possibleWord = definition.substring(start, end);
-			if (possibleWord.equalsIgnoreCase("postneonatal infant mortality rate")) {
-				if (Character.isLetterOrDigit(possibleWord.charAt(0))) {
-					ClickableSpan clickSpan = getClickableSpan(possibleWord);
-					spans.setSpan(clickSpan, start, end,
-							Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-				}
-			}
-		}
-	}
-
-	private ClickableSpan getClickableSpan(final String word) {
-		return new ClickableSpan() {
-			//final String mWord = "Rooting is a type of reflex that your baby may do in response to his/her cheek being stroked.  " +
-			//		"Your baby may turn his/her head and make sucking movements towards your chest/nipple.";
-
-			@Override
-			public void onClick(View widget) {
-				//Log.d("tapped on:", mWord);
-				//Toast.makeText(widget.getContext(), mWord, Toast.LENGTH_LONG).show();
-				if (!dismissPop) {
-					popUp.showAtLocation(v, Gravity.CENTER, 10, 10);
-					popUp.update((int) v.getWidth()/2, 200);
-
-				} else {
-					popUp.dismiss();
-				}
-				dismissPop = !dismissPop;
-			}
-
-			public void updateDrawState(TextPaint ds) {
-				super.updateDrawState(ds);
-			}
-		};
-	}*/
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.changeavatarname :
+            Intent start = new Intent(this, SetUp.class);
+    		startActivity(start);
+               return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }

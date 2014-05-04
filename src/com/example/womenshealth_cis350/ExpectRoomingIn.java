@@ -7,10 +7,12 @@ import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ExpandableListView;
@@ -54,8 +56,8 @@ public class ExpectRoomingIn extends Activity{
 	private void createGroupList() {
 		groupList = new ArrayList<String>();
 		groupList.add("Why should I room in with my baby?");
-		groupList.add("Won’t I lose sleep if I have my baby with me 24 hours a day?");
-		groupList.add("Doesn’t my baby have to go to the nursery for tests and procedures?");
+		groupList.add("Won't I lose sleep if I have my baby with me 24 hours a day?");
+		groupList.add("Doesn't my baby have to go to the nursery for tests and procedures?");
 	}
 
 	private void createCollection() {
@@ -74,7 +76,7 @@ public class ExpectRoomingIn extends Activity{
 			if (item.equals("Why should I room in with my baby?")) {
 				loadChild(roomBaby);
 			}
-			else if (item.equals("Won’t I lose sleep if I have my baby with me 24 hours a day?")){
+			else if (item.equals("Won't I lose sleep if I have my baby with me 24 hours a day?")){
 				loadChild(loseSleep);
 			}
 
@@ -111,6 +113,18 @@ public class ExpectRoomingIn extends Activity{
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+	
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle presses on the action bar items
+	    switch (item.getItemId()) {
+	        case R.id.changeavatarname :
+	        Intent start = new Intent(this, SetUp.class);
+			startActivity(start);
+	           return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
 	}
 }
 

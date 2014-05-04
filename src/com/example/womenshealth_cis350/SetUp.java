@@ -11,6 +11,8 @@ import android.graphics.PorterDuff.Mode;
 
 import android.os.Bundle;
 import android.text.Editable;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -90,5 +92,22 @@ public class SetUp extends Activity {
 	}
 	
 	
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle presses on the action bar items
+	    switch (item.getItemId()) {
+	        case R.id.changeavatarname :
+	        Intent start = new Intent(this, SetUp.class);
+			startActivity(start);
+	           return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
+	}
 	
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
 }

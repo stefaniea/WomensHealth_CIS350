@@ -6,8 +6,10 @@ import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ExpandableListView;
 
 public class CallProvider extends Activity {
@@ -82,4 +84,18 @@ public class CallProvider extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+    
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.changeavatarname :
+            Intent start = new Intent(this, SetUp.class);
+    		startActivity(start);
+               return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+    
+    
 }

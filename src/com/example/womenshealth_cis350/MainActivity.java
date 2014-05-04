@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 
 public class MainActivity extends Activity {
@@ -84,5 +85,17 @@ public class MainActivity extends Activity {
 	//	image = BitmapFactory.decodeResource(getResources(), R.drawable.unicorn);
 		//image = Bitmap.createScaledBitmap(image, 150, 150, false);
 	}
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle presses on the action bar items
+	    switch (item.getItemId()) {
+	        case R.id.changeavatarname :
+	        Intent start = new Intent(this, SetUp.class);
+			startActivity(start);
+	           return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
+	}
+	
 	
 }

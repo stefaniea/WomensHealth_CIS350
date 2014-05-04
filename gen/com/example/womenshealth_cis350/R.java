@@ -222,7 +222,6 @@ public final class R {
         public static final int ScrollView02=0x7f0a0009;
         public static final int WIC_FeedingCues=0x7f0a0051;
         public static final int Womenshealth_gov=0x7f0a0052;
-        public static final int action_settings=0x7f0a0060;
         public static final int age_content=0x7f0a005f;
         public static final int age_spinner=0x7f0a002b;
         public static final int attached_btn=0x7f0a0038;
@@ -242,6 +241,7 @@ public final class R {
         public static final int bubble_scrollview_mythbusters=0x7f0a003a;
         public static final int call_provider_list=0x7f0a0014;
         public static final int callprovider_btn=0x7f0a0023;
+        public static final int changeavatarname=0x7f0a0060;
         public static final int checkBox1=0x7f0a0002;
         public static final int checkBox2=0x7f0a0003;
         public static final int checkBox3=0x7f0a0004;

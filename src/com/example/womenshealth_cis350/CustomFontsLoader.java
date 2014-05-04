@@ -43,4 +43,5 @@ public class CustomFontsLoader {
 		fontsLoaded = true;
 
 	}
+	
 }
